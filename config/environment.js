@@ -21,10 +21,17 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    ENV.APP.LOG_VIEW_LOOKUPS = true;
+    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.contentSecurityPolicy = {
+      'script-src': "'self' 'unsafe-eval' http://*:35729",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'connect-src': "'self' *",
+      'img-src': "'self' data:",
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
+    };
   }
 
   if (environment === 'test') {
