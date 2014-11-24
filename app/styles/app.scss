@@ -1,5 +1,11 @@
-@import 'base';
-@import 'layout';
-@import 'component';
-@import 'other';
-@import 'shame';
+
+
+@import "bootstrap-custom-vars";
+@import "bootstrap-custom-components";
+
+
+@import "base";
+@import "layout";
+@import "component";
+@import "other";
+@import "shame";
