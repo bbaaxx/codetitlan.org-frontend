@@ -1,9 +1,8 @@
 {
   "name": "cdtorgfe",
   "dependencies": {
-    "handlebars": "2.0.0",
     "jquery": "^1.11.1",
-    "ember": "canary",
+    "ember": "1.8.1",
     "ember-data": "1.0.0-beta.11",
     "ember-resolver": "~0.1.7",
     "loader.js": "stefanpenner/loader.js#1.0.1",
@@ -12,10 +11,7 @@
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
     "ember-qunit": "0.1.8",
     "ember-qunit-notifications": "0.0.4",
-    "qunit": "~1.15.0"
-  },
-  "resolutions": {
-    "ember": "canary",
-    "handlebars": ">= 2.0.0 < 3.0.0"
+    "qunit": "~1.15.0",
+    "bootstrap-sass-official": "~3.3.1"
   }
 }
