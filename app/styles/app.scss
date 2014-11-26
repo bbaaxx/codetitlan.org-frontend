@@ -1,9 +1,14 @@
+//@import "bootstrap-custom-vars";
+//@import "bootstrap-custom-components";
 
+// Jasny bootstrap components
+// @import "bower_components/jasny-bootstrap/scss/jasny-bootstrap";
 
-@import "bootstrap-custom-vars";
-@import "bootstrap-custom-components";
+// Import typography from gwsklea
+// @import "gwsklea/fonts/roboto-draft";
+// @import "gwsklea/typography/typography";
 
-
+@import "normalize";
 @import "base";
 @import "layout";
 @import "component";
