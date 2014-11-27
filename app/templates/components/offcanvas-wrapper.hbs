@@ -1,0 +1,18 @@
+{{!
+  Inspired by https://github.com/codrops/OffCanvasMenuEffects
+}}
+
+<div class="offcanvas-menu-wrap">
+  {{offcanvas-menu-top}}
+  {{offcanvas-menu-side}}
+</div>
+
+<button class="offcanvas-menu-button" {{action "toggleMenu"}}>Open Menu</button>
+
+<div class="offcanvas-content-wrap" {{action "closeMenu"}}>
+  <div class="offcanvas-content">
+    <div class="inner-wrap">
+      {{yield}}
+    </div>
+  </div>
+</div>

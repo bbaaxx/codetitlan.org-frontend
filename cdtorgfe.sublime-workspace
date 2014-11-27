@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"install",
+				"installdeps"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
 				"sea",
 				"searchProperty"
 			],
@@ -311,28 +319,80 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/templates/application.hbs",
+			"settings":
+			{
+				"buffer_size": 2513,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/index.hbs",
+			"settings":
+			{
+				"buffer_size": 24,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Brocfile.js",
+			"settings":
+			{
+				"buffer_size": 824,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/app.scss",
+			"settings":
+			{
+				"buffer_size": 389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "  {{#link-to 'index' class=\"navmenu-brand\"}}\n    <img src=\"/assets/images/logo-quetz-w.svg\" alt=\"\" width=\"30\">\n  {{/link-to}}\n\n  <ul class=\"nav navmenu-nav\">\n    {{#link-to \"index\" tagName=\"li\" href=false}}\n      <a {{bind-attr href=\"view.href\"}}>\n        Inicio\n      </a>\n    {{/link-to}}\n  </ul>",
+			"settings":
+			{
+				"buffer_size": 298,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 104.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"remo",
-				"Package Control: Remove Package"
+				"h",
+				"HTMLBeautify"
 			],
 			[
 				":w",
 				":w - Save"
 			],
 			[
-				"synja",
-				"Set Syntax: JavaScript"
+				"ht",
+				"HTMLBeautify"
+			],
+			[
+				"htm",
+				"HTMLBeautify"
 			],
 			[
 				"ins",
 				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"synja",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"inst",
@@ -391,7 +451,7 @@
 				"Set Syntax: HTML with mustaches"
 			]
 		],
-		"width": 416.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -416,10 +476,87 @@
 	},
 	"expanded_folders":
 	[
-		"/T/projects/cdtorgfe"
+		"/T/projects/cdtorgfe",
+		"/T/projects/cdtorgfe/app",
+		"/T/projects/cdtorgfe/app/adapters",
+		"/T/projects/cdtorgfe/app/styles",
+		"/T/projects/cdtorgfe/app/templates",
+		"/T/projects/cdtorgfe/app/templates/components",
+		"/T/projects/cdtorgfe/public/assets",
+		"/T/projects/cdtorgfe/public/assets/images"
 	],
 	"file_history":
 	[
+		"/T/projects/cdtorgfe/package.json",
+		"/T/projects/cdtorgfe/bower.json",
+		"/T/projects/cdtorgfe/Makefile",
+		"/T/projects/cdtorgfe/app/index.html",
+		"/T/projects/cdtorgfe/app/styles/_normalize.scss",
+		"/T/projects/cdtorgfe/app/styles/_component.scss",
+		"/T/projects/cdtorgfe/app/styles/_base.scss",
+		"/C/Users/Eduardo/Desktop/logo-quetz-w.svg",
+		"/C/Users/Eduardo/Desktop/logo-quetz-b.svg",
+		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-vars.scss",
+		"/T/projects/cdtorgfe/public/assets/images/hamburger.svg",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/navigation/images/hamburger.svg",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/header-panel/header-panel.js",
+		"/T/projects/cdtorgfe/app/routes/application.js",
+		"/T/projects/cdtorgfe/app/adapters/application.js",
+		"/T/projects/cdtorgfe/app/app.js",
+		"/T/projects/cdtorgfe/Brocfile.js",
+		"/T/projects/cdtorgfe/app/templates/application.hbs",
+		"/T/projects/cdtorgfe/app/models/section.js",
+		"/T/projects/cdtorgfe/app/models/menu.js",
+		"/T/projects/cdtorgfe/app/styles/app.scss",
+		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-components.scss",
+		"/T/projects/cdtorgfe/app/router.js",
+		"/T/projects/cdtorgfe/app/routes/section.js",
+		"/T/projects/cdtorgfe/app/models/menu-entry.js",
+		"/T/projects/cdtorgfe/app/models/entry.js",
+		"/T/ghrepos/ember-paper/vendor/ember-paper/styles.css",
+		"/T/projects/cdtorgfe/app/templates/index.hbs",
+		"/T/ghrepos/ember-paper/addon/components/paper-sidenav.js",
+		"/T/ghrepos/ember-paper/app/templates/components/paper-sidenav.hbs",
+		"/T/projects/cdtorgfe/public/images/quetz-light-50x50-transp.gif",
+		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-vars",
+		"/T/projects/cdtorgfe/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss",
+		"/T/projects/cdtorgfe/bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/palette/_palette.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/styleguide.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/fonts/_roboto-draft.scss",
+		"/T/projects/cdtorgfe/app/styles/_settings.scss",
+		"/T/projects/cdtorgfe/app/breakpoints.js",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu.hbs",
+		"/T/projects/cdtorgfe/app/components/offcanvas-menu.js",
+		"/T/projects/cdtorgfe/app/templates/components/pure-sidenav.hbs",
+		"/T/projects/cdtorgfe/app/styles/_other.scss",
+		"/T/projects/cdtorgfe/dist/fonts/fontawesome-webfont.svg",
+		"/T/projects/cdtorgfe/dist/fonts/fontawesome-webfont.woff",
+		"/T/projects/cdtorgfe/app/components/pure-sidenav.js",
+		"/T/projects/cdtorgfe/tests/test-helper.js",
+		"/T/projects/cdtorgfe/app/components/.gitkeep",
+		"/T/projects/cdtorgfe/dist/crossdomain.xml",
+		"/T/projects/cdtorgfe/cdtorgfe.sublime-project",
+		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-shared.scss",
+		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-horizontal.scss",
+		"/T/projects/cdtorgfe/app/styles/glwskea/_main.scss",
+		"/T/projects/cdtorgfe/app/views/material-sidenav.js",
+		"/T/projects/cdtorgfe/app/templates/material/sidenav-horizontal.hbs",
+		"/T/projects/cdtorgfe/app/templates/components/material-sidenav.hbs",
+		"/T/projects/cdtorgfe/app/components/material-sidenav.js",
+		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-static.scss",
+		"/T/projects/cdtorgfe/app/styles/glwskea/typography/_typography.scss",
+		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/images/hamburger.svg",
+		"/T/projects/cdtorgfe/public/images/hamburger.svg",
+		"/T/projects/cdtorgfe/app/styles/glwskea/animation/_animation.scss",
+		"/T/projects/cdtorgfe/app/styles/glwskea/palette/_palette.scss",
+		"/T/projects/cdtorgfe/app/styles/fonts/_roboto-draftscss",
+		"/T/projects/cdtorgfe/app/styles/glwskea/resets/_h5bp.scss",
+		"/T/projects/cdtorgfe/app/templates/components/pure-menu.hbs",
+		"/T/projects/cdtorgfe/app/components/pure-menu.js",
+		"/T/projects/cdtorgfe/app/styles/_layout.scss",
+		"/T/projects/cdtorgfe/app/styles/_shame.scss",
+		"/T/projects/cdtorgfe/app/styles/_modules.scss",
 		"/T/projects/prof2/prof2.sublime-project",
 		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/T/projects/prof2/app/components/position-activity-picker.js",
@@ -477,81 +614,11 @@
 		"/T/projects/prof2/app/views/.gitkeep",
 		"/T/projects/prof2/dist/assets/vendor.css",
 		"/T/projects/prof2/app/templates/skills/index.hbs",
-		"/T/projects/prof2/app/templates/profiles/index.hbs",
-		"/T/projects/prof2/app/templates/displays/profile-normal.hbs",
-		"/T/projects/prof2/app/templates/displays/profile-mini.hbs",
-		"/T/projects/prof2/app/templates/displays/profile-full.hbs",
-		"/T/projects/prof2/app/templates/displays/position-full.hbs",
-		"/T/projects/prof2/app/templates/displays/skill-full.hbs",
-		"/T/projects/prof2/app/models/profile.js",
-		"/T/projects/prof2/app/templates/profiles/create.hbs",
-		"/T/prof2/app/models/position.js",
-		"/T/prof2/app/models/skill-indicator.js",
-		"/T/prof2/app/mixins/live-search-engine.js",
-		"/T/prof2/app/templates/index.hbs",
-		"/T/prof2/wercker.yml",
-		"/T/prof2/README.md",
-		"/T/prof2/prof2.sublime-project",
-		"/T/prof2/tests/index.html",
-		"/S/projects/cdtorgblfe/config/environment.js",
-		"/S/projects/cdtorgblfe/app/templates/index.hbs",
-		"/S/projects/cdtorgblfe/app/templates/application.hbs",
-		"/S/projects/cdtorgblfe/app/templates/posts.hbs",
-		"/S/projects/cdtorgblfe/app/models/post.js",
-		"/S/projects/cdtorgblfe/app/routes/index.js",
-		"/S/projects/cdtorgblfe/app/serializers/application.js",
-		"/S/projects/cdtorgblfe/app/adapters/application.js",
-		"/S/projects/cdtorgblfe/app/routes/posts.js",
-		"/S/projects/cdtorgblfe/app/adapters/posts.js",
-		"/S/cdtorgblfe/app/templates/index.hbs",
-		"/S/cdtorgblfe/app/templates/application.hbs",
-		"/S/cdtorgblfe/app/routes/index.js",
-		"/S/cdtorgblfe/node_modules/ember-cli/node_modules/testem/lib/dev/ui/error_messages_panel.js",
-		"/S/cdtorgblfe/node_modules/ember-cli/node_modules/temp/lib/temp.js",
-		"/S/cdtorgblfe/node_modules/broccoli-ember-hbs-template-compiler/test/expected-module.js",
-		"/S/cdtorgblfe/node_modules/ember-cli/node_modules/bower/test/assets/test-temp-dir/test-exception.js",
-		"/S/cdtorgblfe/testem.json",
-		"/S/cdtorgblfe/app/app.js",
-		"/S/cdtorgblfe/node_modules/ember-cli/node_modules/lodash-node/compat/internals/arrayPool.js",
-		"/S/cdtorgblfe/node_modules/ember-cli/lib/preprocessors/template-plugin.js",
-		"/S/lab/cdtlapi/index.php",
-		"/S/lab/cdtlapi/sqlitest.php",
-		"/S/projects/emcv/app/models/skill-indicator.js",
-		"/S/projects/emcv/app/controllers/application.js",
-		"/S/projects/emcv/app/templates/skills/create.hbs",
-		"/S/projects/emcv/app/models/position.js",
-		"/S/projects/emcv/app/models/position-activity.js",
-		"/S/projects/emcv/package.json",
-		"/S/projects/emcv/app/transforms/array.js",
-		"/S/projects/emcv/.travis.yml",
-		"/S/projects/emcv/tests/helpers/resolver.js",
-		"/S/projects/emcv/testem.json",
-		"/S/projects/emcv/app/models/company.js",
-		"/S/projects/emcv/app/models/education.js",
-		"/S/projects/emcv/app/controllers/positions/create.js",
-		"/S/projects/emcv/app/components/date-picker.js",
-		"/S/projects/emcv/app/mixins/live-search-engine.js",
-		"/S/projects/emcv/app/helpers/tdat-monthyear.js",
-		"/S/projects/emcv/app/templates/position/details.hbs",
-		"/S/projects/emcv/Brocfile.js",
-		"/S/projects/emcv/.jshintrc",
-		"/S/projects/emcv/app/styles/app.scss",
-		"/S/projects/emcv/config/environment.js",
-		"/S/projects/emcv/app/styles/_component.scss",
-		"/S/projects/emcv/app/models/skill.js",
-		"/S/projects/emcv/app/templates/components/date-pickerer.hbs",
-		"/S/projects/emcv/emcv.sublime-project",
-		"/S/projects/emcv/app/templates/positions/create.hbs",
-		"/S/projects/emcv/app/styles/_module.scss",
-		"/S/projects/emcv/app/styles/_base.scss",
-		"/S/projects/emcv/app/extensions/datepicker.js",
-		"/S/projects/emcv/app/templates/position/editor.hbs",
-		"/S/projects/emcv/app/components/live-search.js",
-		"/S/projects/emcv/app/templates/components/live-search.hbs"
+		"/T/projects/prof2/app/templates/profiles/index.hbs"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 60.0
 	},
 	"find_in_files":
 	{
@@ -566,6 +633,22 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			";\n",
+			"100",
+			"nav",
+			"radius",
+			"round",
+			"fx",
+			"icon",
+			"typography",
+			"bootstrap",
+			"typography",
+			"open",
+			"h3",
+			"h2",
+			"pure",
+			"layout",
+			"0.2",
 			"button",
 			"']",
 			"addActivity",
@@ -677,23 +760,7 @@
 			"button",
 			"arguments",
 			"button",
-			"div",
-			"a",
-			"bar",
-			"camera-retro",
-			"extraAssets",
-			"string",
-			"target",
-			"class",
-			"#",
-			"class",
-			"skillset",
-			"h2",
-			"2",
-			"mainMenuProxy",
-			"textHash",
-			"shortName",
-			"button"
+			"div"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -712,14 +779,188 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/templates/application.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2513,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Brocfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								792,
+								792
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "app/styles/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -733,17 +974,31 @@
 				0,
 				0,
 				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
 				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.522536273795,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -755,7 +1010,7 @@
 	"project": "cdtorgfe.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -763,6 +1018,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"hamb",
+				"app\\styles\\gwsklea\\navigation\\images\\hamburger.svg"
+			],
+			[
+				"appli",
+				"app\\templates\\application.hbs"
+			],
+			[
+				"pal",
+				"app\\styles\\gwsklea\\palette\\_palette.scss"
+			],
+			[
+				"off",
+				"app\\components\\offcanvas-menu.js"
+			],
+			[
+				"comp",
+				"app\\components\\pure-sidenav.js"
+			],
 			[
 				"modks",
 				"app\\models\\skill.js"
@@ -1254,26 +1529,6 @@
 			[
 				"modtag",
 				"app/models/tagline.js"
-			],
-			[
-				"profinde",
-				"app/templates/profiles/index.hbs"
-			],
-			[
-				"templprofin",
-				"app/templates/profile/index.hbs"
-			],
-			[
-				"templatesprofiles",
-				"app/templates/profiles.hbs"
-			],
-			[
-				"rea",
-				"README.md"
-			],
-			[
-				".ember",
-				".ember-cli"
 			]
 		],
 		"width": 0.0
@@ -1302,7 +1557,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 229.0,
+	"side_bar_width": 236.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
