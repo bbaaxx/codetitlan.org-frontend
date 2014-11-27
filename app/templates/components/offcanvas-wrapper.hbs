@@ -3,39 +3,16 @@
 }}
 
 <div class="offcanvas-menu-wrap">
-
-  <nav class="offcanvas-menu-top">
-    <div class="profile">
-      {{#link-to 'index' class="navmenu-brand"}}
-        <img src="/assets/images/logo-quetz-b.svg" alt="" width="40">
-      {{/link-to}}
-      <span>Codetitlan</span>
-    </div>
-    <div class="icon-list">
-      <a href="#"><i class="fa fa-fw fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-fw fa-google-plus"></i></a>
-      <a href="#"><i class="fa fa-fw fa-github"></i></a>
-    </div>
-  </nav>
-
-  <nav class="offcanvas-menu-side">
-    {{#link-to 'index'}}Principal{{/link-to}}
-    {{#link-to 'index'}}Link 1{{/link-to}}
-    {{#link-to 'index'}}Link 2{{/link-to}}
-    {{#link-to 'index'}}Link 3{{/link-to}}
-    {{#link-to 'index'}}Link 4{{/link-to}}
-    {{#link-to 'index'}}Link 5{{/link-to}}
-  </nav>
-
+  {{offcanvas-menu-top}}
+  {{offcanvas-menu-side}}
 </div>
 
-<button class="offcanvas-menu-button" id="open-button" {{action "toggleMenu"}}>Open Menu</button>
+<button class="offcanvas-menu-button" {{action "toggleMenu"}}>Open Menu</button>
 
 <div class="offcanvas-content-wrap" {{action "closeMenu"}}>
   <div class="offcanvas-content">
-    {{yield}}
+    <div class="inner-wrap">
+      {{yield}}
+    </div>
   </div>
 </div>
-
-

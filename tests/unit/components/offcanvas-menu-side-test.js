@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleForComponent('offcan-content', 'OffcanContentComponent', {
+moduleForComponent('offcanvas-menu-side', 'OffcanvasMenuSideComponent', {
   // specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar']
 });

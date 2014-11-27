@@ -6,13 +6,20 @@ export default Ember.Component.extend({
   showingMenu: false,
   actions: {
     showMenu: function(){
-      this.toggleProperty('showingMenu');
+      if ( !this.get('showingMenu') ) {
+        this.set('showingMenu',true);
+      }
+      return false;
     },
     closeMenu: function(){
-      this.set('showingMenu',false);
+      if ( this.get('showingMenu') ) {
+        this.set('showingMenu',false);
+      }
+      return false;
     },
     toggleMenu: function(){
       this.toggleProperty('showingMenu');
+      return false;
     }
   }
 });
