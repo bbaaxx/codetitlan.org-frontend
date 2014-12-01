@@ -1,7 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function(){
-    return this.store.find('section');
+
+  setupController: function(controller,model){
+    this._super(controller,model);
+    controller.set('allSections', this.store.find('section') );
   },
+  renderTemplate: function(controller,model){
+    this._super(controller,model);
+  }
 });

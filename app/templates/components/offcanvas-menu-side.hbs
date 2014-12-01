@@ -2,10 +2,23 @@
   <img src="assets/images/logo-quetz-b.svg" width="100">
 </a>
 
-{{#link-to 'index'}}Inicio{{/link-to}}
-<a href=""></a>
-{{#link-to 'index'}}Todavía...{{/link-to}}
-{{#link-to 'index'}}...no hay...{{/link-to}}
-{{#link-to 'index'}}...nada...{{/link-to}}
-{{#link-to 'index'}}...aquí.{{/link-to}}
+<ul class="list-unstyled">
+{{#each section in allSections}}
 
+
+  {{#unless section.isSubsection}}
+
+    {{#link-to section.linkTarget}}{{section.name}}{{/link-to}}
+    {{#each subSection in section.subSections}}
+
+      {{#link-to subSection.linkTarget}}
+        {{fa-icon "caret-right"}} {{subSection.name}}
+      {{/link-to}}
+
+    {{/each}}
+
+  {{/unless}}
+
+
+{{/each}}
+</ul>

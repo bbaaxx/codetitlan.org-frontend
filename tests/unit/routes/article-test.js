@@ -1,15 +1,14 @@
 import {
-  moduleForModel,
+  moduleFor,
   test
 } from 'ember-qunit';
 
-moduleForModel('menu', 'Menu', {
+moduleFor('route:article', 'ArticleRoute', {
   // Specify the other units that are required for this test.
-  needs: []
+  // needs: ['controller:foo']
 });
 
 test('it exists', function() {
-  var model = this.subject();
-  // var store = this.store();
-  ok(!!model);
+  var route = this.subject();
+  ok(route);
 });

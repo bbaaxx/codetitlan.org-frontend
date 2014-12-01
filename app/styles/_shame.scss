@@ -21,7 +21,7 @@
 
 .offcanvas-content {
   position: relative;
-  //background: #b4bad2;
+  background: #b4bad2;
   background: #ddd;
   /* Overlay */
   &:before {
@@ -93,6 +93,12 @@
 }
 
 .offcanvas-menu-side {
+  .active {
+    background-color: #ddd;
+  }
+  div {
+    cursor: pointer;
+  }
   width: 250px;
   a {
     display: block;
