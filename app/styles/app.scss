@@ -6,12 +6,13 @@
 
 // Import typography from gwsklea
 @import "gwsklea/fonts/roboto-draft";
-@import "gwsklea/typography/typography";
+//@import "gwsklea/typography/typography";
 
 @import "mixins";
-@import "normalize";
+// @import "normalize";
 @import "base";
 @import "layout";
-@import "component";
+@import "modules";
+@import "components";
 @import "other";
 @import "shame";

@@ -10,22 +10,22 @@ var fixtures = [
     id: 2,
     name: 'botánica',
     description: 'Articulos, herramientas e información de nuestros amigos color verde',
-    linkTarget: 'dummy'
+    linkTarget: 'botanica'
   }, {
     id: 3,
     name: 'tecnología',
     description: 'Sobre la tecnología que usamos hoy y la que usaremos mañana',
-    linkTarget: 'dummy'
+    linkTarget: 'tecnologia'
   }, {
     id: 4,
     name: 'política',
     description: 'Opiniones libres para alcanzar la libertad',
-    linkTarget: 'dummy'
+    linkTarget: 'politica'
   }, {
     id: 5,
     name: 'psicología',
     description: 'Un homenaje a una de las maquinarias mas complejas y maravillosas de la naturaleza',
-    linkTarget: 'dummy',
+    linkTarget: 'psicologia',
     subSections: [6]
   }, {
     id: 6,
