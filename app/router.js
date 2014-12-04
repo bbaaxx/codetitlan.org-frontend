@@ -17,14 +17,11 @@ Router.map(function() {
   });
 
   this.resource('sections', {path: '/:section'}, function() {
-    //this.resource('section', { path: '/:section' }, function() { });
+    this.resource('subsection', { path: '/:subSection' }, function() {
+
+    });
   });
 
-  this.route('botanica');
-  this.route('tecnologia');
-  this.route('politica');
-  this.route('psicologia');
-  this.route('dummy');
 
 });
 

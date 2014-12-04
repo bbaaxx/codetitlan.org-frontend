@@ -3,41 +3,41 @@ import DS from 'ember-data';
 var fixtures = [
   {
     id: 1,
-    name: 'principal',
-    description: 'Articulos, herramientas e información de nuestros amigos color verde',
-    linkTarget: 'index'
-  },{
+    name: 'arqueología',
+    slug: 'arqueologia',
+    description: 'El mundo de lo antiguo visto con ojos modernos'
+  }, {
     id: 2,
     name: 'botánica',
-    description: 'Articulos, herramientas e información de nuestros amigos color verde',
-    linkTarget: 'botanica'
+    slug: 'botanica',
+    description: 'Articulos, herramientas e información de nuestros amigos color verde'
   }, {
     id: 3,
     name: 'tecnología',
-    description: 'Sobre la tecnología que usamos hoy y la que usaremos mañana',
-    linkTarget: 'tecnologia'
+    slug: 'tecnologia',
+    description: 'Sobre la tecnología que usamos hoy y la que usaremos mañana'
   }, {
     id: 4,
     name: 'política',
-    description: 'Opiniones libres para alcanzar la libertad',
-    linkTarget: 'politica'
+    slug: 'politica',
+    description: 'Opiniones libres para alcanzar la libertad'
   }, {
     id: 5,
     name: 'psicología',
+    slug: 'psicologia',
     description: 'Un homenaje a una de las maquinarias mas complejas y maravillosas de la naturaleza',
-    linkTarget: 'psicologia',
     subSections: [6]
   }, {
     id: 6,
-    name: 'pnl',
+    name: 'PNL',
+    slug: 'pnl',
     description: 'Programación neuro-linguistica, una perspectiva diferente',
-    linkTarget: 'dummy',
     parentSection: 5
   }, {
     id: 7,
     name: 'herbolaria',
+    slug: 'herbolaria',
     description: 'Plantas que nos ayudan a ser mejores',
-    linkTarget: 'dummy',
     parentSection: 2
   },
 ];
@@ -45,17 +45,19 @@ var fixtures = [
 export default DS.Model.extend({
 
   name: DS.attr('string'),
+  slug: DS.attr('string'),
+  subsectionSlug: function(){
+    return '/sub/'+this.get('parentSection.slug') + '/' + this.get('slug');
+  }.property('slug'),
   description: DS.attr('string'),
-  linkTarget: DS.attr('string'),
   subSections: DS.hasMany('section', {async:true, inverse:'parentSection'}),
   parentSection: DS.belongsTo('section', {async:true, inverse:'subSections'}),
 
   hasSubsections: function() {
-    return this.get('subSections.length') || false;
+    return this.get('subSections.length').get('isTruthy');
   }.property('subSections'),
   isSubsection: function() {
-    var parentSection = this.get('parentSection');
-    return parentSection || false;
+    return this.get('parentSection').get('isTruthy');
   }.property('parentSection')
 
 }).reopenClass({FIXTURES:fixtures});

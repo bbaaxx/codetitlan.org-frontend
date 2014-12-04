@@ -8,11 +8,11 @@
 
   {{#unless section.isSubsection}}
 
-    {{#link-to section.linkTarget}}{{section.name}}{{/link-to}}
-    {{#each subSection in section.subSections}}
+    {{#link-to "sections" section.slug}}{{string-capitalize section.name}}{{/link-to}}
+    {{#each subsection in section.subSections}}
 
-      {{#link-to subSection.linkTarget}}
-        {{fa-icon "caret-right"}} {{subSection.name}}
+      {{#link-to "subsection" subsection.parentSection.slug subsection.slug class="menu__subsection__link"}}
+        {{fa-icon "caret-right"}} {{string-capitalize subsection.name}}
       {{/link-to}}
 
     {{/each}}
