@@ -5,7 +5,7 @@ import {
 
 moduleForModel('section', 'Section', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:article']
 });
 
 test('it exists', function() {

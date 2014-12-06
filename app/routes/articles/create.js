@@ -5,6 +5,6 @@ export default Ember.Route.extend({
     return this.store.createRecord('article');
   },
   renderTemplate: function(){
-    this.render('articles/editor')
+    this.render('articles/editor');
   }
 });

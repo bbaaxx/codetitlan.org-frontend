@@ -3,9 +3,6 @@
   <header class="article__header">
     <h4>{{#link-to 'article' article}}{{article.title}}{{/link-to}} | <small>on {{article.section.name}}</small></h4>
   </header>
-  <div class="article__body">
-    <p>{{article.body}}</p>
-  </div>
   <footer class="article__footer">
     {{#link-to 'article.edit' article}}editar{{/link-to}} | <a href="" {{action "deleteRecord" article}}>eliminar</a>
   </footer>

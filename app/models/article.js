@@ -26,6 +26,10 @@ export default DS.Model.extend({
   body:             DS.attr('string'),
   publishDate:      DS.attr('date'),
   lastChangeDate:   DS.attr('date'),
-  section:          DS.belongsTo('section', {async:true})
+  section:          DS.belongsTo('section', {async:true}),
+
+  allSections: function(){
+    return this.store.find('section');
+  }.property()
 
 }).reopenClass({FIXTURES:fx});

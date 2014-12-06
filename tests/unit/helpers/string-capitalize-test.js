@@ -6,6 +6,6 @@ module('StringCapitalizeHelper');
 
 // Replace this with your real tests.
 test('it works', function() {
-  var result = stringCapitalize(42);
+  var result = stringCapitalize('42');
   ok(result);
 });

@@ -6,6 +6,6 @@ module('StringToupperHelper');
 
 // Replace this with your real tests.
 test('it works', function() {
-  var result = stringToupper(42);
+  var result = stringToupper('42');
   ok(result);
 });
