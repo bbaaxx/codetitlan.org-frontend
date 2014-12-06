@@ -5,5 +5,10 @@
   <p>{{description}}</p>
 </div>
 
+<section>
+  {{#each article in model.articles}}
+    {{article.title}}
+  {{/each}}
+</section>
 
 {{outlet}}

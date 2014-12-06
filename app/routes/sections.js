@@ -1,22 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  targetSection: null,
 
   model: function(params){
-    var self = this;
-    return this.store.find('section')
-      .then(function(sectionsArray){
-        self.set( 'targetSection', sectionsArray.findBy('slug', params.section) );
-        return self.get('targetSection');
-      });
-
+    return this.modelFor('application').findBy('slug', params.section);
   },
   renderTemplate: function(controller,model){
-    if ( !this.get('targetSection') ) {
-      this.transitionTo('index');
-      return;
-    }
+    if ( !model ) { return this.transitionTo('index'); }
     this._super(controller,model);
   }
+
 });

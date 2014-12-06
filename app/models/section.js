@@ -5,7 +5,8 @@ var fixtures = [
     id: 1,
     name: 'arqueología',
     slug: 'arqueologia',
-    description: 'El mundo de lo antiguo visto con ojos modernos'
+    description: 'El mundo de lo antiguo visto con ojos modernos',
+    articles: [1,2]
   }, {
     id: 2,
     name: 'botánica',
@@ -32,7 +33,8 @@ var fixtures = [
     name: 'PNL',
     slug: 'pnl',
     description: 'Programación neuro-linguistica, una perspectiva diferente',
-    parentSection: 5
+    parentSection: 5,
+    articles: [3]
   }, {
     id: 7,
     name: 'herbolaria',
@@ -46,12 +48,10 @@ export default DS.Model.extend({
 
   name: DS.attr('string'),
   slug: DS.attr('string'),
-  subsectionSlug: function(){
-    return '/sub/'+this.get('parentSection.slug') + '/' + this.get('slug');
-  }.property('slug'),
   description: DS.attr('string'),
   subSections: DS.hasMany('section', {async:true, inverse:'parentSection'}),
   parentSection: DS.belongsTo('section', {async:true, inverse:'subSections'}),
+  articles: DS.hasMany('article', {async: true}),
 
   hasSubsections: function() {
     return this.get('subSections.length').get('isTruthy');
