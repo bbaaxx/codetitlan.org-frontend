@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"fi",
+				"filteredSection"
+			],
+			[
+				"sect",
+				"sectionsArray"
+			],
+			[
+				"sec",
+				"sectionsArray"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"em",
+				"emof	Ember - Object Function"
+			],
+			[
+				"artic",
+				"article_id"
+			],
+			[
+				"di",
+				"d:ib	display:inline-block"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"pa",
+				"parentSection"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"show",
+				"showingMenu"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
 				"install",
 				"installdeps"
 			],
@@ -62,14 +118,6 @@
 			[
 				"s",
 				"searchString"
-			],
-			[
-				"fun",
-				"fun	Function"
-			],
-			[
-				"em",
-				"emberProperty	Ember.ComputedProperty"
 			],
 			[
 				"z",
@@ -220,10 +268,6 @@
 				"currentList"
 			],
 			[
-				"cur",
-				"currentClass"
-			],
-			[
 				"ma",
 				"makeObject"
 			],
@@ -320,59 +364,111 @@
 	"buffers":
 	[
 		{
-			"file": "app/templates/application.hbs",
+			"file": "app/templates/sections.hbs",
 			"settings":
 			{
-				"buffer_size": 2513,
+				"buffer_size": 137,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/index.hbs",
+			"file": "app/models/section.js",
 			"settings":
 			{
-				"buffer_size": 24,
+				"buffer_size": 1731,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Brocfile.js",
+			"file": "app/models/article.js",
 			"settings":
 			{
-				"buffer_size": 824,
+				"buffer_size": 480,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/app.scss",
+			"file": "app/templates/subsection.hbs",
 			"settings":
 			{
-				"buffer_size": 389,
+				"buffer_size": 230,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "  {{#link-to 'index' class=\"navmenu-brand\"}}\n    <img src=\"/assets/images/logo-quetz-w.svg\" alt=\"\" width=\"30\">\n  {{/link-to}}\n\n  <ul class=\"nav navmenu-nav\">\n    {{#link-to \"index\" tagName=\"li\" href=false}}\n      <a {{bind-attr href=\"view.href\"}}>\n        Inicio\n      </a>\n    {{/link-to}}\n  </ul>",
+			"file": "app/routes/application.js",
 			"settings":
 			{
-				"buffer_size": 298,
-				"line_ending": "Windows"
+				"buffer_size": 468,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/error.hbs",
+			"settings":
+			{
+				"buffer_size": 36,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/app.js",
+			"settings":
+			{
+				"buffer_size": 414,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/environment.js",
+			"settings":
+			{
+				"buffer_size": 1363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/sections.js",
+			"settings":
+			{
+				"buffer_size": 578,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/subsection.js",
+			"settings":
+			{
+				"buffer_size": 539,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/router.js",
+			"settings":
+			{
+				"buffer_size": 542,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 357.0,
 		"selected_items":
 		[
 			[
-				"h",
-				"HTMLBeautify"
-			],
-			[
 				":w",
 				":w - Save"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				"h",
+				"HTMLBeautify"
 			],
 			[
 				"ht",
@@ -415,10 +511,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				":W",
-				":w - Save"
-			],
-			[
 				"prett",
 				"HTMLPrettify"
 			],
@@ -451,13 +543,14 @@
 				"Set Syntax: HTML with mustaches"
 			]
 		],
-		"width": 512.0
+		"width": 416.0
 	},
 	"console":
 	{
 		"height": 153.0,
 		"history":
 		[
+			"sublime.log_input(False)",
 			"sublime.log_input(True)",
 			"sublime.log_commands(True)",
 			"sublime.log_input(True)",
@@ -479,42 +572,99 @@
 		"/T/projects/cdtorgfe",
 		"/T/projects/cdtorgfe/app",
 		"/T/projects/cdtorgfe/app/adapters",
-		"/T/projects/cdtorgfe/app/styles",
+		"/T/projects/cdtorgfe/app/components",
+		"/T/projects/cdtorgfe/app/controllers",
+		"/T/projects/cdtorgfe/app/helpers",
+		"/T/projects/cdtorgfe/app/models",
+		"/T/projects/cdtorgfe/app/routes",
 		"/T/projects/cdtorgfe/app/templates",
+		"/T/projects/cdtorgfe/app/templates/articles",
 		"/T/projects/cdtorgfe/app/templates/components",
+		"/T/projects/cdtorgfe/config",
+		"/T/projects/cdtorgfe/public",
 		"/T/projects/cdtorgfe/public/assets",
 		"/T/projects/cdtorgfe/public/assets/images"
 	],
 	"file_history":
 	[
+		"/T/projects/cdtorgfe/app/styles/_mixins.scss",
+		"/T/projects/cdtorgfe/app/models/section.js",
+		"/T/projects/cdtorgfe/app/components/offcanvas-wrapper.js",
+		"/T/projects/cdtorgfe/app/styles/_modules.scss",
+		"/T/projects/cdtorgfe/app/adapters/application.js",
+		"/T/projects/cdtorgfe/app/routes/articles.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/radio/demo.html",
+		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-components.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/dropdown-menu/_dropdown-menu.scss",
+		"/T/projects/cdtorgfe/app/routes/article.js",
+		"/T/projects/cdtorgfe/app/models/article.js",
+		"/T/projects/cdtorgfe/app/templates/index.hbs",
+		"/T/projects/cdtorgfe/app/styles/app.scss",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-side.hbs",
+		"/T/projects/cdtorgfe/app/templates/articles/index.hbs",
+		"/T/projects/cdtorgfe/app/routes/section.js",
+		"/T/projects/cdtorgfe/app/helpers/string-capitalize.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/fonts/_roboto-draft.scss",
+		"/T/projects/cdtorgfe/app/routes/articles-by-section-article.js",
+		"/T/projects/cdtorgfe/app/routes/articles-by-section.js",
+		"/T/projects/cdtorgfe/app/routes/by-section.js",
+		"/T/projects/cdtorgfe/app/templates/by-section.hbs",
+		"/T/projects/cdtorgfe/dist/robots.txt",
+		"/T/projects/cdtorgfe/app/routes/application.js",
+		"/T/projects/cdtorgfe/tests/unit/models/article-test.js",
+		"/T/projects/cdtorgfe/app/styles/_base.scss",
+		"/T/projects/cdtorgfe/app/app.js",
+		"/T/projects/cdtorgfe/app/templates/application.hbs",
+		"/T/projects/cdtorgfe/app/components/offcanvas-menu-top.js",
+		"/T/projects/cdtorgfe/app/components/offcanvas-menu-side.js",
+		"/T/projects/cdtorgfe/app/router.js",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-wrapper.hbs",
+		"/T/projects/cdtorgfe/app/styles/_shame.scss",
+		"/T/projects/cdtorgfe/app/styles/_layout.scss",
+		"/T/projects/cdtorgfe/testem.json",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-top.hbs",
+		"/T/projects/cdtorgfe/app/helpers/string-toupper.js",
 		"/T/projects/cdtorgfe/package.json",
-		"/T/projects/cdtorgfe/bower.json",
+		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/T/projects/cdtorgfe/app/models/.gitkeep",
 		"/T/projects/cdtorgfe/Makefile",
+		"/T/projects/cdtorgfe/app/templates/articles.hbs",
+		"/T/projects/cdtorgfe/app/templates/blog.hbs",
+		"/T/projects/cdtorgfe/app/routes/blog.js",
+		"/T/projects/cdtorgfe/public/assets/images/logo-quetz-b.svg",
+		"/C/Users/Eduardo/Downloads/google400e63623f06ca1d.html",
+		"/T/projects/cdtorgfe/cdtorgfe.sublime-project",
+		"/C/Users/Eduardo/Desktop/canvas/logo-codetitlan-cvs-b.html",
+		"/C/Users/Eduardo/Desktop/canvas/logo-codetitlan_sqare.html",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/navigation/_sidenav-horizontal.scss",
+		"/T/projects/cdtorgfe/tests/helpers/start-app.js",
 		"/T/projects/cdtorgfe/app/index.html",
+		"/T/projects/cdtorgfe/app/templates/components/offcan-main-container.hbs",
+		"/T/projects/cdtorgfe/app/components/offcan-main-container.js",
+		"/T/projects/cdtorgfe/app/components/offcan-button.js",
+		"/T/projects/cdtorgfe/app/components/offcan-menu-wrap.js",
+		"/T/projects/cdtorgfe/app/components/offcan-menu-top.js",
+		"/T/projects/cdtorgfe/app/components/offcan-menu-side.js",
+		"/T/projects/cdtorgfe/app/components/offcan-content-wrap.js",
+		"/T/projects/cdtorgfe/app/components/offcan-content.js",
+		"/T/projects/cdtorgfe/app/templates/components/offcan-button.hbs",
+		"/T/projects/cdtorgfe/app/views/application.js",
+		"/T/projects/cdtorgfe/Brocfile.js",
+		"/T/projects/cdtorgfe/bower.json",
 		"/T/projects/cdtorgfe/app/styles/_normalize.scss",
 		"/T/projects/cdtorgfe/app/styles/_component.scss",
-		"/T/projects/cdtorgfe/app/styles/_base.scss",
 		"/C/Users/Eduardo/Desktop/logo-quetz-w.svg",
 		"/C/Users/Eduardo/Desktop/logo-quetz-b.svg",
 		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-vars.scss",
 		"/T/projects/cdtorgfe/public/assets/images/hamburger.svg",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/navigation/images/hamburger.svg",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/header-panel/header-panel.js",
-		"/T/projects/cdtorgfe/app/routes/application.js",
-		"/T/projects/cdtorgfe/app/adapters/application.js",
-		"/T/projects/cdtorgfe/app/app.js",
-		"/T/projects/cdtorgfe/Brocfile.js",
-		"/T/projects/cdtorgfe/app/templates/application.hbs",
-		"/T/projects/cdtorgfe/app/models/section.js",
 		"/T/projects/cdtorgfe/app/models/menu.js",
-		"/T/projects/cdtorgfe/app/styles/app.scss",
-		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-components.scss",
-		"/T/projects/cdtorgfe/app/router.js",
-		"/T/projects/cdtorgfe/app/routes/section.js",
 		"/T/projects/cdtorgfe/app/models/menu-entry.js",
 		"/T/projects/cdtorgfe/app/models/entry.js",
 		"/T/ghrepos/ember-paper/vendor/ember-paper/styles.css",
-		"/T/projects/cdtorgfe/app/templates/index.hbs",
 		"/T/ghrepos/ember-paper/addon/components/paper-sidenav.js",
 		"/T/ghrepos/ember-paper/app/templates/components/paper-sidenav.hbs",
 		"/T/projects/cdtorgfe/public/images/quetz-light-50x50-transp.gif",
@@ -523,7 +673,6 @@
 		"/T/projects/cdtorgfe/bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/palette/_palette.scss",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/styleguide.scss",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/fonts/_roboto-draft.scss",
 		"/T/projects/cdtorgfe/app/styles/_settings.scss",
 		"/T/projects/cdtorgfe/app/breakpoints.js",
 		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu.hbs",
@@ -536,7 +685,6 @@
 		"/T/projects/cdtorgfe/tests/test-helper.js",
 		"/T/projects/cdtorgfe/app/components/.gitkeep",
 		"/T/projects/cdtorgfe/dist/crossdomain.xml",
-		"/T/projects/cdtorgfe/cdtorgfe.sublime-project",
 		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-shared.scss",
 		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-horizontal.scss",
 		"/T/projects/cdtorgfe/app/styles/glwskea/_main.scss",
@@ -554,9 +702,6 @@
 		"/T/projects/cdtorgfe/app/styles/glwskea/resets/_h5bp.scss",
 		"/T/projects/cdtorgfe/app/templates/components/pure-menu.hbs",
 		"/T/projects/cdtorgfe/app/components/pure-menu.js",
-		"/T/projects/cdtorgfe/app/styles/_layout.scss",
-		"/T/projects/cdtorgfe/app/styles/_shame.scss",
-		"/T/projects/cdtorgfe/app/styles/_modules.scss",
 		"/T/projects/prof2/prof2.sublime-project",
 		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/T/projects/prof2/app/components/position-activity-picker.js",
@@ -569,56 +714,11 @@
 		"/T/projects/prof2/app/styles/app.scss",
 		"/T/projects/prof2/config/environment.js",
 		"/T/projects/prof2/app/adapters/application.js",
-		"/T/projects/prof2/package.json",
-		"/T/projects/prof2/Brocfile.js",
-		"/T/projects/prof2/.jshintrc",
-		"/T/projects/prof2/app/templates/components/company-picker.hbs",
-		"/T/projects/prof2/tests/unit/components/skill-picker-test.js",
-		"/T/projects/prof2/tests/unit/components/position-activity-picker-test.js",
-		"/T/projects/prof2/tests/unit/components/company-picker-test.js",
-		"/T/projects/prof2/tests/unit/components/editor-indicator-test.js",
-		"/T/projects/prof2/tests/unit/components/date-picker-test.js",
-		"/T/projects/prof2/tests/unit/components/live-search-test.js",
-		"/T/projects/prof2/app/components/live-search.js",
-		"/T/projects/prof2/app/components/editor-indicator.js",
-		"/T/projects/prof2/tests/unit/adapters/application-test.js",
-		"/T/projects/prof2/app/templates/positions/create.hbs",
-		"/T/projects/prof2/app/templates/editors/position.hbs",
-		"/T/projects/prof2/app/templates/components/position-activity-picker.hbs",
-		"/T/projects/prof2/app/templates/editors/position-activity.hbs",
-		"/T/projects/prof2/app/controllers/positions/create.js",
-		"/T/projects/prof2/app/mixins/live-search-engine.js",
-		"/T/projects/prof2/app/models/skill.js",
-		"/T/projects/prof2/app/models/skill-indicator.js",
-		"/T/projects/prof2/app/styles/_component.scss",
-		"/T/projects/prof2/app/models/company.js",
-		"/T/projects/prof2/app/controllers/application.js",
-		"/T/projects/prof2/app/templates/skills/create.hbs",
-		"/T/projects/prof2/app/templates/components/skill-picker.hbs",
-		"/T/projects/prof2/app/models/position-activity.js",
-		"/T/projects/prof2/app/models/position.js",
-		"/T/projects/prof2/app/models/skill-metric.js",
-		"/T/projects/prof2/tests/unit/models/education-test.js",
-		"/T/projects/prof2/app/app.js",
-		"/T/projects/prof2/app/templates/displays/position-mini.hbs",
-		"/T/projects/prof2/app/templates/positions/index.hbs",
-		"/T/projects/prof2/app/templates/position/details.hbs",
-		"/T/projects/prof2/app/views/skill-display.js",
-		"/T/projects/prof2/app/views/profile-display.js",
-		"/T/projects/prof2/app/views/position-display.js",
-		"/T/projects/prof2/app/templates/displays/skill-mini.hbs",
-		"/T/projects/prof2/app/templates/displays/position-normal.hbs",
-		"/T/projects/prof2/tests/unit/models/position-test.js",
-		"/T/projects/prof2/testem.json",
-		"/T/projects/prof2/app/templates/position/editor.hbs",
-		"/T/projects/prof2/app/views/.gitkeep",
-		"/T/projects/prof2/dist/assets/vendor.css",
-		"/T/projects/prof2/app/templates/skills/index.hbs",
-		"/T/projects/prof2/app/templates/profiles/index.hbs"
+		"/T/projects/prof2/package.json"
 	],
 	"find":
 	{
-		"height": 60.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -633,6 +733,35 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"subSection",
+			"slug",
+			"linkTarget",
+			"route",
+			"value",
+			"dipi",
+			"subsection",
+			"subsections",
+			"index",
+			"sideMenu",
+			"index",
+			"this",
+			"300",
+			"icon",
+			"button",
+			"profile",
+			"font-weight",
+			"}}\n",
+			"-w",
+			"Principal",
+			"-b",
+			"\n@",
+			"codrops",
+			"line",
+			"offcanvas-main-container",
+			"showing-menu",
+			"show",
+			"'';",
+			"container",
 			";\n",
 			"100",
 			"nav",
@@ -731,36 +860,7 @@
 			"realm",
 			"null",
 			"realm",
-			"span",
-			"availableNatures",
-			"item",
-			"industry",
-			"realm",
-			"title",
-			"resume",
-			"shortName",
-			"resume",
-			"description",
-			"realm",
-			"controller",
-			"section",
-			"title",
-			"relation",
-			"getRelationship",
-			"};\n",
-			"relationship",
-			"title:",
-			"tagline",
-			"summary",
-			"summ",
-			"summary",
-			"profile",
-			"profiles",
-			"profile",
-			"button",
-			"arguments",
-			"button",
-			"div"
+			"span"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -779,57 +879,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/templates/application.hbs",
+					"file": "app/templates/sections.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2513,
+						"buffer_size": 137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								409,
-								409
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/index.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
+								137,
+								137
 							]
 						],
 						"settings":
@@ -845,24 +912,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Brocfile.js",
+					"buffer": 1,
+					"file": "app/models/section.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 824,
+						"buffer_size": 1731,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								792,
-								792
+								1435,
+								1435
 							]
 						],
 						"settings":
@@ -875,10 +942,208 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 76.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/article.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/templates/subsection.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/routes/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								387
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/templates/error.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								242,
+								242
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "config/environment.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								597
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -888,27 +1153,60 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
-					"file": "app/styles/app.scss",
+					"buffer": 8,
+					"file": "app/routes/sections.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 389,
+						"buffer_size": 578,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								114,
-								114
+								370,
+								370
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/routes/subsection.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								373,
+								373
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -927,32 +1225,36 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 10,
+					"file": "app/router.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 298,
+						"buffer_size": 542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								246,
-								246
+								214,
+								214
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -992,7 +1294,7 @@
 		"cols":
 		[
 			0.0,
-			0.522536273795,
+			0.486666666667,
 			1.0
 		],
 		"rows":
@@ -1018,6 +1320,74 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"modsec",
+				"app\\models\\section.js"
+			],
+			[
+				"modart",
+				"app\\models\\article.js"
+			],
+			[
+				"rose",
+				"app\\routes\\section.js"
+			],
+			[
+				"modese",
+				"app\\models\\section.js"
+			],
+			[
+				"roby",
+				"app\\routes\\by-section.js"
+			],
+			[
+				"roae",
+				"app\\routes\\article.js"
+			],
+			[
+				"mix",
+				"app\\styles\\_mixins.scss"
+			],
+			[
+				"articles",
+				"app\\routes\\articles.js"
+			],
+			[
+				"router",
+				"app\\router.js"
+			],
+			[
+				"app.css",
+				"app\\styles\\app.scss"
+			],
+			[
+				"tempin",
+				"app\\templates\\index.hbs"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"roapp",
+				"app\\routes\\application.js"
+			],
+			[
+				"modse",
+				"app\\models\\section.js"
+			],
+			[
+				"shame",
+				"app\\styles\\_shame.scss"
+			],
+			[
+				"sha",
+				"app\\styles\\_shame.scss"
+			],
+			[
+				"offconw",
+				"app\\components\\offcan-content-wrap.js"
+			],
 			[
 				"hamb",
 				"app\\styles\\gwsklea\\navigation\\images\\hamburger.svg"
@@ -1077,10 +1447,6 @@
 			[
 				"modpos",
 				"app\\models\\position.js"
-			],
-			[
-				"mix",
-				"app\\mixins\\live-search-engine.js"
 			],
 			[
 				"posac",
@@ -1155,10 +1521,6 @@
 				"app\\components\\live-search.js"
 			],
 			[
-				"router",
-				"app\\router.js"
-			],
-			[
 				"modpo",
 				"app\\models\\position.js"
 			],
@@ -1193,10 +1555,6 @@
 			[
 				"po",
 				"app\\models\\position.js"
-			],
-			[
-				"roapp",
-				"app\\routes\\application.js"
 			],
 			[
 				"help",
@@ -1343,10 +1701,6 @@
 				"app\\controllers\\application.js"
 			],
 			[
-				"pa",
-				"package.json"
-			],
-			[
 				"envi",
 				"config\\environment.js"
 			],
@@ -1477,58 +1831,6 @@
 			[
 				"metric",
 				"app/models/skill/metric.js"
-			],
-			[
-				"skme",
-				"app/models/skill/metric.js"
-			],
-			[
-				"style",
-				"app/styles/_base.scss"
-			],
-			[
-				"temskcr",
-				"app/templates/skills/create.hbs"
-			],
-			[
-				"rouskce",
-				"app/routes/skills/create.js"
-			],
-			[
-				"modena",
-				"app/models/skill/nature.js"
-			],
-			[
-				"rousk",
-				"app/routes/skills.js"
-			],
-			[
-				"skna",
-				"app/models/skill/nature.js"
-			],
-			[
-				"coree",
-				"app/controllers/resume/edit.js"
-			],
-			[
-				"moreti",
-				"app/models/resume/title.js"
-			],
-			[
-				"coned",
-				"app/controllers/profile/edit.js"
-			],
-			[
-				"edit",
-				"app/templates/profile/edit-profile.hbs"
-			],
-			[
-				"temedi",
-				"app/templates/profile/edit-profile.hbs"
-			],
-			[
-				"modtag",
-				"app/models/tagline.js"
 			]
 		],
 		"width": 0.0
@@ -1549,7 +1851,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1557,7 +1859,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 236.0,
+	"side_bar_width": 229.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

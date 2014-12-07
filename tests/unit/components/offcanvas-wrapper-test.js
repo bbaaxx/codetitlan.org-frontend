@@ -5,7 +5,7 @@ import {
 
 moduleForComponent('offcanvas-wrapper', 'OffcanvasWrapperComponent', {
   // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: ['component:offcanvas-menu-side', 'component:offcanvas-menu-top']
 });
 
 test('it renders', function() {

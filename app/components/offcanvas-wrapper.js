@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['offcanvas-main-wrap'],
-  classNameBindings: ['showingMenu'],
+  classNames: ['offcanvasmenu__main__wrap'],
+  classNameBindings: ['showingMenu:offcanvasmenu__main__wrap--showingMenu'],
   showingMenu: false,
   actions: {
     showMenu: function(){
