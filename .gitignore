@@ -17,3 +17,6 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+# Editor files
+cdtorgfe.sublime-workspace

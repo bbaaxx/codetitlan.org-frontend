@@ -2,5 +2,5 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'nav',
-  classNames: ['offcanvas-menu-side']
+  classNames: ['offcanvasmenu__menu__side']
 });

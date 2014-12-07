@@ -1,11 +1,18 @@
-build:
+build: cleandist
 
-	rm ./dist/* -rf
 	ember build --environment production
 
 cleandeps:
 
-	rm -rf node_modules bower_components
+	@echo "refreshing dependencies ..."
+	@rm -rf node_modules bower_components
+	@echo "done!"
+
+cleandist:
+	
+	@echo "cleaning dist folder"
+	@rm ./dist/* -rf
+	@echo "done!"
 
 installdeps:
 
