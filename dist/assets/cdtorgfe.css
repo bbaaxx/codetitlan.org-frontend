@@ -2446,25 +2446,18 @@ html, body, body > .ember-view {
   width: 100%;
   height: 100%; }
 
-.section__index {
-  padding-top: 3em; }
-
-.section__index__header img {
-  margin: 0 auto;
-  display: block; }
-
-.offcanvas-main-wrap {
+.offcanvasmenu__main__wrap {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: #eee; }
-  .offcanvas-main-wrap a {
+  background: #373a47; }
+  .offcanvasmenu__main__wrap a {
     color: #b8b7ad; }
-    .offcanvas-main-wrap a:hover, .offcanvas-main-wrap a:focus {
+    .offcanvasmenu__main__wrap a:hover, .offcanvasmenu__main__wrap a:focus {
       text-decoration: none;
       color: #c94e50; }
 
-.offcanvas-content-wrap {
+.offcanvasmenu__content__wrap {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -2473,28 +2466,52 @@ html, body, body > .ember-view {
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s; }
 
-.offcanvas-content {
-  position: relative;
-  background: #b4bad2;
-  background: #ddd;
-  /* Overlay */ }
-  .offcanvas-content:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    content: '';
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
-    transition: opacity 0.3s, transform 0s 0.3s; }
+.offcanvasmenu__menu__wrap {
+  position: absolute;
+  font-weight: 700;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
 
-/* Menu Button */
-.offcanvas-menu-button {
+.offcanvasmenu__menu__top {
+  line-height: 59px; }
+  .offcanvasmenu__menu__top__brand {
+    display: inline-block;
+    padding: 8px 10px;
+    width: 250px;
+    line-height: 42px; }
+  .offcanvasmenu__menu__top__social-icons {
+    display: inline-block;
+    font-size: 1.25em; }
+    .offcanvasmenu__menu__top__social-icons a {
+      margin: 0 em 0 0;
+      padding: 0; }
+      @media screen and (max-width: 32em) {
+        .offcanvasmenu__menu__top__social-icons a {
+          margin-left: 1em; } }
+    @media screen and (max-width: 32em) {
+      .offcanvasmenu__menu__top__social-icons {
+        margin: 0 auto;
+        padding-left: 1.25em; } }
+
+.offcanvasmenu__menu__side {
+  width: 250px; }
+  .offcanvasmenu__menu__side .active {
+    background-color: #ddd; }
+  .offcanvasmenu__menu__side div {
+    cursor: pointer; }
+  .offcanvasmenu__menu__side a {
+    display: block;
+    padding: 1.2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .offcanvasmenu__menu__side a .active {
+      font-weight: 900; }
+  .offcanvasmenu__menu__side .offcanvas-logo-area img {
+    margin: 0 auto; }
+
+/* Toggle menu button */
+.offcanvasmenu__button {
   position: fixed;
   z-index: 1000;
   margin: 1em;
@@ -2508,7 +2525,7 @@ html, body, body > .ember-view {
   background: transparent;
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s; }
-  .offcanvas-menu-button:before {
+  .offcanvasmenu__button:before {
     position: absolute;
     top: 0.5em;
     right: 0.5em;
@@ -2516,75 +2533,53 @@ html, body, body > .ember-view {
     left: 0.5em;
     background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
     content: ''; }
-  .offcanvas-menu-button:hover {
+  .offcanvasmenu__button:hover {
     opacity: 0.6; }
-  .offcanvas-menu-button:focus {
+  .offcanvasmenu__button:focus {
     outline: 0; }
 
-/* Menu */
-.offcanvas-menu-wrap {
-  position: absolute;
-  font-weight: 700;
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s; }
-
-.offcanvas-menu-top {
-  line-height: 59px; }
-  .offcanvas-menu-top .offcanvas-brand-area {
-    display: inline-block;
-    padding: 8px 10px;
-    width: 250px;
-    line-height: 42px; }
-
-.offcanvas-menu-side {
-  width: 250px; }
-  .offcanvas-menu-side .active {
-    background-color: #ddd; }
-  .offcanvas-menu-side div {
-    cursor: pointer; }
-  .offcanvas-menu-side a {
-    display: block;
-    padding: 1.2em;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .offcanvas-menu-side a .active {
-      font-weight: 900; }
-  .offcanvas-menu-side .offcanvas-logo-area img {
-    margin: 0 auto; }
-
-.offcanvas-content {
+.offcanvasmenu__content {
   position: relative;
+  background: #b4bad2;
   min-height: 100%;
-  padding-top: 3em; }
+  padding-top: 3em;
+  /* Overlay */ }
+  .offcanvasmenu__content:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+    transition: opacity 0.3s, transform 0s 0.3s; }
 
-/* Showing menu */
-.showing-menu .offcanvas-menu-wrap {
-  opacity: 1; }
-.showing-menu .offcanvas-content-wrap, .showing-menu .offcanvas-menu-button {
+.offcanvasmenu__main__wrap--showingMenu .offcanvasmenu__button, .offcanvasmenu__main__wrap--showingMenu .offcanvasmenu__content__wrap {
   -webkit-transform: translate3d(250px, 60px, 0);
   transform: translate3d(250px, 60px, 0); }
-.showing-menu .offcanvas-content::before {
+.offcanvasmenu__main__wrap--showingMenu .offcanvasmenu__menu__wrap {
   opacity: 1;
+  z-index: 1000; }
+.offcanvasmenu__main__wrap--showingMenu .offcanvasmenu__content::before {
+  opacity: 1;
+  z-index: 1000;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-.offcanvas-social-icons {
-  display: inline-block;
-  font-size: 1.25em; }
-  .offcanvas-social-icons a {
-    margin: 0 em 0 0;
-    padding: 0; }
-    @media screen and (max-width: 32em) {
-      .offcanvas-social-icons a {
-        margin-left: 1em; } }
-  @media screen and (max-width: 32em) {
-    .offcanvas-social-icons {
-      margin: 0 auto;
-      padding-left: 1.25em; } }
+.section__index {
+  padding-top: 3em; }
+
+.section__index__header img {
+  margin: 0 auto;
+  display: block; }
 
 .index-social-icons {
   margin-top: 2em;
   font-size: 3em; }
-
