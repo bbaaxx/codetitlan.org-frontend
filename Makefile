@@ -20,5 +20,9 @@ installdeps:
 
 refreshdeps: cleandeps installdeps
 
+updategwsk:
+
+	rm app/styles/gwsklea/* -rf
+	cp ../../ghrepos/web-starter-kit/app/styleguide/* app/styles/gwsklea -r
 
 .PHONY: build cleandeps installdeps refreshdeps
