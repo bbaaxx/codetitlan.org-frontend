@@ -5,15 +5,15 @@
 
 {{! class="offcanvasmenu__main__wrap" }}
 
-<div class="offcanvasmenu__menu__wrap">
+<div class="ofcvm__menu-wrap">
   {{offcanvas-menu-top}}
   {{offcanvas-menu-side allSections=allSections}}
 </div>
 
-<button class="offcanvasmenu__button" {{action "toggleMenu"}}>Open Menu</button>
+{{material-hamburger action="toggleMenu"}}
 
-<div class="offcanvasmenu__content__wrap">
-  <div class="offcanvasmenu__content">
+<div class="ofcvm__content-wrap">
+  <div class="ofcvm__content">
     {{yield}}
   </div>
 </div>

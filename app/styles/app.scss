@@ -4,15 +4,15 @@
 // Jasny bootstrap components
 // @import "bower_components/jasny-bootstrap/scss/jasny-bootstrap";
 
-// Import typography from gwsklea
+// Import stuff from gwsklea
 @import "gwsklea/fonts/roboto-draft";
 // @import "gwsklea/typography/typography";
-@import "gwsklea/palette/palette";
-@import "gwsklea/ripple/ripple";
+// @import "gwsklea/palette/palette";
+
 @import "gwsklea/button/button";
 
 
-@import "mixins";
+@import "global-mixins";
 // @import "normalize";
 @import "base";
 @import "layout";
