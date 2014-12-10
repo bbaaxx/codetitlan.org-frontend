@@ -1,24 +1,18 @@
-<a class="ofcvm__menu__sidemenu__logo text-center">
-  <img src="assets/images/logo-quetz-b.svg" width="100">
-</a>
+<div class="offcvm__menu__sidemenu__logo">
+  <a><img src="assets/images/logo-quetz-b.svg" width="100"></a>
+</div>
 
-<ul class="list-unstyled">
-{{#each section in allSections}}
-
-
+<ul>
+{{#each section in sidemenuItems}}
   {{#unless section.isSubsection}}
 
     {{#link-to "sections" section.slug}}{{string-capitalize section.name}}{{/link-to}}
     {{#each subsection in section.subSections}}
-
       {{#link-to "subsection" subsection.parentSection.slug subsection.slug class="menu__subsection__link"}}
         {{fa-icon "caret-right"}} {{string-capitalize subsection.name}}
       {{/link-to}}
-
     {{/each}}
 
   {{/unless}}
-
-
 {{/each}}
 </ul>

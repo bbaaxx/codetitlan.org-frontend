@@ -1,30 +1,37 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# Based on this box:
+# => https://github.com/joaquimserafim/vagrant-nodejs-redis-mongodb
+
 box      = 'ubuntu/trusty64'
 hostname = 'emberclibox'
 domain   = 'example.com'
 ip       = '192.168.42.42'
 ram      = '512'
 
-$script = <<SCRIPT
-  echo I am provisioning...
-  apt-get update && apt-get install -y vim git curl
-
-  echo "nodejs installation"
-
+$rootScript = <<SCRIPT
+  echo "I am provisioning..."
+  add-apt-repository ppa:git-core/ppa
   apt-get update
-  apt-get -y upgrade
+  apt-get install -y vim git-core curl
 
-  apt-get install -y git curl man
+  sudo su vagrant -c "wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh"
 
-  # Install node
-  su vagrant -l -c "curl https://raw.github.com/creationix/nvm/master/install.sh | sh"
-  su vagrant -l -c "nvm install 0.10"
-  su vagrant -l -c "nvm alias default 0.10"
+  source /home/vagrant/.bashrc
+  nvm install 0.10
+  nvm alias default 0.10
 
+SCRIPT
+
+$buildDepsScript = <<SCRIPT
+  source /home/vagrant/.bashrc
+  # Install ember-cli + bower
   echo "ember-cli + bower"
-  su vagrant -l -c "npm install -g ember-cli bower"
+  npm install -g ember-cli bower
+
+  cd /home/vagrant
+  make refreshdeps
 SCRIPT
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
@@ -41,8 +48,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # config.vm.box_check_update = false
 
   # Forwarding default ports for ember server and livereload
-  config.vm.network "forwarded_port", guest: 4200, host: 4200
-  config.vm.network "forwarded_port", guest: 35729, host: 35729
+  config.vm.network :forwarded_port, guest: 4200, host: 4200
+  config.vm.network :forwarded_port, guest: 35729, host: 35729
+  config.vm.network :forwarded_port, guest: 3000, host: 3000, auto_correct: true
+  config.vm.network :forwarded_port, guest: 27017, host: 27017, auto_correct: true
+  config.vm.network :forwarded_port, guest: 6379, host: 6379, auto_correct: true
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -50,7 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
-  config.ssh.forward_agent = true
+  # config.ssh.forward_agent = true
 
   # http://blog.liip.ch/archive/2012/07/25/vagrant-and-node-js-quick-tip.html
   # config.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
@@ -66,10 +76,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--memory", ram]
+    vb.customize  [
+                    "modifyvm", :id,
+                    "--memory", ram
+                  ]
   end
 
-  config.vm.provision "shell", inline: $script
+  # config.vm.provision "shell", inline: $rootScript
+  # config.vm.provision "shell", inline: $buildDepsScript, privileged: false
   #
   # View the documentation for the provider you're using for more
   # information on available options.
@@ -99,6 +113,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   puppet.manifests_path = "manifests"
   #   puppet.manifest_file  = "default.pp"
   # end
+  config.vm.provision :puppet do |puppet|
+    puppet.manifests_path = "vagrant/puppet/manifests"
+    puppet.module_path    = "vagrant/puppet/modules"
+    puppet.manifest_file  = "main.pp"
+    puppet.options        = [
+                              '--verbose',
+                              #'--debug',
+                            ]
+  end
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
   # path, and data_bags path (all relative to this Vagrantfile), and adding

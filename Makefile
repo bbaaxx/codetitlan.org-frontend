@@ -25,4 +25,7 @@ updategwsk:
 	rm app/styles/gwsklea/* -rf
 	cp ../../ghrepos/web-starter-kit/app/styleguide/* app/styles/gwsklea -r
 
+start: installdeps
+	ember serve
+
 .PHONY: build cleandeps installdeps refreshdeps

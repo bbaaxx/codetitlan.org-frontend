@@ -1,5 +1,17 @@
-{{#offcanvas-wrapper allSections=model}}
-<div class="container-fluid">
+{{#offcanvas-wrapper
+  sidemenuItems=sidemenuItems
+  topmenuItems=topmenuItems
+  showingMenu=showingMenu
+  toggleMenu="toggleMenu"
+}}
   {{outlet}}
-</div>
+
 {{/offcanvas-wrapper}}
+
+  <div class="console">
+    {{#if showingMenu}}
+      <p>Dippi !</p>
+    {{else}}
+      <p>Dahh !</p>
+    {{/if}}
+  </div>

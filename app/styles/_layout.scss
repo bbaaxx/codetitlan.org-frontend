@@ -1,0 +1,17 @@
+.console {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+
+.section {
+  min-height: 100%;
+}
+.section--index {
+  background-color: #eee;
+}
+.section--index__header {
+  padding-top: 100px;
+}
+.section--index__body {
+}

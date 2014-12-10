@@ -18,7 +18,8 @@ export default Ember.Component.extend({
       }
     },
     toggleMenu: function(){
-      this.toggleProperty('showingMenu');
+      // this.toggleProperty('showingMenu');
+      this.sendAction('toggleMenu');
     }
   }
 

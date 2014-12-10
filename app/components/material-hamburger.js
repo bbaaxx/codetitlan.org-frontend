@@ -7,15 +7,17 @@ export default Ember.Component.extend({
       'material-design-hamburger__icon--to-arrow' :
       'material-design-hamburger__icon--from-arrow' ;
   }.property('externalTrigger'),
-  classNames: ['ofcvm__hamburger', 'ofcvm__toggler'],
+  classNames: ['material__hamburger', 'ofcvm__toggler'],
 
   clickHandler: function(evt){
-    console.log(evt);
     this.toggleProperty('externalTrigger');
     this.sendAction();
+    console.log(evt);1
   },
   didInsertElement: function(){
-    var hammerManager = new Hammer(this.$()[0]);
-    hammerManager.on('tap', this.get('clickHandler').bind(this));
+    // var hammerManager = new Hammer(this.$());
+    // hammerManager.on('tap', this.get('clickHandler').bind(this));
+    this.$().on('click', this.get('clickHandler').bind(this));
+
   },
 });
