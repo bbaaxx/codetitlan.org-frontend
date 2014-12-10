@@ -1,17 +1,17 @@
+{{! Component offcanvas-wrapper}}
+
 {{#offcanvas-wrapper
   sidemenuItems=sidemenuItems
   topmenuItems=topmenuItems
   showingMenu=showingMenu
-  toggleMenu="toggleMenu"
-}}
-  {{outlet}}
-
+  toggleMenu="toggleMenu"}}
+{{outlet}}
 {{/offcanvas-wrapper}}
 
-  <div class="console">
-    {{#if showingMenu}}
-      <p>Dippi !</p>
+<div class="console">
+  {{#if showingMenu}}
+    <p>Dippi !</p>
     {{else}}
-      <p>Dahh !</p>
-    {{/if}}
-  </div>
+    <p>Dahh !</p>
+  {{/if}}
+</div>

@@ -1,12 +1,20 @@
-<div class="section__index">
-  <header>
-    <h2>{{string-capitalize name}}</h2>
-  </header>
+<header class="section__header">
+  <h2>{{string-capitalize name}}</h2>
   <p>{{description}}</p>
+</header>
+<div class="section__body">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Articulos recientes</h3>
+      </div>
+    </div>
+    <div class="row">
+      {{#each article in articles}}
+      <div class="col-xs-12 col-md-6">
+        {{display-article article=article}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
 </div>
-
-<section>
-  {{#each article in model.articles}}
-    {{article.title}}
-  {{/each}}
-</section>

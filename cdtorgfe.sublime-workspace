@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"sec",
+				"section__header"
+			],
+			[
 				"min",
 				"min-height"
 			],
@@ -77,10 +85,6 @@
 			],
 			[
 				"sect",
-				"sectionsArray"
-			],
-			[
-				"sec",
 				"sectionsArray"
 			],
 			[
@@ -264,10 +268,6 @@
 				"destDir"
 			],
 			[
-				"fo",
-				"font-size"
-			],
-			[
 				"l",
 				"linkto	{{#link-to}} {{/link-to}}"
 			],
@@ -420,10 +420,10 @@
 	"buffers":
 	[
 		{
-			"file": "Vagrantfile",
+			"file": "app/styles/app.scss",
 			"settings":
 			{
-				"buffer_size": 5067,
+				"buffer_size": 520,
 				"line_ending": "Unix"
 			}
 		}
@@ -572,47 +572,63 @@
 		"/T/projects/cdtorgfe/app/routes",
 		"/T/projects/cdtorgfe/app/styles",
 		"/T/projects/cdtorgfe/app/styles/components",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/animation",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/button",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/layout",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/ripple",
 		"/T/projects/cdtorgfe/app/templates",
-		"/T/projects/cdtorgfe/app/templates/components",
+		"/T/projects/cdtorgfe/app/templates/articles",
 		"/T/projects/cdtorgfe/app/templates/sections",
+		"/T/projects/cdtorgfe/app/templates/subsection",
 		"/T/projects/cdtorgfe/config",
-		"/T/projects/cdtorgfe/tests/unit",
-		"/T/projects/cdtorgfe/tests/unit/components"
+		"/T/projects/cdtorgfe/vagrant",
+		"/T/projects/cdtorgfe/vagrant/puppet",
+		"/T/projects/cdtorgfe/vagrant/puppet/manifests"
 	],
 	"file_history":
 	[
-		"/T/projects/cdtorgfe/Vagrantfile.bak",
+		"/T/projects/cdtorgfe/app/templates/sections/index.hbs",
+		"/T/projects/cdtorgfe/app/styles/_global-mixins.scss",
+		"/T/projects/cdtorgfe/app/styles/_layout.scss",
+		"/T/projects/cdtorgfe/app/styles/components/_material-hamburger.scss",
+		"/T/projects/cdtorgfe/app/styles/_modules.scss",
+		"/T/projects/cdtorgfe/app/styles/_other.scss",
+		"/T/projects/cdtorgfe/app/styles/_shame.scss",
+		"/T/projects/cdtorgfe/app/styles/_base.scss",
+		"/T/projects/cdtorgfe/app/templates/subsection/index.hbs",
 		"/T/projects/cdtorgfe/app/templates/application.hbs",
+		"/T/projects/cdtorgfe/app/routes/sections.js",
+		"/T/projects/cdtorgfe/app/templates/subsection.hbs",
+		"/T/projects/cdtorgfe/app/templates/sections.hbs",
+		"/T/projects/cdtorgfe/app/routes/subsection.js",
+		"/T/projects/cdtorgfe/testem.json",
+		"/T/projects/cdtorgfe/app/templates/index.hbs",
+		"/T/projects/cdtorgfe/app/components/display-article.js",
+		"/T/projects/cdtorgfe/app/templates/components/display-article.hbs",
+		"/T/projects/cdtorgfe/app/router.js",
+		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/T/projects/cdtorgfe/app/routes/application.js",
+		"/T/projects/cdtorgfe/app/models/section.js",
+		"/T/projects/cdtorgfe/Vagrantfile",
+		"/T/projects/cdtorgfe/vagrant/puppet/modules/mongodb/spec/spec_helper_system.rb",
+		"/T/projects/cdtorgfe/app/styles/_normalize.scss",
+		"/T/projects/cdtorgfe/vagrant/puppet/modules/mongodb/spec/unit/puppet/type/mongodb_user_spec.rb",
+		"/C/Users/Eduardo/Code/vagrants/vvm/vagrant/puppet/manifests/main.pp",
+		"/C/Users/Eduardo/Code/vagrants/vvm/Vagrantfile",
+		"/T/projects/cdtorgfe/Vagrantfile.bak",
 		"/T/projects/cdtorgfe/app/templates/components/offcanvas-wrapper.hbs",
 		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-top.hbs",
 		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-side.hbs",
-		"/T/projects/cdtorgfe/app/templates/index.hbs",
-		"/T/projects/cdtorgfe/app/routes/application.js",
 		"/T/projects/cdtorgfe/app/components/offcanvas-wrapper.js",
 		"/T/projects/cdtorgfe/app/styles/app.scss",
-		"/T/projects/cdtorgfe/app/styles/_layout.scss",
 		"/T/projects/cdtorgfe/app/styles/_components.scss",
-		"/T/projects/cdtorgfe/app/styles/_modules.scss",
-		"/T/projects/cdtorgfe/testem.json",
 		"/T/projects/cdtorgfe/app/routes/article.js",
 		"/T/projects/cdtorgfe/app/styles/components/_offcanvas-menu.scss",
 		"/T/projects/cdtorgfe/app/components/material-hamburger.js",
-		"/T/projects/cdtorgfe/app/styles/_shame.scss",
 		"/T/projects/cdtorgfe/app/models/social-ref.js",
-		"/T/projects/cdtorgfe/app/models/section.js",
 		"/T/projects/cdtorgfe/app/mixins/material-rippleable.js",
-		"/T/projects/cdtorgfe/app/routes/sections.js",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/fonts/_roboto-draft.scss",
 		"/T/projects/cdtorgfe/app/models/social-refs.js",
 		"/T/projects/cdtorgfe/app/models/.gitkeep",
 		"/T/projects/cdtorgfe/Brocfile.js",
 		"/T/projects/cdtorgfe/.jshintrc",
-		"/T/projects/cdtorgfe/app/styles/_global-mixins.scss",
-		"/T/projects/cdtorgfe/app/styles/components/_material-hamburger.scss",
 		"/T/projects/cdtorgfe/tests/unit/components/material-hamburger-test.js",
 		"/T/projects/cdtorgfe/app/templates/components/offcanvas-hamburger.hbs",
 		"/T/projects/cdtorgfe/app/components/offcanvas-menu-side.js",
@@ -634,18 +650,12 @@
 		"/T/projects/cdtorgfe/.editorconfig",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/column-layout/column-layout.js",
 		"/T/projects/cdtorgfe/cdtorgfe.sublime-project",
-		"/T/projects/cdtorgfe/app/styles/_base.scss",
-		"/T/projects/cdtorgfe/app/styles/_other.scss",
 		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-menu-side-test.js",
 		"/T/projects/cdtorgfe/tests/unit/models/section-test.js",
 		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-wrapper-test.js",
 		"/T/projects/cdtorgfe/app/routes/articles/create.js",
 		"/T/projects/cdtorgfe/tests/unit/helpers/string-capitalize-test.js",
 		"/T/projects/cdtorgfe/app/templates/articles/editor.hbs",
-		"/T/projects/cdtorgfe/app/templates/subsection/index.hbs",
-		"/T/projects/cdtorgfe/app/templates/subsection.hbs",
-		"/T/projects/cdtorgfe/app/templates/sections.hbs",
-		"/T/projects/cdtorgfe/app/templates/sections/index.hbs",
 		"/T/projects/cdtorgfe/app/templates/articles/fullview.hbs",
 		"/T/projects/cdtorgfe/app/templates/articles/index.hbs",
 		"/T/projects/cdtorgfe/app/models/article.js",
@@ -653,7 +663,6 @@
 		"/T/projects/cdtorgfe/app/templates/article/index.hbs",
 		"/T/projects/cdtorgfe/app/routes/article/index.js",
 		"/T/projects/cdtorgfe/app/templates/articles.hbs",
-		"/T/projects/cdtorgfe/app/router.js",
 		"/T/projects/cdtorgfe/app/routes/articles.js",
 		"/T/projects/cdtorgfe/app/models/subsection.js",
 		"/T/projects/cdtorgfe/app/templates/article.hbs",
@@ -661,10 +670,8 @@
 		"/T/projects/cdtorgfe/app/templates/articles-create.hbs",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/dropdown-menu/_dropdown-menu.scss",
 		"/T/projects/cdtorgfe/app/controllers/articles.js",
-		"/T/projects/cdtorgfe/app/routes/subsection.js",
 		"/T/projects/cdtorgfe/app/app.js",
 		"/T/projects/cdtorgfe/__Vagrantfile",
-		"/T/projects/cdtorgfe/Vagrantfile",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/radio/demo.html",
 		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-components.scss",
 		"/T/projects/cdtorgfe/app/routes/section.js",
@@ -677,7 +684,6 @@
 		"/T/projects/cdtorgfe/app/helpers/string-toupper.js",
 		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/T/projects/cdtorgfe/Makefile",
 		"/T/projects/cdtorgfe/app/templates/blog.hbs",
 		"/T/projects/cdtorgfe/app/routes/blog.js",
@@ -697,7 +703,6 @@
 		"/T/projects/cdtorgfe/app/components/offcan-content.js",
 		"/T/projects/cdtorgfe/app/templates/components/offcan-button.hbs",
 		"/T/projects/cdtorgfe/app/views/application.js",
-		"/T/projects/cdtorgfe/app/styles/_normalize.scss",
 		"/T/projects/cdtorgfe/app/styles/_component.scss",
 		"/C/Users/Eduardo/Desktop/logo-quetz-w.svg",
 		"/C/Users/Eduardo/Desktop/logo-quetz-b.svg",
@@ -705,14 +710,7 @@
 		"/T/projects/cdtorgfe/public/assets/images/hamburger.svg",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/navigation/images/hamburger.svg",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/header-panel/header-panel.js",
-		"/T/projects/cdtorgfe/app/models/menu.js",
-		"/T/projects/cdtorgfe/app/models/menu-entry.js",
-		"/T/projects/cdtorgfe/app/models/entry.js",
-		"/T/ghrepos/ember-paper/vendor/ember-paper/styles.css",
-		"/T/ghrepos/ember-paper/addon/components/paper-sidenav.js",
-		"/T/ghrepos/ember-paper/app/templates/components/paper-sidenav.hbs",
-		"/T/projects/cdtorgfe/public/images/quetz-light-50x50-transp.gif",
-		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-vars"
+		"/T/projects/cdtorgfe/app/models/menu.js"
 	],
 	"find":
 	{
@@ -882,26 +880,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Vagrantfile",
+					"file": "app/styles/app.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5067,
+						"buffer_size": 520,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								523,
-								523
+								408,
+								408
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -913,6 +911,11 @@
 					"stack_index": 0,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -933,11 +936,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -962,6 +972,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"tempse",
+				"app\\templates\\sections.hbs"
+			],
+			[
+				"tempsu",
+				"app\\templates\\subsection.hbs"
+			],
+			[
+				"router",
+				"app\\router.js"
+			],
+			[
+				"tempsec",
+				"app\\templates\\sections.hbs"
+			],
 			[
 				"va",
 				"Vagrantfile"
@@ -1085,10 +1111,6 @@
 			[
 				"articles",
 				"app\\routes\\articles.js"
-			],
-			[
-				"router",
-				"app\\router.js"
 			],
 			[
 				"app.css",
@@ -1461,18 +1483,6 @@
 			[
 				"skm",
 				"app/models/skill/metric.js"
-			],
-			[
-				"moskin",
-				"app/models/skill/indicator.js"
-			],
-			[
-				"modro",
-				"app/models/role.js"
-			],
-			[
-				"modskme",
-				"app/models/skill/metric.js"
 			]
 		],
 		"width": 0.0
@@ -1493,7 +1503,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

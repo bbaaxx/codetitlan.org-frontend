@@ -4,14 +4,25 @@
   left: 1em;
 }
 
-.section {
-  min-height: 100%;
+.section__header {
+  height: 20em;
+  background-color: #fafafa;
+  text-align: right;
+  padding-top: 5em;
+  h2 {
+    font-weight: 900;
+  }
 }
-.section--index {
-  background-color: #eee;
+
+.section--psicologia {
+  .section__header {
+    background-color: #afafaf;
+  }
 }
-.section--index__header {
-  padding-top: 100px;
-}
-.section--index__body {
+
+
+.section--arqueologia {
+  .section__header {
+    background-color: #ffaaff;
+  }
 }

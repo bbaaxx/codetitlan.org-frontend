@@ -48,8 +48,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # config.vm.box_check_update = false
 
   # Forwarding default ports for ember server and livereload
-  config.vm.network :forwarded_port, guest: 4200, host: 4200
-  config.vm.network :forwarded_port, guest: 35729, host: 35729
+  config.vm.network :forwarded_port, guest: 4200, host: 4200, auto_correct: true
+  config.vm.network :forwarded_port, guest: 35729, host: 35729, auto_correct: true
   config.vm.network :forwarded_port, guest: 3000, host: 3000, auto_correct: true
   config.vm.network :forwarded_port, guest: 27017, host: 27017, auto_correct: true
   config.vm.network :forwarded_port, guest: 6379, host: 6379, auto_correct: true

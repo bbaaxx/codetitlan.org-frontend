@@ -6,12 +6,15 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('admin', {path: '/admin'}, function(){
 
-  this.resource('articles', {path: '/articulos'}, function() {
-    this.resource('article', {path:'/:article_id'}, function(){
-      this.route('edit', {path: '/editar'});
+    this.resource('articles', {path: '/articulos'}, function() {
+      this.resource('article', {path:'/:article_id'}, function(){
+        this.route('edit', {path: '/editar'});
+      });
+      this.route('create', {path: '/nuevo'});
     });
-    this.route('create', {path: '/nuevo'});
+
   });
 
   this.resource('sections', {path: '/:section'}, function() {

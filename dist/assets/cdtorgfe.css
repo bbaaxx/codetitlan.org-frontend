@@ -2100,25 +2100,6 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     display: none !important; }
  }
 
-html, body, body > .ember-view {
-  overflow: hidden;
-  width: 100%;
-  height: 100%; }
-
-.console {
-  position: fixed;
-  bottom: 1em;
-  left: 1em; }
-
-.section {
-  min-height: 100%; }
-
-.section--index {
-  background-color: #eee; }
-
-.section--index__header {
-  padding-top: 100px; }
-
 .material-design-hamburger button {
   display: block;
   border: none;
@@ -2356,6 +2337,30 @@ html, body, body > .ember-view {
           transition: opacity 300ms;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); }
+
+html, body, body > .ember-view {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+.console {
+  position: fixed;
+  bottom: 1em;
+  left: 1em; }
+
+.section__header {
+  height: 20em;
+  background-color: #fafafa;
+  text-align: right;
+  padding-top: 5em; }
+  .section__header h2 {
+    font-weight: 900; }
+
+.section--psicologia .section__header {
+  background-color: #afafaf; }
+
+.section--arqueologia .section__header {
+  background-color: #ffaaff; }
 
 .index-social-icons {
   margin-top: 2em;
