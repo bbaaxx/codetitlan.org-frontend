@@ -1,0 +1,57 @@
+@mixin header-text-shadow {
+  color: #fff;
+  text-shadow: 1px 1px 5px #222;
+
+}
+.section__header {
+  transition: 300ms ease all;
+  //background-image: url('/assets/images/fern_background_sm.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  box-shadow: inset 0px 0px 134px -1px rgba(0,0,0,0.66);
+  @include shadow-z2();
+  h1 {
+    @include typo-display-3;
+    @include header-text-shadow;
+  }
+  h5 {
+    @include header-text-shadow;
+  }
+}
+
+.subsection__header {
+  transition: 300ms ease all;
+}
+
+.section--index {
+  .section__header {
+    background: #fff;
+  }
+}
+
+.section--psicologia {
+  .section__header {
+    background-image: url('/assets/images/cupidpsyche_background_sm.jpg') ;
+  }
+}
+
+.section--botanica {
+  .section__header {
+    background-image: url('/assets/images/fern_background_sm.jpg') ;
+  }
+}
+
+.section--arqueologia {
+  .section__header {
+    background-image: url('/assets/images/tiwunaku_background_sm.jpg') ;
+  }
+}
+
+.section--tecnologia {
+  .section__header {
+    background-image: url('/assets/images/mainboard_background_sm.jpg') ;
+  }
+}
+

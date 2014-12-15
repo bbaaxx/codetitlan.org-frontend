@@ -12,7 +12,7 @@ export default Ember.Component.extend({
   clickHandler: function(evt){
     this.toggleProperty('externalTrigger');
     this.sendAction();
-    console.log(evt);1
+    console.log(evt);
   },
   didInsertElement: function(){
     // var hammerManager = new Hammer(this.$());

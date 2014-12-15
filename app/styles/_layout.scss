@@ -4,25 +4,9 @@
   left: 1em;
 }
 
+
 .section__header {
-  height: 20em;
-  background-color: #fafafa;
-  text-align: right;
-  padding-top: 5em;
-  h2 {
-    font-weight: 900;
-  }
+  height: 30em;
+  padding-top: 12em;
 }
 
-.section--psicologia {
-  .section__header {
-    background-color: #afafaf;
-  }
-}
-
-
-.section--arqueologia {
-  .section__header {
-    background-color: #ffaaff;
-  }
-}
