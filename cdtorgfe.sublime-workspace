@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"rippl",
+				"rippleSize"
+			],
+			[
+				"ripple",
+				"rippleSize"
+			],
+			[
+				"ripp",
+				"rippleContainer"
+			],
+			[
+				"ri",
+				"rippleElement"
+			],
+			[
+				"fr",
+				"rippleFrameCount"
+			],
+			[
+				"rip",
+				"rippleSize"
+			],
+			[
 				"bac",
 				"background-image"
 			],
@@ -48,10 +72,6 @@
 				"childNodes"
 			],
 			[
-				"ripple",
-				"rippleElement"
-			],
-			[
 				"emb",
 				"emberProperty	Ember.ComputedProperty"
 			],
@@ -68,20 +88,12 @@
 				"parentElement"
 			],
 			[
-				"ripp",
-				"rippleManager"
-			],
-			[
 				"blu",
 				"blurHandlerGenerator"
 			],
 			[
 				"blur",
 				"blurHandler"
-			],
-			[
-				"rippl",
-				"rippleContainer"
 			],
 			[
 				"offca",
@@ -492,6 +504,17 @@
 			}
 		},
 		{
+			"contents": "import Ember from 'ember';\n\nexport default Ember.Mixin.create({\n\n  rippleContainer: null,\n  _rippleContainer: null,\n  rippleElement: null,\n  _rippleElement: null,\n  rippleSize: 0,\n  rippleBound: 0,\n  rippleFrameCount: 0,\n  rippleX: 0,\n  rippleY: 0,\n\n  init: function(params){\n    if ( !this.get('ripple') ){return this._super();}\n    this._super();\n    // Initialize ripple container\n    this.setProperties({\n      rippleContainer: document.createElement('span'),\n      rippleElement: document.createElement('span')\n      });\n    this.get('rippleContainer').classList.add('wsk-button__ripple-container');\n    this.get('rippleElement').classList.add('Ripple');\n    this.get('rippleContainer').appendChild(this.get('rippleElement'));\n  },\n\n  didInsertElement: function(){\n    if ( !this.get('ripple') ){return this._super();}\n    this._super();\n    var bound = this.get('element').getBoundingClientRect();\n    var rippleSize = Math.max(bound.width, bound.height) * 2 +'px';\n    this.set('rippleSize', rippleSize);\n    this.get('rippleElement').style.width = rippleSize;\n    this.get('rippleElement').style.height = rippleSize;\n    this.get('element').appendChild(this.get('rippleContainer'));\n  },\n\n  rippleHandler: function(evt){\n    var x, y, bound;\n    this.set('frameCount', 1);\n\n    // Hammered\n    if (evt.pointers) {\n      bound = evt.target.getBoundingClientRect();\n      x = Math.round(evt.center.x - bound.left);\n      y = Math.round(evt.center.y - bound.top);\n      console.log(evt.srcEvent.clientY);\n      console.log(evt.center);\n\n    // Vanilla\n    } else {\n      bound = evt.currentTarget.getBoundingClientRect();\n      if (evt.clientX === 0 && evt.clientY === 0) {\n        x = Math.round(bound.width / 2);\n        y = Math.round(bound.height / 2);\n      } else {\n        var clientX = evt.clientX ? evt.clientX : evt.touches[0].clientX;\n        var clientY = evt.clientY ? evt.clientY : evt.touches[0].clientY;\n        x = Math.round(clientX - bound.left);\n        y = Math.round(clientY - bound.top);\n      }\n\n    }\n\n    this.set('rippleX', x);\n    this.set('rippleY', y);\n    this.get('setRippleStyles').bind(this)(true);\n    window.requestAnimationFrame(this.get('animFrameHandler').bind(this));\n  }.on('mouseDown'),\n\n  animFrameHandler: function(){\n    var fC = this.get('rippleFrameCount');\n    if ( fC-- > 0 ) {\n      window.requestAnimationFrame(this.get('animFrameHandler').bind(this));\n    } else {\n      this.get('setRippleStyles').bind(this)(false);\n    }\n  },\n\n  setRippleStyles: function(start){\n    var transformString, scale, size, offset;\n\n    offset =  'translate('+\n              this.get('rippleX')+'px, '+\n              this.get('rippleY')+'px)';\n\n    if (start) {\n      scale = 'scale(0.0001, 0.0001)';\n      size = '1px';\n    } else {\n      scale = 'scale(1, 1)';\n      size = this.get('rippleSize') + 'px';\n      // if (recentering) {\n      //   offset = 'translate(' + bound.width / 2 + 'px, ' +\n      //     bound.height / 2 + 'px)';\n      // }\n    }\n\n    transformString = 'translate(-50%, -50%) ' + offset + scale;\n\n    var rippleElement = this.get('rippleElement');\n    rippleElement.style.webkitTransform = transformString;\n    rippleElement.style.msTransform = transformString;\n    rippleElement.style.transform = transformString;\n\n    if (start) {\n      rippleElement.style.opacity = '0.4';\n      rippleElement.classList.remove('is-animating');\n    } else {\n      rippleElement.style.opacity = '0';\n      rippleElement.classList.add('is-animating');\n    }\n  }\n\n\n});\n",
+			"file": "app/mixins/material-rippleable.js",
+			"file_size": 3513,
+			"file_write_time": 130631701467128545,
+			"settings":
+			{
+				"buffer_size": 3511,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/styles/gwsklea/ripple/ripple.js",
 			"settings":
 			{
@@ -500,37 +523,18 @@
 			}
 		},
 		{
-			"file": "app/styles/gwsklea/button/demo.html",
-			"settings":
-			{
-				"buffer_size": 2382,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/gwsklea/third_party/rAF.js",
-			"settings":
-			{
-				"buffer_size": 382,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "import Ember from 'ember';\nimport Rippleable from '../mixins/material-rippleable';\n\nexport default Ember.Component.extend(Rippleable, {\n  init: function(){\n    this._super();\n    console.log(' ======> Component Initialized <======= ');\n  },\n  classNames: ['wsk-button wsk-js-button'],\n  classNameBindings: [\n    'raised:wsk-button--raised',\n    'ripple:RippleEffect',\n    'colored:wsk-button--colored'\n  ],\n  tagName: 'button',\n  raised: false,\n  ripple: false,\n\n  willInsertElement: function(){\n\n    if ( this.get('ripple') ) {\n      // Create and setup the ripple container and element\n      this.$()\n        .append(Ember.$('<span clas=\"wsk-button__ripple-container\"><span class=\"Ripple\">'));\n\n      this.$()\n        .on('mousedown touchstart', this.get('rippleHandler').bind(this));\n    }\n\n  },\n\n  didInsertElement: function(){\n    this.$().on('mouseup', this.get('blurHandler').bind(this) );\n    // Hammer(this.$()[0]).on('tap', self.get('rippleHandler').bind(this));\n    // this.$().on('mousedown touchstart', self.get('rippleHandler'));\n    // this.$().attr('class').split(' ').contains('RippleEffect--recentering');\n    f\n  }\n\n});\n",
-			"file": "app/components/material-button.js",
-			"file_size": 1133,
-			"file_write_time": 130628883926207640,
-			"settings":
-			{
-				"buffer_size": 1139,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/templates/application.hbs",
 			"settings":
 			{
-				"buffer_size": 314,
+				"buffer_size": 210,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/components/material-button.js",
+			"settings":
+			{
+				"buffer_size": 661,
 				"line_ending": "Unix"
 			}
 		},
@@ -538,7 +542,7 @@
 			"file": "app/templates/index.hbs",
 			"settings":
 			{
-				"buffer_size": 1808,
+				"buffer_size": 1835,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,14 +559,6 @@
 			"settings":
 			{
 				"buffer_size": 480,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/mixins/material-rippleable.js",
-			"settings":
-			{
-				"buffer_size": 909,
 				"line_ending": "Unix"
 			}
 		},
@@ -715,6 +711,7 @@
 		"/T/projects/cdtorgfe",
 		"/T/projects/cdtorgfe/app",
 		"/T/projects/cdtorgfe/app/components",
+		"/T/projects/cdtorgfe/app/initializers",
 		"/T/projects/cdtorgfe/app/models",
 		"/T/projects/cdtorgfe/app/routes",
 		"/T/projects/cdtorgfe/app/styles",
@@ -736,24 +733,28 @@
 	],
 	"file_history":
 	[
-		"/T/projects/cdtorgfe/Makefile",
+		"/T/projects/cdtorgfe/app/initializers/anim-frame-shim.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/button/demo.html",
+		"/T/projects/cdtorgfe/app/styles/_shame.scss",
+		"/T/projects/cdtorgfe/app/models/section.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/third_party/rAF.js",
+		"/T/projects/cdtorgfe/app/components/material-hamburger.js",
 		"/T/projects/cdtorgfe/app/models/social-ref.js",
+		"/T/projects/cdtorgfe/app/components/material-button.js",
+		"/T/projects/cdtorgfe/Makefile",
 		"/T/projects/cdtorgfe/tests/index.html",
 		"/T/projects/cdtorgfe/dist/index.html",
 		"/T/projects/cdtorgfe/app/index.html",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/ripple/ripple.js",
 		"/T/projects/cdtorgfe/app/router.js",
-		"/T/projects/cdtorgfe/app/styles/_shame.scss",
 		"/T/projects/cdtorgfe/app/styles/_other.scss",
 		"/T/projects/cdtorgfe/app/templates/subsection.hbs",
 		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-menu-side-test.js",
 		"/T/projects/cdtorgfe/testem.json",
 		"/T/projects/cdtorgfe/vagrant/puppet/modules/mongodb/spec/classes/server_install_spec.rb",
-		"/T/projects/cdtorgfe/app/models/section.js",
 		"/T/projects/cdtorgfe/app/templates/sections.hbs",
 		"/T/projects/cdtorgfe/tests/unit/models/section-test.js",
 		"/T/projects/cdtorgfe/app/styles/components/_material-hamburger.scss",
-		"/T/projects/cdtorgfe/app/components/material-button.js",
 		"/C/Users/Eduardo/Desktop/Forest.css",
 		"/T/projects/cdtorgfe/app/templates/articles/fullview.hbs",
 		"/T/projects/cdtorgfe/Vagrantfile",
@@ -787,7 +788,6 @@
 		"/T/projects/cdtorgfe/app/styles/_components.scss",
 		"/T/projects/cdtorgfe/app/routes/article.js",
 		"/T/projects/cdtorgfe/app/styles/components/_offcanvas-menu.scss",
-		"/T/projects/cdtorgfe/app/components/material-hamburger.js",
 		"/T/projects/cdtorgfe/app/mixins/material-rippleable.js",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/fonts/_roboto-draft.scss",
 		"/T/projects/cdtorgfe/app/models/social-refs.js",
@@ -799,7 +799,6 @@
 		"/T/projects/cdtorgfe/app/components/offcanvas-menu-side.js",
 		"/T/projects/cdtorgfe/app/components/offcanvas-menu-top.js",
 		"/T/projects/cdtorgfe/config/environment.js",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/button/demo.html",
 		"/T/projects/cdtorgfe/app/styles/_mixins.scss",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/button/button.js",
 		"/T/projects/cdtorgfe/app/templates/components/material-button.hbs",
@@ -861,9 +860,7 @@
 		"/T/projects/cdtorgfe/app/components/offcan-content.js",
 		"/T/projects/cdtorgfe/app/templates/components/offcan-button.hbs",
 		"/T/projects/cdtorgfe/app/views/application.js",
-		"/T/projects/cdtorgfe/app/styles/_component.scss",
-		"/C/Users/Eduardo/Desktop/logo-quetz-w.svg",
-		"/C/Users/Eduardo/Desktop/logo-quetz-b.svg"
+		"/T/projects/cdtorgfe/app/styles/_component.scss"
 	],
 	"find":
 	{
@@ -882,6 +879,33 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"'rippleSize'",
+			"'rippleBound'",
+			"rippleSize",
+			"rippleBound",
+			"rippleContainer",
+			"rippleElement",
+			"_r",
+			"console",
+			"span",
+			"rippleElement",
+			"evt.clientY",
+			"evt.clientX",
+			"evt",
+			"self",
+			"size",
+			"setFrameCount",
+			"this.setFrameCount",
+			"self",
+			"requestAnimFrame",
+			"animFrameHandler",
+			"ignoringMouseDown",
+			"();",
+			"getBoundingClientRect",
+			"parentElement",
+			"requestAnimFrame",
+			"animFrameHandler",
+			"setRippleStyles",
 			"background-color: #ddd;",
 			"background",
 			"palette",
@@ -982,34 +1006,7 @@
 			"company",
 			"button",
 			"br",
-			"p",
-			"em",
-			"position",
-			"skill",
-			"emcv",
-			"String",
-			"\"",
-			":\",",
-			"date",
-			"filter",
-			"model.",
-			"result",
-			"company",
-			"background-",
-			".$('.",
-			"searchString",
-			"searchBox",
-			"\"\n",
-			"tagline",
-			"title",
-			"positionName",
-			"professional experience",
-			"indicatorContainer",
-			"type=\"a\"",
-			"button",
-			"h4",
-			"300",
-			"rofexp"
+			"p"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1061,7 +1058,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1127,7 +1124,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1160,7 +1157,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1193,7 +1190,7 @@
 						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -1259,7 +1256,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1275,8 +1272,8 @@
 						"selection":
 						[
 							[
-								883,
-								883
+								703,
+								578
 							]
 						],
 						"settings":
@@ -1292,11 +1289,50 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 8,
+					"file": "app/mixins/material-rippleable.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3511,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2024,
+								2024
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
 					"file": "app/styles/gwsklea/ripple/ripple.js",
 					"semi_transient": false,
 					"settings":
@@ -1308,8 +1344,8 @@
 						"selection":
 						[
 							[
-								1910,
-								1910
+								182,
+								182
 							]
 						],
 						"settings":
@@ -1323,67 +1359,34 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 264.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/styles/gwsklea/button/demo.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2382,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2288,
-								2288
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 924.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "app/styles/gwsklea/third_party/rAF.js",
+					"file": "app/templates/application.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 382,
+						"buffer_size": 210,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								210,
+								210
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1392,30 +1395,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 11,
 					"file": "app/components/material-button.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1139,
+						"buffer_size": 661,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1129,
-								1129
+								360,
+								360
 							]
 						],
 						"settings":
@@ -1428,60 +1425,27 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 400.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "app/templates/application.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 314,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								313,
-								313
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
 					"file": "app/templates/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1808,
+						"buffer_size": 1835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1382,
-								1382
+								1762,
+								1762
 							]
 						],
 						"settings":
@@ -1494,14 +1458,14 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 660.0,
+						"translation.y": 396.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 13,
 					"file": "app/templates/sections/index.hbs",
 					"semi_transient": false,
 					"settings":
@@ -1513,8 +1477,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								377,
+								377
 							]
 						],
 						"settings":
@@ -1530,11 +1494,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "app/templates/subsection/index.hbs",
 					"semi_transient": false,
 					"settings":
@@ -1563,50 +1527,11 @@
 						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 16,
-					"file": "app/mixins/material-rippleable.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 909,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								304,
-								304
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 198.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 15,
 					"file": "app/components/material-hamburger.js",
 					"semi_transient": false,
 					"settings":
@@ -1626,6 +1551,7 @@
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
+							"history_list_is_closing": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
@@ -1635,7 +1561,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1657,19 +1583,13 @@
 				0,
 				0,
 				1,
-				2
+				1
 			],
 			[
 				1,
 				0,
 				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		],
 		"cols":
@@ -1681,7 +1601,6 @@
 		"rows":
 		[
 			0.0,
-			0.5,
 			1.0
 		]
 	},
@@ -1701,6 +1620,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"shim",
+				"app\\initializers\\anim-frame-shim.js"
+			],
+			[
+				"mater",
+				"app\\components\\material-button.js"
+			],
 			[
 				"matha",
 				"app\\components\\material-hamburger.js"
@@ -2204,14 +2131,6 @@
 			[
 				"roi",
 				"app\\routes\\index.js"
-			],
-			[
-				"temdi",
-				"app\\templates\\dispatcher.hbs"
-			],
-			[
-				"rodi",
-				"app\\routes\\dispatcher.js"
 			]
 		],
 		"width": 0.0
@@ -2232,14 +2151,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 229.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -2,10 +2,6 @@ import Ember from 'ember';
 import Rippleable from '../mixins/material-rippleable';
 
 export default Ember.Component.extend(Rippleable, {
-  init: function(){
-    this._super();
-    console.log(' ======> Component Initialized <======= ');
-  },
   classNames: ['wsk-button wsk-js-button'],
   classNameBindings: [
     'raised:wsk-button--raised',

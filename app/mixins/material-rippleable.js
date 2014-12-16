@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
+  rippleContainer: null,
   rippleElement: null,
   rippleSize: 0,
   rippleBound: 0,
@@ -8,63 +9,48 @@ export default Ember.Mixin.create({
   rippleX: 0,
   rippleY: 0,
 
-  rippleInitializer: function(){
 
-    // If no ripple do nothing BUT!!
-    // TODO (Implement cleanup for dynamic ripple setting change)
-    if ( !this.get('ripple') ){
-      return this.$('wsk-button__ripple-container').remove();
-    }
+  didInsertElement: function(){
+    // Don't bother if ripple = false
+    if ( !this.get('ripple') ){return this._super();}
 
+    // Call super first !
+    this._super();
 
-    // Append the ripple container and ripple element
-    this.$()
-      .append(Ember.$('<span clas="wsk-button__ripple-container"><span class="Ripple">'));
+    // Create elements
+    this.setProperties({
+      rippleContainer: document.createElement('span'),
+      rippleElement: document.createElement('span')
+    });
+    var rippleContainer = this.get('rippleContainer');
+    var rippleElement = this.get('rippleElement');
+    rippleContainer.classList.add('wsk-button__ripple-container');
+    rippleElement.classList.add('Ripple');
+    rippleContainer.appendChild(rippleElement);
 
-    // Set the ripple element size
-    var parentElement = this.get('element');
-    var rippleElement = parentElement.querySelector('.Ripple');
-    var bound = parentElement.getBoundingClientRect();
-    var rippleSize =  Math.max(bound.width, bound.height) * 2;
-    rippleElement.style.width = rippleSize + 'px';
-    rippleElement.style.height = rippleSize + 'px';
-
-    // Refactor
-    var _rippleElement = Ember.$('<span class="Ripple">');
-    _rippleElement.width = rippleSize + 'px';
-    _rippleElement.height = rippleSize + 'px';
-    console.log(_rippleElement);
-
-    // Save the values on instance properties
-    this.set('rippleElement', rippleElement);
-    this.set('rippleBound', bound);
+    // Set the ripple size
+    var bound = this.get('element').getBoundingClientRect();
+    var rippleSize = Math.max(bound.width, bound.height) * 2 +'px';
     this.set('rippleSize', rippleSize);
+    rippleElement.style.width = rippleSize;
+    rippleElement.style.height = rippleSize;
 
-    // Bind the mousedown event
-    this.$().on('mousedown touchstart', this.get('rippleHandler').bind(this));
+    // Append ripple container to element
+    this.get('element').appendChild(rippleContainer);
 
-    // neva 4get
-    // new Hammer(this.$()[0]).on('tap', this.get('rippleHandler').bind(this));
-    // this.$().attr('class').split(' ').contains('RippleEffect--recentering');
-
-  }.observes('ripple').on('didInsertElement'),
+  },
 
   rippleHandler: function(evt){
-
     var x, y, bound;
     this.set('frameCount', 1);
 
-    // Hammered
-    if (evt.pointers) {
-
+    if (evt.pointers) {    // If using HammerJs...
       bound = evt.target.getBoundingClientRect();
       x = Math.round(evt.center.x - bound.left);
       y = Math.round(evt.center.y - bound.top);
       console.log(evt.srcEvent.clientY);
       console.log(evt.center);
-
-    } else {
-
+    } else {     // ... else, vanilla Js
       bound = evt.currentTarget.getBoundingClientRect();
       if (evt.clientX === 0 && evt.clientY === 0) {
         x = Math.round(bound.width / 2);
@@ -75,26 +61,30 @@ export default Ember.Mixin.create({
         x = Math.round(clientX - bound.left);
         y = Math.round(clientY - bound.top);
       }
-
     }
 
-    this.get()
+    this.setProperties({ rippleX: x, rippleY: y});
+    this.get('applyRippleStyles').bind(this)(true);
 
-    this.set('rippleX', x);
-    this.set('rippleY', y);
-    this.get('setRippleStyles').bind(this)(true);
+    // Don't like this here
     window.requestAnimationFrame(this.get('animFrameHandler').bind(this));
-  },
-  animFrameHandler: function(){
-    var fC = this.get('rippleFrameCount');
-    if ( fC-- > 0 ) {
-      window.requestAnimationFrame(this.get('animFrameHandler').bind(this));
-    } else {
-      this.get('setRippleStyles').bind(this)(false);
-    }
+
+  }.on('mouseDown'),
+
+  animFrameHandler: function(dippi){
+    // Ember.Logger.debug('Dippi value: %s', dippi);
+    // var fC = this.get('rippleFrameCount');
+    // Ember.Logger.debug('Frame count changed on op: %s', fC);
+    // Ember.Logger.debug('If check will be: %s', fC-- > 0);
+    // if ( fC-- > 0 ) {
+    //   window.requestAnimationFrame(this.get('animFrameHandler').bind(this));
+    // } else {
+    //   this.get('applyRippleStyles').bind(this)(false);
+    // }
+      this.get('applyRippleStyles').bind(this)(false);
   },
 
-  setRippleStyles: function(start){
+  applyRippleStyles: function(start){
     var transformString, scale, size, offset;
 
     offset =  'translate('+
@@ -127,7 +117,5 @@ export default Ember.Mixin.create({
       rippleElement.style.opacity = '0';
       rippleElement.classList.add('is-animating');
     }
-
-
-  },
+  }
 });

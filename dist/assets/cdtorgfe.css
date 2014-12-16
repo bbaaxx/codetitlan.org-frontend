@@ -3163,7 +3163,7 @@ html, body, body > .ember-view {
           transition: 300ms ease all; }
 
 .section--index .section__header {
-  background: #fff; }
+  background-color: #fff; }
 
 .section--psicologia .section__header {
   background-image: url('/assets/images/cupidpsyche_background_sm.jpg'); }

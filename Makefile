@@ -22,9 +22,11 @@ refreshdeps: cleandeps installdeps
 
 updategwsk:
 
+	cp -r app/styles/gwsklea/fonts tmp/_fonts
 	rm app/styles/gwsklea/* -rf
 	cp ../../ghrepos/web-starter-kit/app/styleguide/* app/styles/gwsklea -r
-
+	mv tmp/_fonts app/styles/gwsklea/fonts
+	
 start: installdeps
 	ember serve
 
