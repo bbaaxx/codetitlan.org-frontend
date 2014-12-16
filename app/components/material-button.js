@@ -5,20 +5,19 @@ export default Ember.Component.extend(Rippleable, {
   classNames: ['wsk-button wsk-js-button'],
   classNameBindings: [
     'raised:wsk-button--raised',
-    'ripple:RippleEffect',
+    'ripple:wsk-js-ripple-effect',
     'colored:wsk-button--colored'
   ],
   tagName: 'button',
   raised: false,
   ripple: false,
 
-  blurHandler: function(){
+  actionHandler: function(){
     this.$().blur();
+    this.sendAction();
   },
   willInsertElement: function(){
-    this.$().on('mouseup', this.get('blurHandler').bind(this) );
+    this.$().on('mouseup', this.get('actionHandler').bind(this) );
   },
-
-  // didInsertElement: function(){}
 
 });

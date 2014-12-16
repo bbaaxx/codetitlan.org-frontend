@@ -12,10 +12,10 @@ $button-active-color: rgba($button-primary-color, 0.40);
 $button-focus-color: rgba(black, 0.12);
 
 // Colored button colors.
-$button-primary-color-alt: nth($primaryPalette, 6);
+$button-primary-color-alt: nth($palette-primary, 6);
 $button-secondary-color-alt: #fff;
-$button-hover-color-alt: nth($primaryPalette, 7);
-$button-active-color-alt: nth($primaryPalette, 8);
+$button-hover-color-alt: nth($palette-primary, 7);
+$button-active-color-alt: nth($palette-primary, 8);
 $button-focus-color-alt: $button-focus-color;
 
 // Ripple color for colored raised buttons and FABs.
@@ -26,12 +26,17 @@ $button-primary-color-disabled: rgba(#000, 0.12);
 $button-secondary-color-disabled: rgba(#000, 0.26);
 
 // FAB colors and sizes.
-$button-fab-color-alt: nth($accentPalette, 5);
-$button-fab-hover-color-alt: nth($accentPalette, 6);
-$button-fab-active-color-alt: nth($accentPalette, 7);
+$button-fab-color-alt: nth($palette-accent, 5);
+$button-fab-hover-color-alt: nth($palette-accent, 6);
+$button-fab-active-color-alt: nth($palette-accent, 7);
 $button-fab-size: 56px;
 $button-fab-size-mini: 40px;
 $button-fab-font-size: 24px;
+
+// Icon button colors and sizes.
+$button-icon-size: 32px;
+$button-icon-color: nth($palette-grey, 8);
+$button-icon-focus-color: $button-focus-color;
 
 // Focus shadow mixin.
 @mixin focus-shadow() {
@@ -59,6 +64,7 @@ $button-fab-font-size: 24px;
               background-color 0.2s $animation-curve-default,
               color 0.2s $animation-curve-default;
   outline: none;
+  cursor: pointer;
 
   &::-moz-focus-inner {
     border: 0;
@@ -124,7 +130,7 @@ $button-fab-font-size: 24px;
         background-color: $button-active-color-alt;
       }
 
-      & .Ripple {
+      & .wsk-ripple {
         background: $button-ripple-color-alt;
       }
     }
@@ -189,7 +195,7 @@ $button-fab-font-size: 24px;
         background-color: $button-fab-active-color-alt;
       }
 
-      & .Ripple {
+      & .wsk-ripple {
         background: $button-ripple-color-alt;
       }
     }
@@ -199,6 +205,26 @@ $button-fab-font-size: 24px;
       background-color: $button-primary-color-disabled;
       color: $button-secondary-color-disabled;
       @include shadow-z1();
+    }
+  }
+
+
+  // Icon buttons
+  .wsk-button--icon {
+    border-radius: 50%;
+    font-size: $button-fab-font-size;
+    height: $button-icon-size;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: $button-icon-size;
+    width: $button-icon-size;
+    padding: 0;
+    overflow: hidden;
+
+    & .wsk-button__ripple-container {
+      border-radius: 50%;
+      // Fixes clipping bug in Safari.
+      -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
     }
   }
 
@@ -214,7 +240,7 @@ $button-fab-font-size: 24px;
     z-index: 0;
     overflow: hidden;
 
-    .wsk-button[disabled] & .Ripple {
+    .wsk-button[disabled] & .wsk-ripple {
       background-color: transparent;
     }
   }
