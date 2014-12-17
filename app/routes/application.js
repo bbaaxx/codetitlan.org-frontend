@@ -15,6 +15,7 @@ export default Ember.Route.extend({
       .then(function(sections){
         controller.set('sidemenuItems', sections);
       });
+
     controller.set('showingMenu', false);
 
   },
@@ -32,7 +33,7 @@ export default Ember.Route.extend({
       this.get('controller').set('showingMenu', false);
     }
   },
-  didTransition: function(){
-    this.send('closeMenu');
+  willTransition: function(){
+    alert('I did');
   }
 });

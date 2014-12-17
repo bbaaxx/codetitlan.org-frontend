@@ -14,7 +14,9 @@ $ofcvm-animation-duration: 300ms !default;
 
 .ofcvm {
 
-  &__main-wrap { @include meta-wrap; } // <--end: __main-wrap
+  &__main-wrap {
+    @include meta-wrap;
+  }
   &__menu-wrap {
     position: absolute;
     opacity: 0;
@@ -47,12 +49,8 @@ $ofcvm-animation-duration: 300ms !default;
   } // <--end: __content
   &__toggler {
     position: fixed;
-    z-index: 1000;
-    border: none;
-    color: transparent;
-    background: transparent;
+    z-index: 1500;
     transition: transform $ofcvm-animation-duration;
-    &:focus { outline:0; }
   } // <--end: __toggler
 
 
@@ -60,29 +58,46 @@ $ofcvm-animation-duration: 300ms !default;
   &__menu {
 
     &__topmenu {
-      height: $ofcvm-topmenu-height;
+      position: relative;
+      display: block;
+      height: $ofcvm-topmenu-height*4;
 
-      &__brand {
+      &__logos {
+        float: left;
+        width: $ofcvm-sidemenu-width;
+        max-height: $ofcvm-topmenu-height*3;
+        &--top {
+          display: block;
+          width: $ofcvm-sidemenu-width;
+          height: $ofcvm-topmenu-height;
+        }
+        &--bottom {
+          display: block;
+          height: $ofcvm-topmenu-height*2;
+          width: $ofcvm-sidemenu-width;
+        }
+      }
+      &__icons {
         display: inline-block;
+        float: left;
         width: $ofcvm-sidemenu-width;
         height: $ofcvm-topmenu-height;
       }
 
-      &__icons {
-        display: inline-block;
-        height: $ofcvm-topmenu-height;
+      &__logo {
+        width: $ofcvm-sidemenu-width;
+        height: $ofcvm-topmenu-height*2;
       }
     } // <-- end: __topmenu
 
     &__sidemenu {
-      min-height: 100%;
+      position: relative;
+      display: block;
+
       width: $ofcvm-sidemenu-width;
-
-      &__logo {
-
-      }
-      &__nav{
-
+      &__navigation {
+        display: inline-block;
+        width: $ofcvm-sidemenu-width;
       }
     } // <-- end: __sidemenu
   } // <-- end: __menu

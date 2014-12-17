@@ -6,8 +6,11 @@
 {{! class="offcanvasmenu__main__wrap" }}
 
 <div class="ofcvm__menu-wrap">
-  {{offcanvas-menu-top topmenuItems=topmenuItems}}
-  {{offcanvas-menu-side sidemenuItems=sidemenuItems}}
+  {{offcanvas-menu-top
+    topmenuItems=topmenuItems}}
+  {{offcanvas-menu-side
+    sidemenuItems=sidemenuItems
+    action="closeMenu"}}
 </div>
 
 {{material-hamburger action="toggleMenu"}}

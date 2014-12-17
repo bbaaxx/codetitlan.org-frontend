@@ -3,6 +3,29 @@
   text-shadow: 1px 1px 5px #222;
 
 }
+
+.logo--brand {
+  background-image: url(images/logo-typeo-b.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.logo--quetz {
+  background-image: url(images/logo-quetz-b.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  height: 100%;
+  width: 50%;
+}
+
+
+
 .section__header {
   transition: 300ms ease all;
   //background-image: url('/assets/images/fern_background_sm.jpg');

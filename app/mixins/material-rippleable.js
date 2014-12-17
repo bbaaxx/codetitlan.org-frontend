@@ -100,7 +100,8 @@ export default Ember.Mixin.create({
     }.bind(this);
     // Register the mousedown and touchstart events
     this.on('mouseDown',startAnimation);
-    this.on('touchStart',startAnimation);
+    //this.on('touchStart',startAnimation);
+    //this.on('click',startAnimation);
   }.on('didInsertElement'),
 
 });

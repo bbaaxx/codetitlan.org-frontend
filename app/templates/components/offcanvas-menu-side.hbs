@@ -1,18 +1,13 @@
-<div class="offcvm__menu__sidemenu__logo">
-  <a><img src="assets/images/logo-quetz-b.svg" width="100"></a>
-</div>
-
-<ul>
+<nav>
 {{#each section in sidemenuItems}}
-  {{#unless section.isSubsection}}
-
-    {{#link-to "sections" section.slug}}{{string-capitalize section.name}}{{/link-to}}
-    {{#each subsection in section.subSections}}
-      {{#link-to "subsection" subsection.parentSection.slug subsection.slug class="menu__subsection__link"}}
-        {{fa-icon "caret-right"}} {{string-capitalize subsection.name}}
+    {{#unless section.isSubsection}}
+      {{#link-to "sections" section.slug action="closeMenu"}}
+        {{#material-button
+          action="closeMenu"
+          ripple=true
+          class="ofcvm__menu__sidemenu__navigation__link"
+        }}{{section.name}}{{/material-button}}
       {{/link-to}}
-    {{/each}}
-
-  {{/unless}}
-{{/each}}
-</ul>
+    {{/unless}}
+  {{/each}}
+</nav>

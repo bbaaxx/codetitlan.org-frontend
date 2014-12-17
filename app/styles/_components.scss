@@ -12,33 +12,43 @@
 // Overide default styles
 .ofcvm__menu {
 
-  // &__topmenu {
+  &__topmenu {
 
-  //   &__social-icons {
-  //     display: inline-block;
-  //     font-size: 1.25em;
-  //     a {
-  //       margin: 0 1em 0 0;
-  //       padding: 0;
-  //     }
-  //     @media screen and (max-width: 32em) {
-  //       a {margin-left: 1em; margin-right: 0;}
-  //       margin: 0 auto;
-  //       padding-left: 1.25em;
-  //     }
-  //   }
-  // } // <-- end: __topmenu
+    &__icons {
+      padding-top: 1em;
+      a {
+        margin-right: 5%;
+        padding-left: 1em;
+      }
+      // @media screen and (max-width: 32em) {
+      //   a {margin-left: 1em; margin-right: 0;}
+      //   margin: 0 auto;
+      //   padding-left: 1.25em;
+      // }
+    }
 
-  // &__sidemenu {
-  //   .active { background-color: #ddd; }
-  //   div { cursor: pointer; }
-  //   a {
-  //     display: block;
-  //     padding: 1.2em;
-  //     border-bottom: 1px solid rgba(0,0,0,0.1);
-  //     // &:first-child {
-  //     //   border-top: 1px solid rgba(0,0,0,0.1);
-  //     // }
-  //   }
-  // } // <-- end: __sidemenu
+  } // <-- end: __topmenu
+
+  &__sidemenu {
+
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+
+    &__navigation {
+
+      &__link {
+        display: block;
+        line-height: 2em;
+        height: 3em;
+        width: 100%;
+        font-size: 1.2em;
+      }
+    }
+
+  }// <-- end: __sidemenu
 }

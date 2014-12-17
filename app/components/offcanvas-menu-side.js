@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'nav',
-  classNames: ['ofcvm__menu__sidemenu']
+  classNames: ['ofcvm__menu ofcvm__menu__sidemenu'],
+  actions: {
+    closeMenu: function(){
+      this.sendAction();
+    }
+  }
 });
