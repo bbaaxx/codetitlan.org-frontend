@@ -1,15 +1,26 @@
 {{!
   Inspired by https://github.com/codrops/OffCanvasMenuEffects
 }}
-<div class="offcanvasmenu__menu__wrap">
-  {{offcanvas-menu-top}}
-  {{offcanvas-menu-side allSections=allSections}}
+
+
+{{! class="offcanvasmenu__main__wrap" }}
+
+<div class="ofcvm__menu-wrap">
+  {{offcanvas-menu-top
+    topmenuItems=topmenuItems}}
+  {{offcanvas-menu-side
+    sidemenuItems=sidemenuItems
+    action="closeMenu"}}
 </div>
 
-<button class="offcanvasmenu__button" {{action "toggleMenu"}}>Open Menu</button>
+{{material-hamburger
+  hamburgerToggler=showingMenu
+  action="toggleMenu"
+  class="ofcvm__toggler"}}
 
-<div class="offcanvasmenu__content__wrap">
-  <div class="offcanvasmenu__content">
+<div class="ofcvm__content-wrap">
+  <div class="ofcvm__content">
     {{yield}}
   </div>
+  <div class="ofcvm__content-wrap__overlay"></div>
 </div>

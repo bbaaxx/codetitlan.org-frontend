@@ -1,10 +1,84 @@
-.section__index {
-  padding-top: 3em;
+
+
+
+
+.logo--brand {
+  background-image: url(images/logo-typeo-b.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
-.section__index__header img{
+.logo--quetz {
+  background-image: url(images/logo-quetz-b.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  height: 100%;
+  width: 50%;
+}
 
-  margin: 0 auto;
-  display: block;
 
+// Section styles
+@mixin header-text-shadow {
+  color: #fff;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.section__header {
+  transition: 300ms ease all;
+  //background-image: url('/assets/images/fern_background_sm.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  box-shadow: inset 0px 0px 134px -1px rgba(0,0,0,0.66);
+  @include shadow-z2();
+  h1 {
+    @include typo-display-3;
+    @include header-text-shadow;
+  }
+  h5 {
+    @include header-text-shadow;
+  }
+}
+
+
+.section--index {
+  .section__header {
+    background-color: #fff;
+  }
+}
+
+.section--psicologia {
+  .section__header {
+    @include background-image-preload('/assets/images/cupidpsyche_background_sm.jpg') ;
+  }
+}
+
+.section--botanica {
+  .section__header {
+    @include background-image-preload('/assets/images/fern_background_sm.jpg') ;
+  }
+}
+
+.section--arqueologia {
+  .section__header {
+    @include background-image-preload('/assets/images/tiwunaku_background_sm.jpg') ;
+  }
+}
+
+.section--tecnologia {
+  .section__header {
+    @include background-image-preload('/assets/images/mainboard_background_sm.jpg') ;
+  }
+}
+
+.section__header:before {
+  display: none;
+  content: $preloaded-images;
 }

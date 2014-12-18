@@ -4,6 +4,154 @@
 		"selected_items":
 		[
 			[
+				"to",
+				"toggleProperty"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"top",
+				"topmenu-sizing"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"start",
+				"startAnimation"
+			],
+			[
+				"rippl",
+				"rippleEvent"
+			],
+			[
+				"rippleE",
+				"rippleEvent"
+			],
+			[
+				"ripple",
+				"rippleEvent"
+			],
+			[
+				"ripp",
+				"rippleIsAnimating"
+			],
+			[
+				"em",
+				"emberProperty	Ember.ComputedProperty"
+			],
+			[
+				"bou",
+				"bound"
+			],
+			[
+				"ri",
+				"rippleSize"
+			],
+			[
+				"bound",
+				"rippleBound"
+			],
+			[
+				"fr",
+				"rippleFrameCount"
+			],
+			[
+				"rip",
+				"rippleSize"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"sec",
+				"section__header"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"link",
+				"linkTarget"
+			],
+			[
+				"of",
+				"ofcvm-animation-duration"
+			],
+			[
+				"ham",
+				"hamburger-height"
+			],
+			[
+				"ha",
+				"hamburger-width"
+			],
+			[
+				"ex",
+				"externalTrigger"
+			],
+			[
+				"child",
+				"childNodes"
+			],
+			[
+				"emb",
+				"emberProperty	Ember.ComputedProperty"
+			],
+			[
+				"get",
+				"getBoundingClientRect"
+			],
+			[
+				"pa",
+				"parentElement"
+			],
+			[
+				"blu",
+				"blurHandlerGenerator"
+			],
+			[
+				"blur",
+				"blurHandler"
+			],
+			[
+				"offca",
+				"offcanvasmenu__main__wrap"
+			],
+			[
 				"fi",
 				"filteredSection"
 			],
@@ -12,16 +160,8 @@
 				"sectionsArray"
 			],
 			[
-				"sec",
-				"sectionsArray"
-			],
-			[
 				"fun",
 				"function"
-			],
-			[
-				"em",
-				"emof	Ember - Object Function"
 			],
 			[
 				"artic",
@@ -34,10 +174,6 @@
 			[
 				"padding",
 				"padding-top"
-			],
-			[
-				"pa",
-				"parentSection"
 			],
 			[
 				"cur",
@@ -100,20 +236,12 @@
 				"activities"
 			],
 			[
-				"emb",
-				"emberProperty	Ember.ComputedProperty"
-			],
-			[
 				"com",
 				"companySearchBox"
 			],
 			[
 				"no",
 				"normalizeString"
-			],
-			[
-				"to",
-				"toLowerCase"
 			],
 			[
 				"s",
@@ -150,10 +278,6 @@
 			[
 				"indi",
 				"IndicatorProxy"
-			],
-			[
-				"in",
-				"indicatorContainer"
 			],
 			[
 				"if",
@@ -206,10 +330,6 @@
 			[
 				"de",
 				"destDir"
-			],
-			[
-				"fo",
-				"font-size"
 			],
 			[
 				"l",
@@ -348,10 +468,6 @@
 				"config"
 			],
 			[
-				"paddi",
-				"padding-top"
-			],
-			[
 				"genera",
 				"generatedImagesDir"
 			],
@@ -364,10 +480,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/templates/sections.hbs",
+			"file": "app/styles/_layout.scss",
 			"settings":
 			{
-				"buffer_size": 137,
+				"buffer_size": 121,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/_modules.scss",
+			"settings":
+			{
+				"buffer_size": 1638,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/_components.scss",
+			"settings":
+			{
+				"buffer_size": 882,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/components/_offcanvas-menu.scss",
+			"settings":
+			{
+				"buffer_size": 2769,
 				"line_ending": "Unix"
 			}
 		},
@@ -375,23 +515,15 @@
 			"file": "app/models/section.js",
 			"settings":
 			{
-				"buffer_size": 1731,
+				"buffer_size": 1740,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/article.js",
+			"file": "app/components/offcanvas-wrapper.js",
 			"settings":
 			{
-				"buffer_size": 480,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/templates/subsection.hbs",
-			"settings":
-			{
-				"buffer_size": 230,
+				"buffer_size": 447,
 				"line_ending": "Unix"
 			}
 		},
@@ -399,55 +531,7 @@
 			"file": "app/routes/application.js",
 			"settings":
 			{
-				"buffer_size": 468,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/templates/error.hbs",
-			"settings":
-			{
-				"buffer_size": 36,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/app.js",
-			"settings":
-			{
-				"buffer_size": 414,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/environment.js",
-			"settings":
-			{
-				"buffer_size": 1363,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/routes/sections.js",
-			"settings":
-			{
-				"buffer_size": 578,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/routes/subsection.js",
-			"settings":
-			{
-				"buffer_size": 539,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/router.js",
-			"settings":
-			{
-				"buffer_size": 542,
+				"buffer_size": 934,
 				"line_ending": "Unix"
 			}
 		}
@@ -455,16 +539,56 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 357.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Git: Toggle Annotations"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"synja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"synru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				":w",
 				":w - Save"
 			],
 			[
+				":q",
+				"Snippet: quotes"
+			],
+			[
 				":W",
 				":w - Save"
+			],
+			[
+				"syn rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"syn ry",
+				"Set Syntax: Ruby"
+			],
+			[
+				"synruby",
+				"Set Syntax: Ruby"
 			],
 			[
 				"h",
@@ -479,16 +603,8 @@
 				"HTMLBeautify"
 			],
 			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
 				"remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"synja",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"inst",
@@ -543,7 +659,7 @@
 				"Set Syntax: HTML with mustaches"
 			]
 		],
-		"width": 416.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -571,154 +687,146 @@
 	[
 		"/T/projects/cdtorgfe",
 		"/T/projects/cdtorgfe/app",
-		"/T/projects/cdtorgfe/app/adapters",
 		"/T/projects/cdtorgfe/app/components",
-		"/T/projects/cdtorgfe/app/controllers",
-		"/T/projects/cdtorgfe/app/helpers",
-		"/T/projects/cdtorgfe/app/models",
-		"/T/projects/cdtorgfe/app/routes",
-		"/T/projects/cdtorgfe/app/templates",
-		"/T/projects/cdtorgfe/app/templates/articles",
-		"/T/projects/cdtorgfe/app/templates/components",
-		"/T/projects/cdtorgfe/config",
-		"/T/projects/cdtorgfe/public",
-		"/T/projects/cdtorgfe/public/assets",
-		"/T/projects/cdtorgfe/public/assets/images"
+		"/T/projects/cdtorgfe/app/styles",
+		"/T/projects/cdtorgfe/app/styles/components",
+		"/T/projects/cdtorgfe/app/styles/gwsklea",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/button"
 	],
 	"file_history":
 	[
-		"/T/projects/cdtorgfe/app/styles/_mixins.scss",
-		"/T/projects/cdtorgfe/app/models/section.js",
-		"/T/projects/cdtorgfe/app/components/offcanvas-wrapper.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/animation/_animation.scss",
 		"/T/projects/cdtorgfe/app/styles/_modules.scss",
+		"/T/projects/cdtorgfe/app/styles/components/_offcanvas-menu.scss",
+		"/T/projects/cdtorgfe/app/styles/_components.scss",
+		"/T/projects/cdtorgfe/app/models/article.js",
+		"/T/projects/cdtorgfe/app/models/section.js",
+		"/T/projects/cdtorgfe/app/models/social-ref.js",
+		"/T/projects/cdtorgfe/app/mixins/material-rippleable.js",
+		"/T/projects/cdtorgfe/app/templates/components/material-hamburger.hbs",
+		"/T/projects/cdtorgfe/app/styles/components/_material-hamburger.scss",
+		"/T/projects/cdtorgfe/app/styles/_global-mixins.scss",
+		"/T/projects/cdtorgfe/app/templates/application.hbs",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-wrapper.hbs",
+		"/T/projects/cdtorgfe/app/components/material-hamburger.js",
+		"/T/projects/cdtorgfe/app/helpers/string-toupper.js",
+		"/T/projects/cdtorgfe/app/templates/sections.hbs",
+		"/T/projects/cdtorgfe/app/templates/index.hbs",
+		"/T/projects/cdtorgfe/testem.json",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-side.hbs",
+		"/T/projects/cdtorgfe/app/templates/articles/create.hbs",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/shadow/_shadow.scss",
+		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-wrapper-test.js",
+		"/T/projects/cdtorgfe/app/components/offcanvas-menu-side.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/animation/demo.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/animation/demo.html",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/third_party/rAF.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/button/_button.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/button/button.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/_styleguide_demo_bp.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/styleguide.scss",
+		"/T/projects/cdtorgfe/dist/assets/images/logo-codetitlan-w.svg",
+		"/T/projects/cdtorgfe/tests/unit/components/material-button-test.js",
+		"/T/projects/cdtorgfe/app/helpers/string-capitalize.js",
+		"/T/projects/cdtorgfe/app/components/offcanvas-menu-top.js",
+		"/T/projects/cdtorgfe/app/components/material-button.js",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-top.hbs",
+		"/T/projects/cdtorgfe/app/routes/application.js",
+		"/T/projects/cdtorgfe/app/index.html",
+		"/T/projects/cdtorgfe/.gitignore",
+		"/T/projects/cdtorgfe/dist/index.html",
+		"/T/projects/cdtorgfe/tests/index.html",
+		"/T/projects/cdtorgfe/tests/unit/mixins/material-rippleable-test.js",
 		"/T/projects/cdtorgfe/app/adapters/application.js",
+		"/T/projects/cdtorgfe/app/components/offcanvas-wrapper.js",
+		"/T/projects/cdtorgfe/app/components/material-linkto.js",
+		"/T/projects/cdtorgfe/app/styles/_normalize.scss",
+		"/T/projects/cdtorgfe/app/router.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/ripple/ripple.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/ripple/_ripple.scss",
+		"/T/projects/cdtorgfe/app/styles/app.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/card/_card.scss",
+		"/T/projects/cdtorgfe/app/templates/components/material-button.hbs",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/layout/README.md",
+		"/T/projects/cdtorgfe/Brocfile.js",
+		"/T/projects/cdtorgfe/app/styles/bootstrap/_custom-components.scss",
+		"/T/projects/cdtorgfe/app/styles/_layout.scss",
+		"/T/projects/cdtorgfe/app/templates/sections/index.hbs",
+		"/T/projects/cdtorgfe/app/templates/subsection/index.hbs",
+		"/T/projects/cdtorgfe/app/initializers/anim-frame-shim.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/button/demo.html",
+		"/T/projects/cdtorgfe/app/styles/_shame.scss",
+		"/T/projects/cdtorgfe/Makefile",
+		"/T/projects/cdtorgfe/app/styles/_other.scss",
+		"/T/projects/cdtorgfe/app/templates/subsection.hbs",
+		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-menu-side-test.js",
+		"/T/projects/cdtorgfe/vagrant/puppet/modules/mongodb/spec/classes/server_install_spec.rb",
+		"/T/projects/cdtorgfe/tests/unit/models/section-test.js",
+		"/C/Users/Eduardo/Desktop/Forest.css",
+		"/T/projects/cdtorgfe/app/templates/articles/fullview.hbs",
+		"/T/projects/cdtorgfe/Vagrantfile",
+		"/T/projects/cdtorgfe/___Vagrantfile",
+		"/T/projects/cdtorgfe/app/styles/_base.scss",
+		"/T/projects/cdtorgfe/app/routes/sections.js",
+		"/T/projects/cdtorgfe/app/routes/subsection.js",
+		"/T/projects/cdtorgfe/app/components/display-article.js",
+		"/T/projects/cdtorgfe/app/templates/components/display-article.hbs",
+		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/T/projects/cdtorgfe/vagrant/puppet/modules/mongodb/spec/spec_helper_system.rb",
+		"/T/projects/cdtorgfe/vagrant/puppet/modules/mongodb/spec/unit/puppet/type/mongodb_user_spec.rb",
+		"/C/Users/Eduardo/Code/vagrants/vvm/vagrant/puppet/manifests/main.pp",
+		"/C/Users/Eduardo/Code/vagrants/vvm/Vagrantfile",
+		"/T/projects/cdtorgfe/Vagrantfile.bak",
+		"/T/projects/cdtorgfe/app/routes/article.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/fonts/_roboto-draft.scss",
+		"/T/projects/cdtorgfe/app/models/social-refs.js",
+		"/T/projects/cdtorgfe/app/models/.gitkeep",
+		"/T/projects/cdtorgfe/.jshintrc",
+		"/T/projects/cdtorgfe/tests/unit/components/material-hamburger-test.js",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-hamburger.hbs",
+		"/T/projects/cdtorgfe/config/environment.js",
+		"/T/projects/cdtorgfe/app/styles/_mixins.scss",
+		"/T/projects/cdtorgfe/tests/unit/adapters/application-test.js",
+		"/T/projects/cdtorgfe/package.json",
+		"/T/projects/cdtorgfe/tests/unit/helpers/string-toupper-test.js",
+		"/T/projects/cdtorgfe/bower.json",
+		"/T/projects/cdtorgfe/tests/unit/models/article-test.js",
+		"/T/projects/cdtorgfe/.editorconfig",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/column-layout/column-layout.js",
+		"/T/projects/cdtorgfe/cdtorgfe.sublime-project",
+		"/T/projects/cdtorgfe/app/routes/articles/create.js",
+		"/T/projects/cdtorgfe/tests/unit/helpers/string-capitalize-test.js",
+		"/T/projects/cdtorgfe/app/templates/articles/editor.hbs",
+		"/T/projects/cdtorgfe/app/templates/articles/index.hbs",
+		"/T/projects/cdtorgfe/app/routes/article/edit.js",
+		"/T/projects/cdtorgfe/app/templates/article/index.hbs",
+		"/T/projects/cdtorgfe/app/routes/article/index.js",
+		"/T/projects/cdtorgfe/app/templates/articles.hbs",
 		"/T/projects/cdtorgfe/app/routes/articles.js",
+		"/T/projects/cdtorgfe/app/models/subsection.js",
+		"/T/projects/cdtorgfe/app/templates/article.hbs",
+		"/T/projects/cdtorgfe/app/templates/error.hbs",
+		"/T/projects/cdtorgfe/app/templates/articles-create.hbs",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/dropdown-menu/_dropdown-menu.scss",
+		"/T/projects/cdtorgfe/app/controllers/articles.js",
+		"/T/projects/cdtorgfe/app/app.js",
+		"/T/projects/cdtorgfe/__Vagrantfile",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/radio/demo.html",
 		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-components.scss",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/dropdown-menu/_dropdown-menu.scss",
-		"/T/projects/cdtorgfe/app/routes/article.js",
-		"/T/projects/cdtorgfe/app/models/article.js",
-		"/T/projects/cdtorgfe/app/templates/index.hbs",
-		"/T/projects/cdtorgfe/app/styles/app.scss",
-		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-side.hbs",
-		"/T/projects/cdtorgfe/app/templates/articles/index.hbs",
 		"/T/projects/cdtorgfe/app/routes/section.js",
-		"/T/projects/cdtorgfe/app/helpers/string-capitalize.js",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/fonts/_roboto-draft.scss",
 		"/T/projects/cdtorgfe/app/routes/articles-by-section-article.js",
 		"/T/projects/cdtorgfe/app/routes/articles-by-section.js",
 		"/T/projects/cdtorgfe/app/routes/by-section.js",
 		"/T/projects/cdtorgfe/app/templates/by-section.hbs",
 		"/T/projects/cdtorgfe/dist/robots.txt",
-		"/T/projects/cdtorgfe/app/routes/application.js",
-		"/T/projects/cdtorgfe/tests/unit/models/article-test.js",
-		"/T/projects/cdtorgfe/app/styles/_base.scss",
-		"/T/projects/cdtorgfe/app/app.js",
-		"/T/projects/cdtorgfe/app/templates/application.hbs",
-		"/T/projects/cdtorgfe/app/components/offcanvas-menu-top.js",
-		"/T/projects/cdtorgfe/app/components/offcanvas-menu-side.js",
-		"/T/projects/cdtorgfe/app/router.js",
-		"/T/projects/cdtorgfe/app/templates/components/offcanvas-wrapper.hbs",
-		"/T/projects/cdtorgfe/app/styles/_shame.scss",
-		"/T/projects/cdtorgfe/app/styles/_layout.scss",
-		"/T/projects/cdtorgfe/testem.json",
-		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-top.hbs",
-		"/T/projects/cdtorgfe/app/helpers/string-toupper.js",
-		"/T/projects/cdtorgfe/package.json",
 		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/T/projects/cdtorgfe/app/models/.gitkeep",
-		"/T/projects/cdtorgfe/Makefile",
-		"/T/projects/cdtorgfe/app/templates/articles.hbs",
-		"/T/projects/cdtorgfe/app/templates/blog.hbs",
-		"/T/projects/cdtorgfe/app/routes/blog.js",
-		"/T/projects/cdtorgfe/public/assets/images/logo-quetz-b.svg",
-		"/C/Users/Eduardo/Downloads/google400e63623f06ca1d.html",
-		"/T/projects/cdtorgfe/cdtorgfe.sublime-project",
-		"/C/Users/Eduardo/Desktop/canvas/logo-codetitlan-cvs-b.html",
-		"/C/Users/Eduardo/Desktop/canvas/logo-codetitlan_sqare.html",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/navigation/_sidenav-horizontal.scss",
-		"/T/projects/cdtorgfe/tests/helpers/start-app.js",
-		"/T/projects/cdtorgfe/app/index.html",
-		"/T/projects/cdtorgfe/app/templates/components/offcan-main-container.hbs",
-		"/T/projects/cdtorgfe/app/components/offcan-main-container.js",
-		"/T/projects/cdtorgfe/app/components/offcan-button.js",
-		"/T/projects/cdtorgfe/app/components/offcan-menu-wrap.js",
-		"/T/projects/cdtorgfe/app/components/offcan-menu-top.js",
-		"/T/projects/cdtorgfe/app/components/offcan-menu-side.js",
-		"/T/projects/cdtorgfe/app/components/offcan-content-wrap.js",
-		"/T/projects/cdtorgfe/app/components/offcan-content.js",
-		"/T/projects/cdtorgfe/app/templates/components/offcan-button.hbs",
-		"/T/projects/cdtorgfe/app/views/application.js",
-		"/T/projects/cdtorgfe/Brocfile.js",
-		"/T/projects/cdtorgfe/bower.json",
-		"/T/projects/cdtorgfe/app/styles/_normalize.scss",
-		"/T/projects/cdtorgfe/app/styles/_component.scss",
-		"/C/Users/Eduardo/Desktop/logo-quetz-w.svg",
-		"/C/Users/Eduardo/Desktop/logo-quetz-b.svg",
-		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-vars.scss",
-		"/T/projects/cdtorgfe/public/assets/images/hamburger.svg",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/navigation/images/hamburger.svg",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/header-panel/header-panel.js",
-		"/T/projects/cdtorgfe/app/models/menu.js",
-		"/T/projects/cdtorgfe/app/models/menu-entry.js",
-		"/T/projects/cdtorgfe/app/models/entry.js",
-		"/T/ghrepos/ember-paper/vendor/ember-paper/styles.css",
-		"/T/ghrepos/ember-paper/addon/components/paper-sidenav.js",
-		"/T/ghrepos/ember-paper/app/templates/components/paper-sidenav.hbs",
-		"/T/projects/cdtorgfe/public/images/quetz-light-50x50-transp.gif",
-		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-vars",
-		"/T/projects/cdtorgfe/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss",
-		"/T/projects/cdtorgfe/bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/palette/_palette.scss",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/styleguide.scss",
-		"/T/projects/cdtorgfe/app/styles/_settings.scss",
-		"/T/projects/cdtorgfe/app/breakpoints.js",
-		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu.hbs",
-		"/T/projects/cdtorgfe/app/components/offcanvas-menu.js",
-		"/T/projects/cdtorgfe/app/templates/components/pure-sidenav.hbs",
-		"/T/projects/cdtorgfe/app/styles/_other.scss",
-		"/T/projects/cdtorgfe/dist/fonts/fontawesome-webfont.svg",
-		"/T/projects/cdtorgfe/dist/fonts/fontawesome-webfont.woff",
-		"/T/projects/cdtorgfe/app/components/pure-sidenav.js",
-		"/T/projects/cdtorgfe/tests/test-helper.js",
-		"/T/projects/cdtorgfe/app/components/.gitkeep",
-		"/T/projects/cdtorgfe/dist/crossdomain.xml",
-		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-shared.scss",
-		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-horizontal.scss",
-		"/T/projects/cdtorgfe/app/styles/glwskea/_main.scss",
-		"/T/projects/cdtorgfe/app/views/material-sidenav.js",
-		"/T/projects/cdtorgfe/app/templates/material/sidenav-horizontal.hbs",
-		"/T/projects/cdtorgfe/app/templates/components/material-sidenav.hbs",
-		"/T/projects/cdtorgfe/app/components/material-sidenav.js",
-		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/_sidenav-static.scss",
-		"/T/projects/cdtorgfe/app/styles/glwskea/typography/_typography.scss",
-		"/T/projects/cdtorgfe/app/styles/glwskea/navigation/images/hamburger.svg",
-		"/T/projects/cdtorgfe/public/images/hamburger.svg",
-		"/T/projects/cdtorgfe/app/styles/glwskea/animation/_animation.scss",
-		"/T/projects/cdtorgfe/app/styles/glwskea/palette/_palette.scss",
-		"/T/projects/cdtorgfe/app/styles/fonts/_roboto-draftscss",
-		"/T/projects/cdtorgfe/app/styles/glwskea/resets/_h5bp.scss",
-		"/T/projects/cdtorgfe/app/templates/components/pure-menu.hbs",
-		"/T/projects/cdtorgfe/app/components/pure-menu.js",
-		"/T/projects/prof2/prof2.sublime-project",
-		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/T/projects/prof2/app/components/position-activity-picker.js",
-		"/T/projects/prof2/app/components/company-picker.js",
-		"/T/projects/prof2/app/components/skill-picker.js",
-		"/T/projects/prof2/app/mixins/record-picker.js",
-		"/T/projects/prof2/app/components/date-picker.js",
-		"/T/projects/prof2/app/templates/index.hbs",
-		"/T/projects/prof2/app/templates/application.hbs",
-		"/T/projects/prof2/app/styles/app.scss",
-		"/T/projects/prof2/config/environment.js",
-		"/T/projects/prof2/app/adapters/application.js",
-		"/T/projects/prof2/package.json"
+		"/T/projects/cdtorgfe/app/templates/blog.hbs"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -733,6 +841,112 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"background-image",
+			"externalTrigger",
+			"material-hamburger__icon--slide",
+			"hamburger__icon",
+			"hamburger__icon--to-arrow",
+			"design",
+			"trigger",
+			"z-i",
+			"toggle",
+			"\"\n",
+			"toggle",
+			"send",
+			">\n",
+			"fab",
+			"LinkView",
+			"viewHelper",
+			"repeat",
+			"stopAnimation",
+			"startAnimation",
+			"rippleHandler",
+			"animFrameHandler",
+			"rippleElement",
+			"rippleContainer",
+			"rippleElement",
+			" );",
+			"rippleBound",
+			"blurHandler",
+			"Ripple",
+			"--colored",
+			"setFrameCount",
+			"setRippleStyles",
+			"_rippleE",
+			"_rippleC",
+			"this.get('rippleElement')",
+			"this.get('rippleContainer')",
+			"section",
+			"'rippleSize'",
+			"'rippleBound'",
+			"rippleSize",
+			"rippleBound",
+			"rippleContainer",
+			"rippleElement",
+			"_r",
+			"console",
+			"span",
+			"rippleElement",
+			"evt.clientY",
+			"evt.clientX",
+			"evt",
+			"self",
+			"size",
+			"setFrameCount",
+			"this.setFrameCount",
+			"self",
+			"requestAnimFrame",
+			"animFrameHandler",
+			"ignoringMouseDown",
+			"();",
+			"getBoundingClientRect",
+			"parentElement",
+			"requestAnimFrame",
+			"animFrameHandler",
+			"setRippleStyles",
+			"background-color: #ddd;",
+			"background",
+			"palette",
+			"h1",
+			".gentlemans-grooming",
+			"h1",
+			"adding",
+			"section",
+			"dippi",
+			"null",
+			"300ms",
+			"0.3s",
+			"block",
+			"250px",
+			"hamburger-adjustment-factor",
+			"icons",
+			"include",
+			"-webkit-",
+			"@-webkit-keyframes",
+			"-webkit",
+			"  -",
+			"-webkit",
+			"-webkit-",
+			"transform:",
+			"animation-",
+			"section",
+			"ofcvm__content",
+			"setRippleStyles",
+			"downHandler",
+			"RippleEffect--recentering",
+			"ignoringMouseDown",
+			"recentering",
+			"event",
+			"recentering",
+			"getBoundingClientRect",
+			"requestAnimFrame",
+			"button",
+			"h2",
+			"palette",
+			"typography",
+			"return false;",
+			"offcanvas-main-wrap",
+			"resource",
 			"subSection",
 			"slug",
 			"linkTarget",
@@ -754,113 +968,7 @@
 			"-w",
 			"Principal",
 			"-b",
-			"\n@",
-			"codrops",
-			"line",
-			"offcanvas-main-container",
-			"showing-menu",
-			"show",
-			"'';",
-			"container",
-			";\n",
-			"100",
-			"nav",
-			"radius",
-			"round",
-			"fx",
-			"icon",
-			"typography",
-			"bootstrap",
-			"typography",
-			"open",
-			"h3",
-			"h2",
-			"pure",
-			"layout",
-			"0.2",
-			"button",
-			"']",
-			"addActivity",
-			"Company",
-			"companie",
-			"Companie",
-			"company",
-			"activity",
-			"if",
-			"company",
-			"button",
-			"br",
-			"p",
-			"em",
-			"position",
-			"skill",
-			"emcv",
-			"String",
-			"\"",
-			":\",",
-			"date",
-			"filter",
-			"model.",
-			"result",
-			"company",
-			"background-",
-			".$('.",
-			"searchString",
-			"searchBox",
-			"\"\n",
-			"tagline",
-			"title",
-			"positionName",
-			"professional experience",
-			"indicatorContainer",
-			"type=\"a\"",
-			"button",
-			"h4",
-			"300",
-			"rofexp",
-			"profexp",
-			"skill",
-			"input",
-			"Name",
-			"label",
-			"metricChoice",
-			"this",
-			"text",
-			"metrics",
-			"indicators",
-			"ft",
-			"edit",
-			"name",
-			"realm",
-			"xs-col-12",
-			"unstyled",
-			"col-xs",
-			"+/",
-			"/",
-			"toRelation",
-			"realms",
-			"realm",
-			"thisQuery",
-			"controller",
-			"false",
-			"thisQuery",
-			"indicators",
-			"industries",
-			"industry",
-			"scales",
-			"inRoles",
-			"realm",
-			"nRole",
-			"InRole",
-			"industry",
-			"avail",
-			"availNatures",
-			"avail",
-			"indicator",
-			"realm",
-			"null",
-			"realm",
-			"span"
+			"\n@"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -884,26 +992,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/templates/sections.hbs",
+					"file": "app/styles/_layout.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 137,
+						"buffer_size": 121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								137,
-								137
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -912,97 +1020,31 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/models/section.js",
+					"file": "app/styles/_modules.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1731,
+						"buffer_size": 1638,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1435,
-								1435
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/models/article.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 480,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								409,
-								409
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/templates/subsection.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								192,
-								192
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1015,60 +1057,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/routes/application.js",
+					"buffer": 2,
+					"file": "app/styles/_components.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 468,
+						"buffer_size": 882,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								322,
-								387
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/templates/error.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								30,
-								30
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1081,92 +1090,53 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/app.js",
+					"buffer": 3,
+					"file": "app/styles/components/_offcanvas-menu.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 414,
+						"buffer_size": 2769,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								242,
-								242
+								307,
+								307
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 171.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "config/environment.js",
+					"buffer": 4,
+					"file": "app/models/section.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1363,
+						"buffer_size": 1740,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								597,
-								597
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 66.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 8,
-					"file": "app/routes/sections.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 578,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								370,
-								370
+								614,
+								614
 							]
 						],
 						"settings":
@@ -1184,22 +1154,28 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 9,
-					"file": "app/routes/subsection.js",
+					"buffer": 5,
+					"file": "app/components/offcanvas-wrapper.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 539,
+						"buffer_size": 447,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								373,
-								373
+								447,
+								447
 							]
 						],
 						"settings":
@@ -1217,28 +1193,22 @@
 					},
 					"stack_index": 1,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 10,
-					"file": "app/router.js",
+					"buffer": 6,
+					"file": "app/routes/application.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 542,
+						"buffer_size": 934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
+								561,
+								561
 							]
 						],
 						"settings":
@@ -1254,7 +1224,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1262,7 +1232,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1276,31 +1246,24 @@
 				0,
 				0,
 				1,
-				2
+				1
 			],
 			[
 				1,
 				0,
 				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.486666666667,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.5,
 			1.0
 		]
 	},
@@ -1312,7 +1275,7 @@
 	"project": "cdtorgfe.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1321,12 +1284,304 @@
 		"selected_items":
 		[
 			[
-				"modsec",
+				"sec",
 				"app\\models\\section.js"
+			],
+			[
+				"mose",
+				"app\\models\\section.js"
+			],
+			[
+				"moar",
+				"app\\models\\article.js"
+			],
+			[
+				"app",
+				"app\\routes\\application.js"
+			],
+			[
+				"stmi",
+				"app\\styles\\_global-mixins.scss"
+			],
+			[
+				"stcomha",
+				"app\\styles\\components\\_material-hamburger.scss"
+			],
+			[
+				"tempapph",
+				"app\\templates\\application.hbs"
+			],
+			[
+				"compoffw",
+				"app\\components\\offcanvas-wrapper.js"
+			],
+			[
+				"stma",
+				"app\\styles\\components\\_material-hamburger.scss"
+			],
+			[
+				"temcomha",
+				"app\\templates\\components\\material-hamburger.hbs"
+			],
+			[
+				"compham",
+				"app\\components\\material-hamburger.js"
+			],
+			[
+				"gwani",
+				"app\\styles\\gwsklea\\animation\\_animation.scss"
+			],
+			[
+				"stcomoff",
+				"app\\styles\\components\\_offcanvas-menu.scss"
+			],
+			[
+				"stcom",
+				"app\\styles\\_components.scss"
+			],
+			[
+				"compoffwrh",
+				"app\\templates\\components\\offcanvas-wrapper.hbs"
+			],
+			[
+				"gwsh",
+				"app\\styles\\gwsklea\\shadow\\_shadow.scss"
+			],
+			[
+				"math",
+				"app\\components\\material-hamburger.js"
+			],
+			[
+				"offwr",
+				"app\\templates\\components\\offcanvas-wrapper.hbs"
+			],
+			[
+				"off",
+				"app\\components\\offcanvas-wrapper.js"
+			],
+			[
+				"gwsbu",
+				"app\\styles\\gwsklea\\button\\_button.scss"
+			],
+			[
+				"stmo",
+				"app\\styles\\_modules.scss"
+			],
+			[
+				"stco",
+				"app\\styles\\_components.scss"
+			],
+			[
+				"stla",
+				"app\\styles\\_layout.scss"
+			],
+			[
+				"ind",
+				"app\\index.html"
+			],
+			[
+				"apphbs",
+				"app\\templates\\application.hbs"
+			],
+			[
+				"matbu",
+				"app\\components\\material-button.js"
+			],
+			[
+				"mixi",
+				"app\\mixins\\material-rippleable.js"
+			],
+			[
+				"roapp",
+				"app\\routes\\application.js"
+			],
+			[
+				"appl",
+				"app\\routes\\application.js"
+			],
+			[
+				"mat",
+				"app\\mixins\\material-rippleable.js"
+			],
+			[
+				"offmeto",
+				"app\\components\\offcanvas-menu-top.js"
+			],
+			[
+				"offmesi",
+				"app\\components\\offcanvas-menu-side.js"
+			],
+			[
+				"offmes",
+				"app\\components\\offcanvas-menu-side.js"
+			],
+			[
+				"matlin",
+				"app\\components\\material-linkto.js"
+			],
+			[
+				"offtop",
+				"app\\templates\\components\\offcanvas-menu-top.hbs"
+			],
+			[
+				"compo",
+				"app\\styles\\_components.scss"
+			],
+			[
+				"rouapp",
+				"app\\routes\\application.js"
+			],
+			[
+				"compb",
+				"app\\components\\material-button.js"
+			],
+			[
+				"gwsrip",
+				"app\\styles\\gwsklea\\ripple\\ripple.js"
+			],
+			[
+				"butt",
+				"app\\components\\material-button.js"
+			],
+			[
+				"temin",
+				"app\\templates\\index.hbs"
+			],
+			[
+				"shim",
+				"app\\initializers\\anim-frame-shim.js"
+			],
+			[
+				"mater",
+				"app\\components\\material-button.js"
+			],
+			[
+				"matha",
+				"app\\components\\material-hamburger.js"
+			],
+			[
+				"inde",
+				"app\\templates\\index.hbs"
+			],
+			[
+				"ripplea",
+				"app\\mixins\\material-rippleable.js"
+			],
+			[
+				"temsubin",
+				"app\\templates\\subsection\\index.hbs"
+			],
+			[
+				"sein",
+				"app\\templates\\sections\\index.hbs"
+			],
+			[
+				"tempsecin",
+				"app\\templates\\sections\\index.hbs"
+			],
+			[
+				"va",
+				"Vagrantfile"
+			],
+			[
+				"tempse",
+				"app\\templates\\sections.hbs"
+			],
+			[
+				"tempsu",
+				"app\\templates\\subsection.hbs"
+			],
+			[
+				"router",
+				"app\\router.js"
+			],
+			[
+				"tempsec",
+				"app\\templates\\sections.hbs"
+			],
+			[
+				"tempapp",
+				"app\\templates\\application.hbs"
+			],
+			[
+				"roap",
+				"app\\routes\\application.js"
+			],
+			[
+				"tempin",
+				"app\\templates\\index.hbs"
+			],
+			[
+				"moso",
+				"app\\models\\social-ref.js"
+			],
+			[
+				"modse",
+				"app\\models\\section.js"
+			],
+			[
+				"rosec",
+				"app\\routes\\sections.js"
+			],
+			[
+				"mosec",
+				"app\\models\\section.js"
+			],
+			[
+				"modelso",
+				"app\\models\\social-refs.js"
+			],
+			[
+				"compma",
+				"app\\components\\material-button.js"
+			],
+			[
+				"bro",
+				"Brocfile.js"
+			],
+			[
+				"apptemin",
+				"app\\templates\\index.hbs"
+			],
+			[
+				"index",
+				"app\\index.html"
+			],
+			[
+				"mixin",
+				"app\\styles\\_mixins.scss"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"confen",
+				"config\\environment.js"
+			],
+			[
+				"roarcr",
+				"app\\routes\\articles\\create.js"
+			],
+			[
+				"editor",
+				"app\\templates\\articles\\editor.hbs"
 			],
 			[
 				"modart",
 				"app\\models\\article.js"
+			],
+			[
+				"modsec",
+				"app\\models\\section.js"
+			],
+			[
+				"__",
+				"__Vagrantfile"
+			],
+			[
+				"vag",
+				"Vagrantfile.bak"
 			],
 			[
 				"rose",
@@ -1353,28 +1608,8 @@
 				"app\\routes\\articles.js"
 			],
 			[
-				"router",
-				"app\\router.js"
-			],
-			[
 				"app.css",
 				"app\\styles\\app.scss"
-			],
-			[
-				"tempin",
-				"app\\templates\\index.hbs"
-			],
-			[
-				"pa",
-				"package.json"
-			],
-			[
-				"roapp",
-				"app\\routes\\application.js"
-			],
-			[
-				"modse",
-				"app\\models\\section.js"
 			],
 			[
 				"shame",
@@ -1399,10 +1634,6 @@
 			[
 				"pal",
 				"app\\styles\\gwsklea\\palette\\_palette.scss"
-			],
-			[
-				"off",
-				"app\\components\\offcanvas-menu.js"
 			],
 			[
 				"comp",
@@ -1481,10 +1712,6 @@
 				"app\\templates\\index.hbs"
 			],
 			[
-				"mixi",
-				"app\\mixins\\company-live-search.js"
-			],
-			[
 				"posde",
 				"app\\templates\\position\\details.hbs"
 			],
@@ -1503,10 +1730,6 @@
 			[
 				"modelac",
 				"app\\models\\position-activity.js"
-			],
-			[
-				"bro",
-				"Brocfile.js"
 			],
 			[
 				"broc",
@@ -1571,266 +1794,6 @@
 			[
 				"modelcomp",
 				"app\\models\\company.js"
-			],
-			[
-				"modelpro",
-				"app\\models\\profexp.js"
-			],
-			[
-				"moprofe",
-				"app\\models\\profexp.js"
-			],
-			[
-				"ski",
-				"app\\models\\skill.js"
-			],
-			[
-				"moded",
-				"app\\models\\education.js"
-			],
-			[
-				"educationse",
-				"app\\models\\educationset.js"
-			],
-			[
-				"modco",
-				"app\\models\\company.js"
-			],
-			[
-				"modprofe",
-				"app\\models\\profexpset.js"
-			],
-			[
-				"modskil",
-				"app\\models\\skillset.js"
-			],
-			[
-				"mome",
-				"app\\models\\skill-metric.js"
-			],
-			[
-				"modin",
-				"app\\models\\skill-indicator.js"
-			],
-			[
-				"ropr",
-				"app\\routes\\profexp.js"
-			],
-			[
-				"rocr",
-				"app\\routes\\skills\\create.js"
-			],
-			[
-				"sked",
-				"app\\templates\\skill\\editor.hbs"
-			],
-			[
-				"creat",
-				"app\\templates\\skills\\create.hbs"
-			],
-			[
-				"modesk",
-				"app\\models\\skill.js"
-			],
-			[
-				"roski",
-				"app\\routes\\skills.js"
-			],
-			[
-				"temskin",
-				"app\\templates\\skills\\index.hbs"
-			],
-			[
-				"templa",
-				"app\\templates\\skills.hbs"
-			],
-			[
-				"temapp",
-				"app\\templates\\application.hbs"
-			],
-			[
-				"edi",
-				"app\\routes\\skill\\edit.js"
-			],
-			[
-				"ind",
-				"app\\models\\skill-indicator.js"
-			],
-			[
-				"rosj",
-				"app\\routes\\skills\\create.js"
-			],
-			[
-				"temsk",
-				"app\\templates\\skill.hbs"
-			],
-			[
-				"routess",
-				"app\\routes\\skills.js"
-			],
-			[
-				"roap",
-				"app\\routes\\application.js"
-			],
-			[
-				"conapp",
-				"app\\controllers\\application.js"
-			],
-			[
-				"plu",
-				"app\\helpers\\tstr-pluralize.js"
-			],
-			[
-				"fstr",
-				"app\\helpers\\fstr-capfirst.js"
-			],
-			[
-				"fs",
-				"app\\helpers\\fstr-capall.js"
-			],
-			[
-				"ada",
-				"app\\adapters\\application.js"
-			],
-			[
-				"controll",
-				"tests\\unit\\controllers\\application-test.js"
-			],
-			[
-				"contr",
-				"app\\controllers\\application.js"
-			],
-			[
-				"envi",
-				"config\\environment.js"
-			],
-			[
-				"bowe",
-				"bower.json"
-			],
-			[
-				"route",
-				"app\\router.js"
-			],
-			[
-				".embe",
-				".ember-cli"
-			],
-			[
-				"roi",
-				"app\\routes\\index.js"
-			],
-			[
-				"temdi",
-				"app\\templates\\dispatcher.hbs"
-			],
-			[
-				"rodi",
-				"app\\routes\\dispatcher.js"
-			],
-			[
-				"rodis",
-				"app\\routes\\index.js"
-			],
-			[
-				"tea",
-				"app\\templates\\application.hbs"
-			],
-			[
-				"bow",
-				"bower.json"
-			],
-			[
-				"stba",
-				"app\\styles\\_base.scss"
-			],
-			[
-				"plur",
-				"app/helpers/ft-pluralize.js"
-			],
-			[
-				"helpp",
-				"app/helpers/pluralize.js"
-			],
-			[
-				"skm",
-				"app/models/skill/metric.js"
-			],
-			[
-				"moskin",
-				"app/models/skill/indicator.js"
-			],
-			[
-				"modro",
-				"app/models/role.js"
-			],
-			[
-				"modskme",
-				"app/models/skill/metric.js"
-			],
-			[
-				"mods",
-				"app/models/skill.js"
-			],
-			[
-				"edito",
-				"app/templates/skill/editor.hbs"
-			],
-			[
-				"editor",
-				"app/templates/skill/editor.hbs"
-			],
-			[
-				"consked",
-				"app/controllers/skill/edit.js"
-			],
-			[
-				"temsked",
-				"app/templates/skill/edit.hbs"
-			],
-			[
-				"bas",
-				"app/styles/_base.scss"
-			],
-			[
-				"supr",
-				"profprof.sublime-project"
-			],
-			[
-				"base",
-				".sass-cache/2ef1f9036b864f310932ff7d5df1e2b114103a1a/_base.scssc"
-			],
-			[
-				"skill",
-				"app/models/skill.js"
-			],
-			[
-				"mosk",
-				"app/models/skill.js"
-			],
-			[
-				"tempskills",
-				"app/templates/skills.hbs"
-			],
-			[
-				"tempapp",
-				"app/templates/application.hbs"
-			],
-			[
-				"roskc",
-				"app/routes/skills/create.js"
-			],
-			[
-				"modelrol",
-				"app/models/role.js"
-			],
-			[
-				"indu",
-				"app/models/industry.js"
-			],
-			[
-				"metric",
-				"app/models/skill/metric.js"
 			]
 		],
 		"width": 0.0
@@ -1851,15 +1814,15 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 229.0,
+	"side_bar_visible": false,
+	"side_bar_width": 223.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

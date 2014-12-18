@@ -1,30 +1,37 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# Based on this box:
+# => https://github.com/joaquimserafim/vagrant-nodejs-redis-mongodb
+
 box      = 'ubuntu/trusty64'
 hostname = 'emberclibox'
 domain   = 'example.com'
 ip       = '192.168.42.42'
 ram      = '512'
 
-$script = <<SCRIPT
-  echo I am provisioning...
-  apt-get update && apt-get install -y vim git curl
-
-  echo "nodejs installation"
-
+# sudo su vagrant -c source /home/vagrant/profile
+# sudo su vagrant -c source /home/vagrant/.bashrc
+# sudo su vagrant -c nvm install 0.10
+# sudo su vagrant -c nvm alias default 0.10
+$rootScript = <<SCRIPT
+  echo "I am provisioning..."
+  echo doing it as $USER
+  cd /home/vagrant
+  add-apt-repository ppa:git-core/ppa
   apt-get update
-  apt-get -y upgrade
+  apt-get install -y vim git-core curl
+SCRIPT
 
-  apt-get install -y git curl man
-
-  # Install node
-  su vagrant -l -c "curl https://raw.github.com/creationix/nvm/master/install.sh | sh"
-  su vagrant -l -c "nvm install 0.10"
-  su vagrant -l -c "nvm alias default 0.10"
-
-  echo "ember-cli + bower"
-  su vagrant -l -c "npm install -g ember-cli bower"
+$userScript = <<SCRIPT
+  cd /home/vagrant
+  wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
+  export NVM_DIR="/home/vagrant/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+  nvm install 0.10.33
+  nvm alias default 0.10.33
+  npm update -g npm
+  npm install -g bower ember-cli
 SCRIPT
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
@@ -41,8 +48,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # config.vm.box_check_update = false
 
   # Forwarding default ports for ember server and livereload
-  config.vm.network "forwarded_port", guest: 4200, host: 4200
-  config.vm.network "forwarded_port", guest: 35729, host: 35729
+  config.vm.network :forwarded_port, guest: 4200, host: 4200, auto_correct: true
+  config.vm.network :forwarded_port, guest: 35729, host: 35729, auto_correct: true
+  config.vm.network :forwarded_port, guest: 3000, host: 3000, auto_correct: true
+  config.vm.network :forwarded_port, guest: 27017, host: 27017, auto_correct: true
+  config.vm.network :forwarded_port, guest: 6379, host: 6379, auto_correct: true
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -59,82 +69,43 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "./", "/application"
+  config.vm.synced_folder ".", "/vagrant",
+    owner: "vagrant", group: "vagrant"
+
+  # Removes "stdin: is not a tty" annoyance as per
+  # https://github.com/SocialGeeks/vagrant-openstack/commit/d3ea0695e64ea2e905a67c1b7e12d794a1a29b97
+  #config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--memory", ram]
+    vb.customize  [
+                    "modifyvm", :id,
+                    "--memory", ram,
+                  ]
+    # Allow the creation of symlinks for nodejs
+    vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant","1"]
   end
 
-  config.vm.provision "shell", inline: $script
-  #
-  # View the documentation for the provider you're using for more
-  # information on available options.
+  # Shell provisioning.
+  config.vm.provision "shell", inline: $rootScript
+  config.vm.provision "shell", inline: $userScript, privileged: false
 
-  # Enable provisioning with CFEngine. CFEngine Community packages are
-  # automatically installed. For example, configure the host as a
-  # policy server and optionally a policy file to run:
-  #
-  # config.vm.provision "cfengine" do |cf|
-  #   cf.am_policy_hub = true
-  #   # cf.run_file = "motd.cf"
-  # end
-  #
-  # You can also configure and bootstrap a client to an existing
-  # policy server:
-  #
-  # config.vm.provision "cfengine" do |cf|
-  #   cf.policy_server_address = "10.0.2.15"
+  #config.vm.provision "shell", inline: $buildDepsScript, privileged: false
+
+  # Puppet stand alone provisioning.
+
+  # config.vm.provision :puppet do |puppet|
+  #   puppet.manifests_path = "vagrant/puppet/manifests"
+  #   puppet.module_path    = "vagrant/puppet/modules"
+  #   puppet.manifest_file  = "main.pp"
+  #   puppet.options        = [
+  #                             '--verbose',
+  #                             #'--debug',
+  #                           ]
   # end
 
-  # Enable provisioning with Puppet stand alone.  Puppet manifests
-  # are contained in a directory path relative to this Vagrantfile.
-  # You will need to create the manifests directory and a manifest in
-  # the file default.pp in the manifests_path directory.
-  #
-  # config.vm.provision "puppet" do |puppet|
-  #   puppet.manifests_path = "manifests"
-  #   puppet.manifest_file  = "default.pp"
-  # end
 
-  # Enable provisioning with chef solo, specifying a cookbooks path, roles
-  # path, and data_bags path (all relative to this Vagrantfile), and adding
-  # some recipes and/or roles.
-  #
-  # config.vm.provision "chef_solo" do |chef|
-  #   chef.cookbooks_path = "../my-recipes/cookbooks"
-  #   chef.roles_path = "../my-recipes/roles"
-  #   chef.data_bags_path = "../my-recipes/data_bags"
-  #   chef.add_recipe "mysql"
-  #   chef.add_role "web"
-  #
-  #   # You may also specify custom JSON attributes:
-  #   chef.json = { mysql_password: "foo" }
-  # end
-
-  # Enable provisioning with chef server, specifying the chef server URL,
-  # and the path to the validation key (relative to this Vagrantfile).
-  #
-  # The Opscode Platform uses HTTPS. Substitute your organization for
-  # ORGNAME in the URL and validation key.
-  #
-  # If you have your own Chef Server, use the appropriate URL, which may be
-  # HTTP instead of HTTPS depending on your configuration. Also change the
-  # validation key to validation.pem.
-  #
-  # config.vm.provision "chef_client" do |chef|
-  #   chef.chef_server_url = "https://api.opscode.com/organizations/ORGNAME"
-  #   chef.validation_key_path = "ORGNAME-validator.pem"
-  # end
-  #
-  # If you're using the Opscode platform, your validator client is
-  # ORGNAME-validator, replacing ORGNAME with your organization name.
-  #
-  # If you have your own Chef Server, the default validation client name is
-  # chef-validator, unless you changed the configuration.
-  #
-  #   chef.validation_client_name = "ORGNAME-validator"
 end
