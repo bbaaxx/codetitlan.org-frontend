@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  boundToggle: null,
   classNames: ['ofcvm__main-wrap'],
   classNameBindings: ['showingMenu:ofcvm__main-wrap--showingMenu'],
   showingMenu: false,

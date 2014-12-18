@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       'material-hamburger__layer--from-arrow' ;
   }.property('hamburgerToggler'),
 
-  hamburgerHandler: function(evt){
+  hamburgerHandler: function(){
     this.toggleProperty('hamburgerToggler');
   }.on('click'),
 
