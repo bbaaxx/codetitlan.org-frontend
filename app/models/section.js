@@ -6,7 +6,7 @@ var fixtures = [
     name: 'arqueología',
     slug: 'arqueologia',
     description: 'El mundo de lo antiguo visto con ojos modernos',
-    articles: [1,2]
+    articles: [1,2,4,5,6,7,8]
   }, {
     id: 2,
     name: 'botánica',
@@ -16,12 +16,13 @@ var fixtures = [
     id: 3,
     name: 'tecnología',
     slug: 'tecnologia',
-    description: 'Sobre la tecnología que usamos hoy y la que usaremos mañana'
+    description: 'Sobre la tecnología que usamos hoy y la que usaremos mañana',
+    subSections: [8]
   }, {
     id: 4,
     name: 'política',
     slug: 'politica',
-    description: 'Opiniones libres para alcanzar la libertad'
+    description: 'Opiniones libres que persiguen la libertad'
   }, {
     id: 5,
     name: 'psicología',
@@ -41,7 +42,13 @@ var fixtures = [
     slug: 'herbolaria',
     description: 'Plantas que nos ayudan a ser mejores',
     parentSection: 2
-  },
+  }, {
+    id: 8,
+    name: 'desarrollo',
+    slug: 'herbolaria',
+    description: 'Plantas que nos ayudan a ser mejores',
+    parentSection: 3
+  }
 ];
 
 export default DS.Model.extend({

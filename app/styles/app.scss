@@ -4,15 +4,21 @@
 // Jasny bootstrap components
 // @import "bower_components/jasny-bootstrap/scss/jasny-bootstrap";
 
-// Import typography from gwsklea
-@import "gwsklea/fonts/roboto-draft";
-// @import "gwsklea/typography/typography";
+// Fonts
+@import "fonts/roboto-draft";
 
-@import "mixins";
-// @import "normalize";
+// Import stuff from gwsklea
+@import "gwsklea/typography/typography";
+@import "gwsklea/palette/palette";
+@import "gwsklea/shadow/shadow";
+@import "gwsklea/button/button";
+
+// Load these first
+@import "global-mixins";
+@import "components";
+
 @import "base";
 @import "layout";
-@import "components";
 @import "modules";
 @import "other";
 @import "shame";

@@ -1,5 +1,13 @@
-{{#offcanvas-wrapper allSections=model}}
-<div class="container-fluid">
-  {{outlet}}
-</div>
+{{! Component offcanvas-wrapper}}
+
+{{#offcanvas-wrapper
+  sidemenuItems=sidemenuItems
+  topmenuItems=topmenuItems
+  showingMenu=showingMenu
+  toggleMenu="toggleMenu"
+  openMenu="openMenu"
+  closeMenu="closeMenu"}}
+{{outlet}}
 {{/offcanvas-wrapper}}
+
+</div>

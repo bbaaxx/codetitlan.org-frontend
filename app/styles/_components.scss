@@ -1,168 +1,59 @@
-.offcanvasmenu__main__wrap {
-  @include meta-wrap;
-  background: #373a47;
-  a {
-    color: #b8b7ad;
-    &:hover, &:focus {
-      text-decoration: none;
-      color: #c94e50;
-    }
+// ====> Material hamburger <====
+// $hamburger-width:                50px;
+// $hamburger-height:               10px;
+// $hamburger-color:                #fff;
+// $hamburger-bread-adjustment:     85%;
+// $hamburger-animation-duration:   300ms;
+@import "components/material-hamburger";
+// Overide default styles
+.material-hamburger {
+  margin: 4px 5px;
+  &:hover {
+    opacity: 0.6;
   }
 }
 
-.offcanvasmenu__content__wrap {
-  @include meta-wrap;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+// ====> OffCanvas Menu <====
+// $ofcvm-sidemenu-width:     250px;
+// $ofcvm-topmenu-height:     60px;
+// $ofcvm-animation-duration: 300ms;
+@import "components/offcanvas-menu";
 
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
+// Overide default styles
+.ofcvm__content {
+  background-color: #fff;
 }
-
-.offcanvasmenu__menu__wrap {
-  position: absolute;
-  font-weight: 700;
-  opacity: 0;
-  z-index: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-.offcanvasmenu__menu__top {
-  line-height: 59px;
-
-  &__brand {
-    display: inline-block;
-    padding: 8px 10px;
-    width: 250px;
-    line-height: 42px;
-  }
-
-  &__social-icons {
-    display: inline-block;
-    font-size: 1.25em;
-    a {
-      margin: 0 em 0 0;
-      padding: 0;
-      @media screen and (max-width: 32em) {
-        margin-left: 1em;
+.ofcvm__menu {
+  &__topmenu {
+    &__icons {
+      padding-top: 1em;
+      a {
+        margin-right: 5%;
+        padding-left: 1em;
       }
     }
-    @media screen and (max-width: 32em) {
-      margin: 0 auto;
-      padding-left: 1.25em;
+  } // <-- end: __topmenu
+  &__sidemenu {
+    a {
+      &:hover, &:active {text-decoration: none;}
     }
-  }
-
-}
-
-.offcanvasmenu__menu__side {
-  width: 250px;
-
-  .active { background-color: #ddd; }
-
-  div { cursor: pointer; }
-
-  a {
-    display: block;
-    padding: 1.2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    // &:first-child {
-    //   border-top: 1px solid rgba(0,0,0,0.1);
-    // }
-    .active {
-      font-weight: 900;
+    &__navigation {
+      &__link {
+        display: block;
+        line-height: 2em;
+        height: 4em;
+        width: 100%;
+        font-size: 1.2em;
+      }
     }
-  }
-
-  .offcanvas-logo-area {
-    img { margin: 0 auto; }
-  }
-
+  }// <-- end: __sidemenu
 }
 
-
-/* Toggle menu button */
-.offcanvasmenu__button {
-
-  position: fixed;
-  z-index: 1000;
-  margin: 1em;
-  padding: 0;
-  width: 2.5em;
-  height: 2.25em;
-  border: none;
-  text-indent: 2.5em;
-  font-size: 1.5em;
-  color: transparent;
-  background: transparent;
-
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-
-  &:before {
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-    bottom: 0.5em;
-    left: 0.5em;
-    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
-    content: '';
-  }
-
-  &:hover { opacity: 0.6; }
-
-  &:focus {
-    outline:0;
-  }
-
+.ofcvm__content-wrap {
+  @include shadow-z4();
 }
 
-.offcanvasmenu__content {
-  position: relative;
-  background: #b4bad2;
-  min-height: 100%;
-  padding-top: 3em;
-
-  /* Overlay */
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-    content: '';
-    opacity: 0;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
-    -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
-    transition: opacity 0.3s, transform 0s 0.3s;
-  }
+.ofcvm__content:before {
+  background-color: rgba(255,255,255,0.3);
 }
 
-
-// Toggle class
-.offcanvasmenu__main__wrap--showingMenu {
-
-  .offcanvasmenu__button, .offcanvasmenu__content__wrap {
-    -webkit-transform: translate3d(250px,60px,0);
-    transform: translate3d(250px,60px,0);
-  }
-
-  .offcanvasmenu__menu__wrap {
-    opacity: 1;
-    z-index: 1000;
-  }
-
-  .offcanvasmenu__content::before {
-    opacity: 1;
-    z-index: 1000;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-}

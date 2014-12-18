@@ -17,6 +17,31 @@ var fx = [
     title: 'Another title for another article for the second time',
     body: 'Dipity dipitty dah, dappity dappity duhh',
     section: 6
+  }, {
+    id: 4,
+    title: 'Another title for another article for the nth time',
+    body: 'Dipity dipitty dah, dappity dappity duhh',
+    section: 1
+  }, {
+    id: 5,
+    title: 'Another title for another article for the nth time',
+    body: 'Dipity dipitty dah, dappity dappity duhh',
+    section: 1
+  }, {
+    id: 6,
+    title: 'Another title for another article for the nth time',
+    body: 'Dipity dipitty dah, dappity dappity duhh',
+    section: 1
+  }, {
+    id: 7,
+    title: 'Another title for another article for the nth time',
+    body: 'Dipity dipitty dah, dappity dappity duhh',
+    section: 1
+  }, {
+    id: 8,
+    title: 'Another title for another article for the nth time',
+    body: 'Dipity dipitty dah, dappity dappity duhh',
+    section: 1
   }
 ];
 

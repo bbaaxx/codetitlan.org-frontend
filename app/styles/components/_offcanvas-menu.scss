@@ -1,0 +1,123 @@
+// OffCanvas menu
+// Inspired by: https://github.com/codrops/OffCanvasMenuEffects
+
+// Default variables
+$ofcvm-sidemenu-width: 250px !default;
+$ofcvm-topmenu-height: 60px !default;
+$ofcvm-animation-duration: 300ms !default;
+
+@mixin meta-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.ofcvm {
+
+  &__main-wrap {
+    @include meta-wrap;
+  }
+  &__menu-wrap {
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s;
+  } // <--end: __menu-wrap
+  &__content-wrap {
+    @include meta-wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    transition-property: transform;
+    transition-duration: $ofcvm-animation-duration;
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba(255,255,255,0.5);
+      transition-property: opacity;
+      transition-duration: $ofcvm-animation-duration;
+    }
+  } // <--end: __content-wrap
+  &__content {
+    position: relative;
+    height: 100%;
+    z-index: 1000;
+  } // <--end: __content
+  &__toggler {
+    position: fixed;
+    z-index: 1500;
+    transition-property: transform;
+    transition-duration: $ofcvm-animation-duration;
+  } // <--end: __toggler
+
+
+  // -- Menu styles
+  &__menu {
+
+    &__topmenu {
+      position: relative;
+      display: block;
+      height: $ofcvm-topmenu-height*4;
+
+      &__logos {
+        float: left;
+        width: $ofcvm-sidemenu-width;
+        max-height: $ofcvm-topmenu-height*3;
+        &--top {
+          display: block;
+          width: $ofcvm-sidemenu-width;
+          height: $ofcvm-topmenu-height;
+        }
+        &--bottom {
+          display: block;
+          height: $ofcvm-topmenu-height*2;
+          width: $ofcvm-sidemenu-width;
+        }
+      }
+      &__icons {
+        display: inline-block;
+        float: left;
+        width: $ofcvm-sidemenu-width;
+        height: $ofcvm-topmenu-height;
+      }
+
+      &__logo {
+        width: $ofcvm-sidemenu-width;
+        height: $ofcvm-topmenu-height*2;
+      }
+    } // <-- end: __topmenu
+
+    &__sidemenu {
+      position: relative;
+      display: block;
+
+      width: $ofcvm-sidemenu-width;
+      &__navigation {
+        display: inline-block;
+        width: $ofcvm-sidemenu-width;
+      }
+    } // <-- end: __sidemenu
+  } // <-- end: __menu
+
+  // Showing the menu
+  &__main-wrap--showingMenu {
+
+    .ofcvm__content-wrap, .ofcvm__toggler,{
+      transform: translate3d($ofcvm-sidemenu-width,60px,0);
+    }
+    .ofcvm__menu-wrap {
+      opacity: 1;
+    }
+    .ofcvm__content-wrap__overlay {
+      opacity: 1;
+      z-index: 1100;
+    }
+
+  } // <-- end: __main-wrap--showingMenu
+
+}
