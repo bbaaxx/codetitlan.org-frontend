@@ -4,16 +4,17 @@ import Rippleable from '../mixins/material-rippleable';
 export default Ember.Component.extend(Rippleable, {
 
   classNames: ['wsk-button wsk-js-button'],
+  tagName: 'button',
   classNameBindings: [
-    'raised:wsk-button--raised',
     'ripple:wsk-js-ripple-effect',
+    'raised:wsk-button--raised',
     'colored:wsk-button--colored',
     'fab:wsk-button--fab',
     'icon:wsk-button--icon'
   ],
-  tagName: 'button',
-  raised: false,
   ripple: false,
+  raised: false,
+  colored: false,
   fab: false,
   icon: false,
 

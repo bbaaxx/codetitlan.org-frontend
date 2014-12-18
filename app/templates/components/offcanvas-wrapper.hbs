@@ -13,10 +13,14 @@
     action="closeMenu"}}
 </div>
 
-{{material-hamburger action="toggleMenu"}}
+{{material-hamburger
+  hamburgerToggler=showingMenu
+  action="toggleMenu"
+  class="ofcvm__toggler"}}
 
 <div class="ofcvm__content-wrap">
   <div class="ofcvm__content">
     {{yield}}
   </div>
+  <div class="ofcvm__content-wrap__overlay"></div>
 </div>

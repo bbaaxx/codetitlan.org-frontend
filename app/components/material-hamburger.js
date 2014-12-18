@@ -1,23 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  externalTrigger: false,
-  animationClass: function(){
-    return this.get('externalTrigger') ?
-      'material-design-hamburger__icon--to-arrow' :
-      'material-design-hamburger__icon--from-arrow' ;
-  }.property('externalTrigger'),
-  classNames: ['material__hamburger', 'ofcvm__toggler'],
+  classNames: ['material-hamburger'],
+  hamburgerToggler: null,
 
-  clickHandler: function(evt){
-    this.toggleProperty('externalTrigger');
-    this.sendAction();
-    console.log(evt);
-  },
-  didInsertElement: function(){
-    // var hammerManager = new Hammer(this.$());
-    // hammerManager.on('tap', this.get('clickHandler').bind(this));
-    this.$().on('click', this.get('clickHandler').bind(this));
+  hamburgerClassSwapper: function(){
+    return this.get('hamburgerToggler') ?
+      'material-hamburger__layer--to-arrow' :
+      'material-hamburger__layer--from-arrow' ;
+  }.property('hamburgerToggler'),
 
-  },
+  hamburgerHandler: function(evt){
+    this.toggleProperty('hamburgerToggler');
+  }.on('click'),
+
 });

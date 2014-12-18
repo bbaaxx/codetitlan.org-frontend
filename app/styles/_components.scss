@@ -1,54 +1,59 @@
-
+// ====> Material hamburger <====
+// $hamburger-width:                50px;
+// $hamburger-height:               10px;
+// $hamburger-color:                #fff;
+// $hamburger-bread-adjustment:     85%;
+// $hamburger-animation-duration:   300ms;
 @import "components/material-hamburger";
-.material__hamburger {
-  margin: 1em;
+// Overide default styles
+.material-hamburger {
+  margin: 4px 5px;
   &:hover {
     opacity: 0.6;
   }
 }
 
 // ====> OffCanvas Menu <====
+// $ofcvm-sidemenu-width:     250px;
+// $ofcvm-topmenu-height:     60px;
+// $ofcvm-animation-duration: 300ms;
 @import "components/offcanvas-menu";
+
 // Overide default styles
+.ofcvm__content {
+  background-color: #fff;
+}
 .ofcvm__menu {
-
   &__topmenu {
-
     &__icons {
       padding-top: 1em;
       a {
         margin-right: 5%;
         padding-left: 1em;
       }
-      // @media screen and (max-width: 32em) {
-      //   a {margin-left: 1em; margin-right: 0;}
-      //   margin: 0 auto;
-      //   padding-left: 1.25em;
-      // }
     }
-
   } // <-- end: __topmenu
-
   &__sidemenu {
-
-
     a {
-      &:hover {
-        text-decoration: none;
-      }
+      &:hover, &:active {text-decoration: none;}
     }
-
-
     &__navigation {
-
       &__link {
         display: block;
         line-height: 2em;
-        height: 3em;
+        height: 4em;
         width: 100%;
         font-size: 1.2em;
       }
     }
-
   }// <-- end: __sidemenu
 }
+
+.ofcvm__content-wrap {
+  @include shadow-z4();
+}
+
+.ofcvm__content:before {
+  background-color: rgba(255,255,255,0.3);
+}
+

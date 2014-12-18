@@ -1,8 +1,6 @@
-@mixin header-text-shadow {
-  color: #fff;
-  text-shadow: 1px 1px 5px #222;
 
-}
+
+
 
 .logo--brand {
   background-image: url(images/logo-typeo-b.svg);
@@ -25,6 +23,11 @@
 }
 
 
+// Section styles
+@mixin header-text-shadow {
+  color: #fff;
+  text-shadow: 1px 1px 5px #222;
+}
 
 .section__header {
   transition: 300ms ease all;
@@ -44,9 +47,6 @@
   }
 }
 
-.subsection__header {
-  transition: 300ms ease all;
-}
 
 .section--index {
   .section__header {
@@ -56,25 +56,29 @@
 
 .section--psicologia {
   .section__header {
-    background-image: url('/assets/images/cupidpsyche_background_sm.jpg') ;
+    @include background-image-preload('/assets/images/cupidpsyche_background_sm.jpg') ;
   }
 }
 
 .section--botanica {
   .section__header {
-    background-image: url('/assets/images/fern_background_sm.jpg') ;
+    @include background-image-preload('/assets/images/fern_background_sm.jpg') ;
   }
 }
 
 .section--arqueologia {
   .section__header {
-    background-image: url('/assets/images/tiwunaku_background_sm.jpg') ;
+    @include background-image-preload('/assets/images/tiwunaku_background_sm.jpg') ;
   }
 }
 
 .section--tecnologia {
   .section__header {
-    background-image: url('/assets/images/mainboard_background_sm.jpg') ;
+    @include background-image-preload('/assets/images/mainboard_background_sm.jpg') ;
   }
 }
 
+.section__header:before {
+  display: none;
+  content: $preloaded-images;
+}
