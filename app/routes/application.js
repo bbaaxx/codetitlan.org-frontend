@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   },
   setupController: function(controller,model){
     this._super(controller,model);
-
     this.store.find('social-ref')
       .then(function(socialLinks){
         controller.set('topmenuItems', socialLinks);
@@ -16,6 +15,7 @@ export default Ember.Route.extend({
         controller.set('sidemenuItems', sections);
       });
 
+    // DEBUG -- remove this for prod.
     controller.set('showingMenu',true);
   },
   actions: {

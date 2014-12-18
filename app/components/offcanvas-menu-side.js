@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['ofcvm__menu ofcvm__menu__sidemenu'],
-
+  sidemenuItems: null,
+  classNames: ['ofcvm__menu ofcvm__sidemenu'],
   actions: {
     closeMenu: function(){
       this.sendAction();

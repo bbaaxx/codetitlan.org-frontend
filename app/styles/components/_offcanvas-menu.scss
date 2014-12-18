@@ -91,18 +91,20 @@ $ofcvm-animation-duration: 300ms !default;
         height: $ofcvm-topmenu-height*2;
       }
     } // <-- end: __topmenu
-
-    &__sidemenu {
-      position: relative;
-      display: block;
-
-      width: $ofcvm-sidemenu-width;
-      &__navigation {
-        display: inline-block;
-        width: $ofcvm-sidemenu-width;
-      }
-    } // <-- end: __sidemenu
   } // <-- end: __menu
+
+  &__sidemenu {
+    position: relative;
+    display: block;
+
+    width: $ofcvm-sidemenu-width;
+    &__navigation {
+      width: $ofcvm-sidemenu-width;
+    }
+    &__link {
+
+    }
+  } // <-- end: __sidemenu
 
   // Showing the menu
   &__main-wrap--showingMenu {

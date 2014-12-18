@@ -3145,12 +3145,11 @@ dt {
   .ofcvm__menu__topmenu__logo {
     width: 250px;
     height: 120px; }
-.ofcvm__menu__sidemenu {
+.ofcvm__sidemenu {
   position: relative;
   display: block;
   width: 250px; }
-  .ofcvm__menu__sidemenu__navigation {
-    display: inline-block;
+  .ofcvm__sidemenu__navigation {
     width: 250px; }
 .ofcvm__main-wrap--showingMenu .ofcvm__content-wrap, .ofcvm__main-wrap--showingMenu .ofcvm__toggler {
   -webkit-transform: translate3d(250px, 60px, 0);
@@ -3169,14 +3168,21 @@ dt {
   .ofcvm__menu__topmenu__icons a {
     margin-right: 5%;
     padding-left: 1em; }
-.ofcvm__menu__sidemenu a:hover, .ofcvm__menu__sidemenu a:active {
+
+.ofcvm__sidemenu a:hover, .ofcvm__sidemenu a:active {
   text-decoration: none; }
-.ofcvm__menu__sidemenu__navigation__link {
+.ofcvm__sidemenu__link {
   display: block;
   line-height: 2em;
   height: 4em;
   width: 100%;
   font-size: 1.2em; }
+
+.ofcvm__topmenu__icons {
+  padding-top: 1em; }
+  .ofcvm__topmenu__icons a {
+    margin-right: 5%;
+    padding-left: 1em; }
 
 .ofcvm__content-wrap {
   box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.25), 0 10px 5px 0 rgba(0, 0, 0, 0.22); }

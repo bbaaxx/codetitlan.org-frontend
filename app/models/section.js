@@ -61,7 +61,7 @@ export default DS.Model.extend({
   articles: DS.hasMany('article', {async: true}),
 
   hasSubsections: function() {
-    return this.get('subSections.length').get('isTruthy');
+    return this.get('subSections.length');
   }.property('subSections'),
   isSubsection: function() {
     return this.get('parentSection').get('isTruthy');

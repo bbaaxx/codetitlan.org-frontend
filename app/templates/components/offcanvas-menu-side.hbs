@@ -5,9 +5,23 @@
         {{#material-button
           action="closeMenu"
           ripple=true
-          class="ofcvm__menu__sidemenu__navigation__link"
+          class="ofcvm__sidemenu__link ofcvm__sidemenu__link--section"
         }}{{section.name}}{{/material-button}}
       {{/link-to}}
+
+      {{#if section.hasSubsections}}
+        {{#each subsection in section.subSections}}
+          {{#link-to 'subsection' section.slug subsection.slug}}
+            {{#material-button
+              action="closeMenu"
+              ripple=true
+              raised=true
+              class="ofcvm__sidemenu__link ofcvm__sidemenu__link--subsection"
+            }}{{subsection.name}}{{/material-button}}
+          {{/link-to}}
+        {{/each}}
+      {{/if}}
+
     {{/unless}}
   {{/each}}
 </nav>

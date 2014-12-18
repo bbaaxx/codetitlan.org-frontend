@@ -33,21 +33,30 @@
       }
     }
   } // <-- end: __topmenu
-  &__sidemenu {
-    a {
-      &:hover, &:active {text-decoration: none;}
-    }
-    &__navigation {
-      &__link {
-        display: block;
-        line-height: 2em;
-        height: 4em;
-        width: 100%;
-        font-size: 1.2em;
-      }
-    }
-  }// <-- end: __sidemenu
 }
+
+.ofcvm__sidemenu {
+  a {
+    &:hover, &:active {text-decoration: none;}
+  }
+  &__link {
+    display: block;
+    line-height: 2em;
+    height: 4em;
+    width: 100%;
+    font-size: 1.2em;
+  }
+}
+.ofcvm__topmenu {
+  &__icons {
+    padding-top: 1em;
+    a {
+      margin-right: 5%;
+      padding-left: 1em;
+    }
+  }
+}
+
 
 .ofcvm__content-wrap {
   @include shadow-z4();
