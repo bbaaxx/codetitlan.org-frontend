@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   classNames: ['material-hamburger'],
-  hamburgerToggler: null,
+  hamburgerToggler: false,
 
   hamburgerClassSwapper: function(){
     return this.get('hamburgerToggler') ?
