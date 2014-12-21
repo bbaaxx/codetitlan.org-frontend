@@ -1,7 +1,4 @@
-
-
-
-
+// Logos divs.
 .logo--brand {
   background-image: url(images/logo-typeo-b.svg);
   background-repeat: no-repeat;
@@ -11,7 +8,6 @@
   width: 100%;
   margin: auto;
 }
-
 .logo--quetz {
   background-image: url(images/logo-quetz-b.svg);
   background-repeat: no-repeat;
@@ -30,14 +26,12 @@
 }
 
 .section__header {
-  transition: 300ms ease all;
-  //background-image: url('/assets/images/fern_background_sm.jpg');
+  // transition: 300ms ease all;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center;
-  box-shadow: inset 0px 0px 134px -1px rgba(0,0,0,0.66);
-  @include shadow-z2();
+  // box-shadow: inset 0px 0px 134px -1px rgba(0,0,0,0.66);
   h1 {
     @include typo-display-3;
     @include header-text-shadow;
@@ -50,7 +44,7 @@
 
 .section--index {
   .section__header {
-    background-color: #fff;
+    // background-color: #fff;
   }
 }
 

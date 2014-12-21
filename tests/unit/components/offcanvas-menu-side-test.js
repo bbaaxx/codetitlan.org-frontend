@@ -6,7 +6,7 @@ import {
 
 moduleForComponent('offcanvas-menu-side', 'OffcanvasMenuSideComponent', {
   // specify the other units that are required for this test
-  needs: ['component:material-button']
+  needs: ['component:material-item']
 });
 
 var getMockSections = function() {

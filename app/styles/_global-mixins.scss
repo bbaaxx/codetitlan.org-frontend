@@ -1,17 +1,13 @@
-@mixin meta-wrap {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
+// Preload images
 
-// http://yoranbrondsema.com/elegantly-preload-background-images-sass/
-@mixin background-image-preload($img-name) {
-  background-image: url($img-name);
-  $tmp: preload-image($img-name);
-}
-$preloaded-images: null;
-@function preload-image($image-url) {
-  $preloaded-images: $preloaded-images url($image-url);
-  @return $preloaded-images;
-}
+  // http://yoranbrondsema.com/elegantly-preload-background-images-sass/
+  @mixin background-image-preload($img-name) {
+    background-image: url($img-name);
+    $tmp: preload-image($img-name);
+  }
+  $preloaded-images: null;
+  @function preload-image($image-url) {
+    $preloaded-images: $preloaded-images url($image-url);
+    @return $preloaded-images;
+  }
 

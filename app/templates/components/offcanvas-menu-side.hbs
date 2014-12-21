@@ -2,22 +2,19 @@
 {{#each section in sidemenuItems}}
     {{#unless section.isSubsection}}
       {{#link-to "sections" section.slug action="closeMenu"}}
-        {{#material-button
-          action="closeMenu"
-          ripple=true
+        {{#material-item
           class="ofcvm__sidemenu__link ofcvm__sidemenu__link--section"
-        }}{{section.name}}{{/material-button}}
+          ripple=true
+        }}{{section.name}}{{/material-item}}
       {{/link-to}}
 
       {{#if section.hasSubsections}}
         {{#each subsection in section.subSections}}
           {{#link-to 'subsection' section.slug subsection.slug}}
-            {{#material-button
-              action="closeMenu"
-              ripple=true
-              raised=true
+            {{#material-item
               class="ofcvm__sidemenu__link ofcvm__sidemenu__link--subsection"
-            }}{{subsection.name}}{{/material-button}}
+              ripple=true
+            }}{{subsection.name}}{{/material-item}}
           {{/link-to}}
         {{/each}}
       {{/if}}

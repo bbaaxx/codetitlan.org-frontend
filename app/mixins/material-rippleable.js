@@ -2,14 +2,18 @@ import Ember from 'ember';
 
 export default Ember.Mixin.create({
 
-  rippleRecentering: false,
-  rippleContainer: null,
-  rippleElement: null,
-  rippleFrameCount: 0,
-  rippleIsAnimating: null,
-  rippleEvent: null,
-  rippleX: null,
-  rippleY: null,
+  init: function(){
+    this._super();
+    this.setProperties({
+      rippleRecentering: false,
+      rippleContainer: null,
+      rippleElement: null,
+      rippleIsAnimating: null,
+      rippleEvent: null,
+      rippleX: null,
+      rippleY: null,
+    });
+  },
 
   rippleSize: function(){
     var bound = this.get('rippleBound');

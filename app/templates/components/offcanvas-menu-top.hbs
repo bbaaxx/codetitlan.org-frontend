@@ -1,26 +1,18 @@
-<div class="ofcvm__menu__topmenu__logos">
-  <div class="ofcvm__menu__topmenu__logos--top">
-    {{#link-to 'index' }}
-      <div class="logo--brand"></div>
-    {{/link-to}}
-  </div>
-
-  <div class="ofcvm__menu__topmenu__logos--bottom">
-    {{#link-to 'index'}}
-      <div class="logo--quetz"></div>
-    {{/link-to}}
-  </div>
+<div class="ofcvm__topmenu__brand">
+  {{#link-to 'index' }}
+    <div class="logo--brand"></div>
+  {{/link-to}}
 </div>
 
 
-<nav class="ofcvm__menu__topmenu__icons">
+<nav class="ofcvm__topmenu__icons">
 {{#each item in topmenuItems}}
 
   <a {{bind-attr href=item.linkTarget}}>
     {{#material-button
       ripple=true
       icon=true
-      class="ofcvm__menu__topmenu__icons__icon"
+      class="ofcvm__topmenu__icons__icon"
     }}
     {{fa-icon item.iconName}}
     {{/material-button}}

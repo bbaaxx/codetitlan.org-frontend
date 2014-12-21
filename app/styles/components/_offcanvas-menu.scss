@@ -6,120 +6,124 @@ $ofcvm-sidemenu-width: 250px !default;
 $ofcvm-topmenu-height: 60px !default;
 $ofcvm-animation-duration: 300ms !default;
 
-@mixin meta-wrap {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+$animation-curve--fosi: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$animation-curve--losi: cubic-bezier(0, 0, 0.2, 1) !default;
+$animation-curve--foli: cubic-bezier(0.4, 0, 1, 1) !default;
+$animation-curve-default: $animation-curve--fosi !default;
+@mixin ofcvm-animation-fosi($property,$duration:$ofcvm-animation-duration) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $animation-curve-fosi;
+}
+@mixin ofcvm-animation-losi($property,$duration:$ofcvm-animation-duration) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $animation-curve-losi;
+}
+@mixin ofcvm-animation-foli($property,$duration:$ofcvm-animation-duration) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $animation-curve-foli;
+}
+@mixin ofcvm-animation-default($property,$duration:$ofcvm-animation-duration) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $animation-curve-default;
+}
+@mixin constrain-hw($value) {
+  height: $value;
+  width: $value;
 }
 
+html, body,
+body > .ember-view {
+  @include constrain-hw(100%);
+}
+body {
+  overflow: hidden;
+}
 .ofcvm {
-
   &__main-wrap {
-    @include meta-wrap;
+    @include constrain-hw(100%);
+    overflow: hidden;
   }
   &__menu-wrap {
-    height: 100%;
+    overflow: hidden;
+    @include constrain-hw(100%);
     position: absolute;
+    z-index: 1;
     opacity: 0;
-    z-index: 0;
-    transition: opacity 1s;
+    @include ofcvm-animation-default(opacity, $ofcvm-animation-duration);
   } // <--end: __menu-wrap
   &__content-wrap {
-    @include meta-wrap;
+    position: relative;
+    z-index: 3;
     overflow-y: scroll;
-    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-    transition-property: transform;
-    transition-duration: $ofcvm-animation-duration;
+    // overflow-x: hidden;
+    @include constrain-hw(100%);
+    @include ofcvm-animation-default(transform, $ofcvm-animation-duration);
+
     &__overlay {
+      @include constrain-hw(100%);
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
       opacity: 0;
+      z-index: 0;
       background-color: rgba(255,255,255,0.5);
-      transition-property: opacity;
-      transition-duration: $ofcvm-animation-duration;
-    }
+      @include ofcvm-animation-default(opacity, $ofcvm-animation-duration);
+    } // <--end: __content-wrap__overlay
   } // <--end: __content-wrap
+
   &__content {
     position: relative;
-    height: 100%;
-    z-index: 1000;
+    z-index: inherit;
+    min-height: 100%;
   } // <--end: __content
-  &__toggler {
+  &__toggler, &__toggle-button {
     position: fixed;
-    z-index: 1500;
-    transition-property: transform;
-    transition-duration: $ofcvm-animation-duration;
+    z-index: 5;
+    @include transition-property(transform);
+    @include ofcvm-animation-default($ofcvm-animation-duration);
   } // <--end: __toggler
-
-
-  // -- Menu styles
-  &__menu {
-
-    &__topmenu {
-      position: relative;
-      display: block;
-      height: $ofcvm-topmenu-height*4;
-
-      &__logos {
-        float: left;
-        width: $ofcvm-sidemenu-width;
-        max-height: $ofcvm-topmenu-height*3;
-        &--top {
-          display: block;
-          width: $ofcvm-sidemenu-width;
-          height: $ofcvm-topmenu-height;
-        }
-        &--bottom {
-          display: block;
-          height: $ofcvm-topmenu-height*2;
-          width: $ofcvm-sidemenu-width;
-        }
-      }
-      &__icons {
-        display: inline-block;
-        float: left;
-        width: $ofcvm-sidemenu-width;
-        height: $ofcvm-topmenu-height;
-      }
-
-      &__logo {
-        width: $ofcvm-sidemenu-width;
-        height: $ofcvm-topmenu-height*2;
-      }
-    } // <-- end: __topmenu
-  } // <-- end: __menu
-
+  &__topmenu {
+    position: relative;
+    display: block;
+    min-height: $ofcvm-topmenu-height;
+    &__brand {
+      float: left;
+      width: $ofcvm-sidemenu-width;
+      height: $ofcvm-topmenu-height;
+    }
+    &__icons {
+      display: inline-block;
+      float: left;
+      width: $ofcvm-sidemenu-width;
+      height: $ofcvm-topmenu-height;
+    }
+  } // <-- end: __topmenu
   &__sidemenu {
     position: relative;
     display: block;
-
     width: $ofcvm-sidemenu-width;
-    &__navigation {
-      width: $ofcvm-sidemenu-width;
-    }
-    &__link {
-
-    }
   } // <-- end: __sidemenu
-
-  // Showing the menu
-  &__main-wrap--showingMenu {
-
-    .ofcvm__content-wrap, .ofcvm__toggler,{
-      transform: translate3d($ofcvm-sidemenu-width,60px,0);
-    }
-    .ofcvm__menu-wrap {
-      opacity: 1;
-    }
-    .ofcvm__content-wrap__overlay {
-      opacity: 1;
-      z-index: 1100;
-    }
-
-  } // <-- end: __main-wrap--showingMenu
-
 }
+
+
+// Whosing the menu
+.ofcvm__main-wrap--showingMenu {
+
+  .ofcvm__content-wrap, .ofcvm__toggler,{
+    transform: translate3d($ofcvm-sidemenu-width,$ofcvm-topmenu-height,0);
+  }
+  .ofcvm__menu-wrap {
+    opacity: 1;
+    z-index: 2;
+  }
+  .ofcvm__content-wrap__overlay {
+    opacity: 1;
+    z-index: 5;
+  }
+
+} // <-- end: __main-wrap--showingMenu

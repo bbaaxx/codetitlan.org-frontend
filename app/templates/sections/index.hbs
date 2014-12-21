@@ -1,8 +1,45 @@
+{{#material-shadow zPosition=2}}
 <header class="section__header">
   <h1>{{string-capitalize name}}</h4>
   <h5>{{description}}</h5>
 </header>
+{{/material-shadow}}
 <div class="section__body">
+
+{{#if subSections}}
+{{#material-column-layout}}
+{{#each subsection in subSections}}
+
+  {{#material-card}}
+
+    {{#material-card-image}}
+      {{!-- <img src="assets/images/fern_background_sm.jpg" alt=""> --}}
+    {{/material-card-image}}
+
+    {{#material-card-heading}}
+      {{subsection.name}}
+    {{/material-card-heading}}
+
+    {{#material-card-caption}}
+      {{articles.length}} articles
+    {{/material-card-caption}}
+
+    {{#material-card-lower}}
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet necessitatibus cum, ipsum alias iusto nam, corporis delectus error asperiores culpa ipsa placeat. Fugit, aliquam? Voluptatum illo, itaque dignissimos enim maxime.
+    {{/material-card-lower}}
+
+    {{#material-card-bottom}}
+      {{#link-to 'subsection' slug subsection.slug}}go there{{/link-to}}
+    {{/material-card-bottom}}
+
+  {{/material-card}}
+
+{{/each}}
+
+{{/material-column-layout}}
+{{/if}}
+
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">

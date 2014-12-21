@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['ofcvm__menu ofcvm__menu__topmenu']
+  classNames: ['ofcvm__menu ofcvm__menu__topmenu ofcvm__topmenu']
 });

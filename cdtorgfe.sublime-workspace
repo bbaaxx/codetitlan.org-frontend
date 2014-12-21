@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"mo",
+				"mockSections"
+			],
+			[
+				"ove",
+				"overlayContainer"
+			],
+			[
+				"eve",
+				"eventIsRegistered"
+			],
+			[
+				"ov",
+				"overlayContainer"
+			],
+			[
+				"tog",
+				"toggleMenu"
+			],
+			[
+				"transition-d",
+				"transition-duration"
+			],
+			[
+				"cl",
+				"closeMenu"
+			],
+			[
+				"of",
+				"ofcvm__content"
+			],
+			[
 				"to",
 				"toggleProperty"
 			],
@@ -106,10 +138,6 @@
 			[
 				"link",
 				"linkTarget"
-			],
-			[
-				"of",
-				"ofcvm-animation-duration"
 			],
 			[
 				"ham",
@@ -404,10 +432,6 @@
 				"serverTests"
 			],
 			[
-				"mo",
-				"mochaTests"
-			],
-			[
 				"client",
 				"clientJs"
 			],
@@ -480,58 +504,50 @@
 	"buffers":
 	[
 		{
-			"file": "app/styles/_layout.scss",
+			"file": "app/components/material-item.js",
 			"settings":
 			{
-				"buffer_size": 121,
+				"buffer_size": 250,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/_modules.scss",
+			"file": "app/templates/sections/index.hbs",
 			"settings":
 			{
-				"buffer_size": 1638,
+				"buffer_size": 1458,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/_components.scss",
+			"file": "app/styles/app.scss",
 			"settings":
 			{
-				"buffer_size": 882,
+				"buffer_size": 453,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/components/_offcanvas-menu.scss",
+			"file": "app/styles/gwsklea/typography/_typography.scss",
 			"settings":
 			{
-				"buffer_size": 2769,
+				"buffer_size": 8536,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/section.js",
+			"file": "app/components/material-column-layout.js",
 			"settings":
 			{
-				"buffer_size": 1740,
+				"buffer_size": 570,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/components/offcanvas-wrapper.js",
+			"file": "app/components/material-hamburger.js",
 			"settings":
 			{
-				"buffer_size": 447,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/routes/application.js",
-			"settings":
-			{
-				"buffer_size": 934,
+				"buffer_size": 440,
 				"line_ending": "Unix"
 			}
 		}
@@ -689,77 +705,102 @@
 		"/T/projects/cdtorgfe/app",
 		"/T/projects/cdtorgfe/app/components",
 		"/T/projects/cdtorgfe/app/styles",
-		"/T/projects/cdtorgfe/app/styles/components",
 		"/T/projects/cdtorgfe/app/styles/gwsklea",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/button"
+		"/T/projects/cdtorgfe/tests",
+		"/T/projects/cdtorgfe/tests/unit",
+		"/T/projects/cdtorgfe/tests/unit/components"
 	],
 	"file_history":
 	[
-		"/T/projects/cdtorgfe/app/styles/gwsklea/animation/_animation.scss",
-		"/T/projects/cdtorgfe/app/styles/_modules.scss",
-		"/T/projects/cdtorgfe/app/styles/components/_offcanvas-menu.scss",
-		"/T/projects/cdtorgfe/app/styles/_components.scss",
-		"/T/projects/cdtorgfe/app/models/article.js",
-		"/T/projects/cdtorgfe/app/models/section.js",
-		"/T/projects/cdtorgfe/app/models/social-ref.js",
+		"/T/projects/cdtorgfe/app/components/material-card.js",
+		"/T/projects/cdtorgfe/app/components/material-button.js",
 		"/T/projects/cdtorgfe/app/mixins/material-rippleable.js",
-		"/T/projects/cdtorgfe/app/templates/components/material-hamburger.hbs",
-		"/T/projects/cdtorgfe/app/styles/components/_material-hamburger.scss",
-		"/T/projects/cdtorgfe/app/styles/_global-mixins.scss",
-		"/T/projects/cdtorgfe/app/templates/application.hbs",
-		"/T/projects/cdtorgfe/app/templates/components/offcanvas-wrapper.hbs",
-		"/T/projects/cdtorgfe/app/components/material-hamburger.js",
 		"/T/projects/cdtorgfe/app/helpers/string-toupper.js",
-		"/T/projects/cdtorgfe/app/templates/sections.hbs",
+		"/T/projects/cdtorgfe/app/models/section.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/card/demo.html",
+		"/T/projects/cdtorgfe/app/components/material-card-lower.js",
+		"/T/projects/cdtorgfe/app/components/material-card-bottom.js",
+		"/T/projects/cdtorgfe/tests/unit/components/material-shadow-test.js",
+		"/T/projects/cdtorgfe/app/styles/app.scss",
+		"/T/projects/cdtorgfe/app/mixins/material-shadowable.js",
+		"/T/projects/cdtorgfe/app/components/material-shadow.js",
+		"/T/projects/cdtorgfe/app/styles/_shame.scss",
+		"/T/projects/cdtorgfe/tests/helpers/start-app.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/card/_card.scss",
+		"/T/projects/cdtorgfe/app/components/material-card-image.js",
+		"/T/projects/cdtorgfe/app/components/material-card-caption.js",
+		"/T/projects/cdtorgfe/app/components/material-card-heading.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/column-layout/column-layout.js",
+		"/T/projects/cdtorgfe/app/styles/_modules.scss",
+		"/T/projects/cdtorgfe/app/components/material-column-layout.js",
 		"/T/projects/cdtorgfe/app/templates/index.hbs",
+		"/T/projects/cdtorgfe/app/router.js",
+		"/T/projects/cdtorgfe/app/routes/application.js",
+		"/T/projects/cdtorgfe/app/styles/components/_offcanvas-menu.scss",
 		"/T/projects/cdtorgfe/testem.json",
-		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-side.hbs",
-		"/T/projects/cdtorgfe/app/templates/articles/create.hbs",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/shadow/_shadow.scss",
-		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-wrapper-test.js",
 		"/T/projects/cdtorgfe/app/components/offcanvas-menu-side.js",
+		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-menu-side-test.js",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-side.hbs",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/item/_item.scss",
+		"/T/projects/cdtorgfe/app/components/material-item.js",
+		"/T/projects/cdtorgfe/app/templates/components/material-item.hbs",
+		"/T/projects/cdtorgfe/tests/unit/components/material-item-test.js",
+		"/T/projects/cdtorgfe/app/adapters/application.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/item/item.js",
+		"/T/projects/cdtorgfe/app/styles/_global-mixins.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/palette/_palette.scss",
+		"/T/projects/cdtorgfe/package.json",
+		"/T/projects/cdtorgfe/app/components/offcanvas-wrapper.js",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-wrapper.hbs",
+		"/T/projects/cdtorgfe/app/templates/components/material-menuitem.hbs",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/icons/demo.html",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/resets/_h5bp.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/animation/_animation.scss",
+		"/T/projects/cdtorgfe/app/components/material-hamburger.js",
+		"/T/projects/cdtorgfe/app/styles/_components.scss",
+		"/T/projects/cdtorgfe/app/index.html",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/_styleguide_demo_bp.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/styleguide.scss",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/slider/slider.js",
+		"/T/projects/cdtorgfe/app/components/offcanvas-menu-top.js",
+		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-wrapper-test.js",
+		"/T/projects/cdtorgfe/app/styles/_layout.scss",
+		"/T/projects/cdtorgfe/app/templates/application.hbs",
+		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-top.hbs",
+		"/T/projects/cdtorgfe/app/templates/articles/create.hbs",
+		"/T/projects/cdtorgfe/app/templates/sections.hbs",
+		"/T/projects/cdtorgfe/app/styles/components/_material-hamburger.scss",
+		"/T/projects/cdtorgfe/app/initializers/anim-frame-shim.js",
+		"/T/projects/cdtorgfe/app/templates/components/material-hamburger.hbs",
+		"/T/projects/cdtorgfe/app/models/article.js",
+		"/T/projects/cdtorgfe/app/models/social-ref.js",
+		"/T/projects/cdtorgfe/app/styles/gwsklea/shadow/_shadow.scss",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/animation/demo.scss",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/animation/demo.html",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/third_party/rAF.js",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/button/_button.scss",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/button/button.js",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/_styleguide_demo_bp.scss",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/styleguide.scss",
 		"/T/projects/cdtorgfe/dist/assets/images/logo-codetitlan-w.svg",
 		"/T/projects/cdtorgfe/tests/unit/components/material-button-test.js",
 		"/T/projects/cdtorgfe/app/helpers/string-capitalize.js",
-		"/T/projects/cdtorgfe/app/components/offcanvas-menu-top.js",
-		"/T/projects/cdtorgfe/app/components/material-button.js",
-		"/T/projects/cdtorgfe/app/templates/components/offcanvas-menu-top.hbs",
-		"/T/projects/cdtorgfe/app/routes/application.js",
-		"/T/projects/cdtorgfe/app/index.html",
 		"/T/projects/cdtorgfe/.gitignore",
 		"/T/projects/cdtorgfe/dist/index.html",
 		"/T/projects/cdtorgfe/tests/index.html",
 		"/T/projects/cdtorgfe/tests/unit/mixins/material-rippleable-test.js",
-		"/T/projects/cdtorgfe/app/adapters/application.js",
-		"/T/projects/cdtorgfe/app/components/offcanvas-wrapper.js",
 		"/T/projects/cdtorgfe/app/components/material-linkto.js",
 		"/T/projects/cdtorgfe/app/styles/_normalize.scss",
-		"/T/projects/cdtorgfe/app/router.js",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/ripple/ripple.js",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/ripple/_ripple.scss",
-		"/T/projects/cdtorgfe/app/styles/app.scss",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/card/_card.scss",
 		"/T/projects/cdtorgfe/app/templates/components/material-button.hbs",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/layout/README.md",
 		"/T/projects/cdtorgfe/Brocfile.js",
 		"/T/projects/cdtorgfe/app/styles/bootstrap/_custom-components.scss",
-		"/T/projects/cdtorgfe/app/styles/_layout.scss",
 		"/T/projects/cdtorgfe/app/templates/sections/index.hbs",
 		"/T/projects/cdtorgfe/app/templates/subsection/index.hbs",
-		"/T/projects/cdtorgfe/app/initializers/anim-frame-shim.js",
 		"/T/projects/cdtorgfe/app/styles/gwsklea/button/demo.html",
-		"/T/projects/cdtorgfe/app/styles/_shame.scss",
 		"/T/projects/cdtorgfe/Makefile",
 		"/T/projects/cdtorgfe/app/styles/_other.scss",
 		"/T/projects/cdtorgfe/app/templates/subsection.hbs",
-		"/T/projects/cdtorgfe/tests/unit/components/offcanvas-menu-side-test.js",
 		"/T/projects/cdtorgfe/vagrant/puppet/modules/mongodb/spec/classes/server_install_spec.rb",
 		"/T/projects/cdtorgfe/tests/unit/models/section-test.js",
 		"/C/Users/Eduardo/Desktop/Forest.css",
@@ -788,41 +829,17 @@
 		"/T/projects/cdtorgfe/config/environment.js",
 		"/T/projects/cdtorgfe/app/styles/_mixins.scss",
 		"/T/projects/cdtorgfe/tests/unit/adapters/application-test.js",
-		"/T/projects/cdtorgfe/package.json",
 		"/T/projects/cdtorgfe/tests/unit/helpers/string-toupper-test.js",
 		"/T/projects/cdtorgfe/bower.json",
 		"/T/projects/cdtorgfe/tests/unit/models/article-test.js",
 		"/T/projects/cdtorgfe/.editorconfig",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/column-layout/column-layout.js",
 		"/T/projects/cdtorgfe/cdtorgfe.sublime-project",
 		"/T/projects/cdtorgfe/app/routes/articles/create.js",
 		"/T/projects/cdtorgfe/tests/unit/helpers/string-capitalize-test.js",
 		"/T/projects/cdtorgfe/app/templates/articles/editor.hbs",
 		"/T/projects/cdtorgfe/app/templates/articles/index.hbs",
 		"/T/projects/cdtorgfe/app/routes/article/edit.js",
-		"/T/projects/cdtorgfe/app/templates/article/index.hbs",
-		"/T/projects/cdtorgfe/app/routes/article/index.js",
-		"/T/projects/cdtorgfe/app/templates/articles.hbs",
-		"/T/projects/cdtorgfe/app/routes/articles.js",
-		"/T/projects/cdtorgfe/app/models/subsection.js",
-		"/T/projects/cdtorgfe/app/templates/article.hbs",
-		"/T/projects/cdtorgfe/app/templates/error.hbs",
-		"/T/projects/cdtorgfe/app/templates/articles-create.hbs",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/dropdown-menu/_dropdown-menu.scss",
-		"/T/projects/cdtorgfe/app/controllers/articles.js",
-		"/T/projects/cdtorgfe/app/app.js",
-		"/T/projects/cdtorgfe/__Vagrantfile",
-		"/T/projects/cdtorgfe/app/styles/gwsklea/radio/demo.html",
-		"/T/projects/cdtorgfe/app/styles/_bootstrap-custom-components.scss",
-		"/T/projects/cdtorgfe/app/routes/section.js",
-		"/T/projects/cdtorgfe/app/routes/articles-by-section-article.js",
-		"/T/projects/cdtorgfe/app/routes/articles-by-section.js",
-		"/T/projects/cdtorgfe/app/routes/by-section.js",
-		"/T/projects/cdtorgfe/app/templates/by-section.hbs",
-		"/T/projects/cdtorgfe/dist/robots.txt",
-		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/T/projects/cdtorgfe/app/templates/blog.hbs"
+		"/T/projects/cdtorgfe/app/templates/article/index.hbs"
 	],
 	"find":
 	{
@@ -841,6 +858,16 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"image",
+			"palette",
+			"item",
+			"rippleFrameCount",
+			"menuitem",
+			"button",
+			"-button",
+			"sidemenuItems",
+			"!default",
+			";\n",
 			"background-image",
 			"externalTrigger",
 			"material-hamburger__icon--slide",
@@ -958,17 +985,7 @@
 			"index",
 			"sideMenu",
 			"index",
-			"this",
-			"300",
-			"icon",
-			"button",
-			"profile",
-			"font-weight",
-			"}}\n",
-			"-w",
-			"Principal",
-			"-b",
-			"\n@"
+			"this"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -987,31 +1004,31 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/styles/_layout.scss",
+					"file": "app/components/material-item.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 121,
+						"buffer_size": 250,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								250,
+								250
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1025,11 +1042,44 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/styles/_modules.scss",
+					"file": "app/templates/sections/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1638,
+						"buffer_size": 1458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 453,
 						"regions":
 						{
 						},
@@ -1057,53 +1107,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/styles/_components.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 882,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "app/styles/components/_offcanvas-menu.scss",
+					"file": "app/styles/gwsklea/typography/_typography.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2769,
+						"buffer_size": 8536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								307,
-								307
+								1932,
+								1932
 							]
 						],
 						"settings":
@@ -1115,8 +1132,8 @@
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 171.0,
+						"translation.x": -0.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1124,58 +1141,19 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/models/section.js",
+					"file": "app/components/material-column-layout.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1740,
+						"buffer_size": 570,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								614,
-								614
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 5,
-					"file": "app/components/offcanvas-wrapper.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 447,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								447,
-								447
+								201,
+								201
 							]
 						],
 						"settings":
@@ -1195,20 +1173,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/routes/application.js",
-					"semi_transient": false,
+					"buffer": 5,
+					"file": "app/components/material-hamburger.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 934,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								561,
-								561
+								440,
+								440
 							]
 						],
 						"settings":
@@ -1224,7 +1202,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1247,18 +1225,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1284,20 +1255,200 @@
 		"selected_items":
 		[
 			[
-				"sec",
-				"app\\models\\section.js"
+				"macola",
+				"app\\components\\material-column-layout.js"
+			],
+			[
+				"stapp",
+				"app\\styles\\app.scss"
+			],
+			[
+				"mashate",
+				"tests\\unit\\components\\material-shadow-test.js"
+			],
+			[
+				"shadowab",
+				"app\\mixins\\material-shadowable.js"
+			],
+			[
+				"matsha",
+				"app\\mixins\\material-shadowable.js"
+			],
+			[
+				"secin",
+				"app\\templates\\sections\\index.hbs"
+			],
+			[
+				"mabu",
+				"app\\components\\material-button.js"
+			],
+			[
+				"rippa",
+				"app\\mixins\\material-rippleable.js"
+			],
+			[
+				"masha",
+				"app\\mixins\\material-shadowable.js"
+			],
+			[
+				"mats",
+				"app\\components\\material-shadow.js"
+			],
+			[
+				"styapp",
+				"app\\styles\\app.scss"
+			],
+			[
+				"mash",
+				"app\\components\\material-shadow.js"
+			],
+			[
+				"module",
+				"app\\styles\\_modules.scss"
+			],
+			[
+				"temin",
+				"app\\templates\\index.hbs"
+			],
+			[
+				"roapp",
+				"app\\routes\\application.js"
+			],
+			[
+				"app",
+				"app\\styles\\app.scss"
+			],
+			[
+				"stgi",
+				"app\\styles\\gwsklea\\item\\_item.scss"
+			],
+			[
+				"pale",
+				"app\\styles\\gwsklea\\palette\\_palette.scss"
+			],
+			[
+				"offmesite",
+				"tests\\unit\\components\\offcanvas-menu-side-test.js"
+			],
+			[
+				"menui",
+				"app\\templates\\components\\material-menuitem.hbs"
+			],
+			[
+				"menuit",
+				"app\\components\\material-menuitem.js"
+			],
+			[
+				"appss",
+				"app\\styles\\app.scss"
+			],
+			[
+				"mate",
+				"app\\components\\material-menuitem.js"
+			],
+			[
+				"ro",
+				"app\\router.js"
 			],
 			[
 				"mose",
 				"app\\models\\section.js"
 			],
 			[
-				"moar",
-				"app\\models\\article.js"
+				"in",
+				"app\\index.html"
 			],
 			[
-				"app",
-				"app\\routes\\application.js"
+				"stcom",
+				"app\\styles\\_components.scss"
+			],
+			[
+				"styoff",
+				"app\\styles\\components\\_offcanvas-menu.scss"
+			],
+			[
+				"of",
+				"app\\templates\\components\\offcanvas-wrapper.hbs"
+			],
+			[
+				"tesoffmesi",
+				"tests\\unit\\components\\offcanvas-menu-side-test.js"
+			],
+			[
+				"offmesih",
+				"app\\templates\\components\\offcanvas-menu-side.hbs"
+			],
+			[
+				"offmesi",
+				"app\\components\\offcanvas-menu-side.js"
+			],
+			[
+				"offcameh",
+				"app\\templates\\components\\offcanvas-menu-side.hbs"
+			],
+			[
+				"offcwr",
+				"app\\components\\offcanvas-wrapper.js"
+			],
+			[
+				"comoff",
+				"app\\components\\offcanvas-menu-side.js"
+			],
+			[
+				"maha",
+				"app\\components\\material-hamburger.js"
+			],
+			[
+				"rout",
+				"app\\router.js"
+			],
+			[
+				"",
+				"app\\components\\offcanvas-menu-side.js"
+			],
+			[
+				"mab",
+				"app\\components\\material-button.js"
+			],
+			[
+				"mi",
+				"app\\mixins\\material-rippleable.js"
+			],
+			[
+				"tempcomoffs",
+				"app\\templates\\components\\offcanvas-menu-side.hbs"
+			],
+			[
+				"offc",
+				"app\\components\\offcanvas-menu-side.js"
+			],
+			[
+				"comoffm",
+				"app\\components\\offcanvas-menu-side.js"
+			],
+			[
+				"apphb",
+				"app\\templates\\application.hbs"
+			],
+			[
+				"stcomah",
+				"app\\styles\\components\\_material-hamburger.scss"
+			],
+			[
+				"anima",
+				"app\\styles\\gwsklea\\animation\\_animation.scss"
+			],
+			[
+				"temcomoffw",
+				"app\\templates\\components\\offcanvas-wrapper.hbs"
+			],
+			[
+				"sec",
+				"app\\models\\section.js"
+			],
+			[
+				"moar",
+				"app\\models\\article.js"
 			],
 			[
 				"stmi",
@@ -1334,10 +1485,6 @@
 			[
 				"stcomoff",
 				"app\\styles\\components\\_offcanvas-menu.scss"
-			],
-			[
-				"stcom",
-				"app\\styles\\_components.scss"
 			],
 			[
 				"compoffwrh",
@@ -1392,10 +1539,6 @@
 				"app\\mixins\\material-rippleable.js"
 			],
 			[
-				"roapp",
-				"app\\routes\\application.js"
-			],
-			[
 				"appl",
 				"app\\routes\\application.js"
 			],
@@ -1406,10 +1549,6 @@
 			[
 				"offmeto",
 				"app\\components\\offcanvas-menu-top.js"
-			],
-			[
-				"offmesi",
-				"app\\components\\offcanvas-menu-side.js"
 			],
 			[
 				"offmes",
@@ -1442,10 +1581,6 @@
 			[
 				"butt",
 				"app\\components\\material-button.js"
-			],
-			[
-				"temin",
-				"app\\templates\\index.hbs"
 			],
 			[
 				"shim",
@@ -1630,170 +1765,6 @@
 			[
 				"appli",
 				"app\\templates\\application.hbs"
-			],
-			[
-				"pal",
-				"app\\styles\\gwsklea\\palette\\_palette.scss"
-			],
-			[
-				"comp",
-				"app\\components\\pure-sidenav.js"
-			],
-			[
-				"modks",
-				"app\\models\\skill.js"
-			],
-			[
-				"compskill",
-				"app\\components\\skill-picker.js"
-			],
-			[
-				"posa",
-				"app\\models\\position-activity.js"
-			],
-			[
-				"metri",
-				"app\\models\\skill-metric.js"
-			],
-			[
-				"modskin",
-				"app\\models\\skill-indicator.js"
-			],
-			[
-				"modsk",
-				"app\\models\\skill.js"
-			],
-			[
-				"posacp",
-				"app\\components\\position-activity-picker.js"
-			],
-			[
-				"compan",
-				"app\\models\\company.js"
-			],
-			[
-				"compcom",
-				"app\\components\\company-picker.js"
-			],
-			[
-				"modpos",
-				"app\\models\\position.js"
-			],
-			[
-				"posac",
-				"app\\models\\position-activity.js"
-			],
-			[
-				"modac",
-				"app\\models\\position-activity.js"
-			],
-			[
-				"temposinde",
-				"app\\templates\\positions\\index.hbs"
-			],
-			[
-				"viewp",
-				"app\\views\\profile-display.js"
-			],
-			[
-				"viewsk",
-				"app\\views\\skill-display.js"
-			],
-			[
-				"modpro",
-				"app\\models\\profile.js"
-			],
-			[
-				"tempap",
-				"app\\templates\\application.hbs"
-			],
-			[
-				"tempind",
-				"app\\templates\\index.hbs"
-			],
-			[
-				"posde",
-				"app\\templates\\position\\details.hbs"
-			],
-			[
-				"conposcre",
-				"app\\controllers\\positions\\create.js"
-			],
-			[
-				"modski",
-				"app\\models\\skill.js"
-			],
-			[
-				"trarr",
-				"app\\transforms\\array.js"
-			],
-			[
-				"modelac",
-				"app\\models\\position-activity.js"
-			],
-			[
-				"broc",
-				"Brocfile.js"
-			],
-			[
-				"modposi",
-				"app\\models\\position.js"
-			],
-			[
-				"compli",
-				"app\\components\\live-search.js"
-			],
-			[
-				"modpo",
-				"app\\models\\position.js"
-			],
-			[
-				"tempped",
-				"app\\templates\\position\\editor.hbs"
-			],
-			[
-				"tempcre",
-				"app\\templates\\positions\\create.hbs"
-			],
-			[
-				"mopo",
-				"app\\models\\position.js"
-			],
-			[
-				"moin",
-				"app\\models\\skill-indicator.js"
-			],
-			[
-				"rosked",
-				"app\\routes\\skill\\edit.js"
-			],
-			[
-				"moi",
-				"app\\models\\skill-indicator.js"
-			],
-			[
-				"momet",
-				"app\\models\\skill-metric.js"
-			],
-			[
-				"po",
-				"app\\models\\position.js"
-			],
-			[
-				"help",
-				"app\\helpers\\tdat-monthyear.js"
-			],
-			[
-				"mopro",
-				"app\\models\\profexp.js"
-			],
-			[
-				"moco",
-				"app\\models\\company.js"
-			],
-			[
-				"modelcomp",
-				"app\\models\\company.js"
 			]
 		],
 		"width": 0.0
@@ -1821,8 +1792,8 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 223.0,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

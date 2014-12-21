@@ -1,24 +1,24 @@
-@import "bootstrap/custom-vars";
-@import "bootstrap/custom-components";
 
-// Jasny bootstrap components
-// @import "bower_components/jasny-bootstrap/scss/jasny-bootstrap";
+// Reset
+@import "reset/normalize";
 
-// Fonts
-@import "fonts/roboto-draft";
+// Import bourbon | Warning, it may be buggy !
+@import "bower_components/bourbon/dist/bourbon";
 
-// Import stuff from gwsklea
-@import "gwsklea/typography/typography";
-@import "gwsklea/palette/palette";
-@import "gwsklea/shadow/shadow";
-@import "gwsklea/button/button";
+// Import stuff from google's web-starter-kit:material-spring
+  // font
+  @import "fonts/roboto-draft";
+  @import "gwsklea";
+
+
+// Import components
+  @import "components";
+
 
 // Load these first
-@import "global-mixins";
-@import "components";
-
-@import "base";
-@import "layout";
-@import "modules";
-@import "other";
-@import "shame";
+  @import "global-mixins";
+  @import "base";
+  @import "layout";
+  @import "modules";
+  @import "other";
+  @import "shame";

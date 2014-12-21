@@ -21,9 +21,6 @@ export default Ember.Component.extend(Rippleable, {
   actionHandler: function(){
     this.$().blur();
     this.sendAction();
-  },
-  willInsertElement: function(){
-    this.$().on('mouseup', this.get('actionHandler').bind(this) );
-  },
+  }.on('mouseUp')
 
 });

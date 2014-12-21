@@ -21,7 +21,7 @@
 
 // Overide default styles
 .ofcvm__content {
-  background-color: #fff;
+  // background-color: #fff;
 }
 .ofcvm__menu {
   &__topmenu {
@@ -37,14 +37,13 @@
 
 .ofcvm__sidemenu {
   a {
-    &:hover, &:active {text-decoration: none;}
+    &:hover, &:active {
+      text-decoration: none;
+    }
   }
   &__link {
     display: block;
-    line-height: 2em;
-    height: 4em;
     width: 100%;
-    font-size: 1.2em;
   }
 }
 .ofcvm__topmenu {
